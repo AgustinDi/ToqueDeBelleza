@@ -11,8 +11,8 @@ export default async function ProductsList() {
             <h2>fetching:</h2>
             |---------------|
             {result.slice(0,5).map(value => 
-                <div>
-                    <h3 key={value.id}>
+                <div key={value.id}>
+                    <h3>
                         {value.title}
                     </h3>
                     <p>
