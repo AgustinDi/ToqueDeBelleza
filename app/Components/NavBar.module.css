@@ -1,0 +1,14 @@
+.header {
+    border: 2px solid #ececec;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.ul {
+    display: flex;
+    list-style: none;
+}
+
+.ul li {
+    padding-left: 15px;
+}
