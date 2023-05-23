@@ -1,0 +1,24 @@
+{
+    "data" : [
+        {
+            "title": "Bonet",
+            "price": 800,
+            "size": "250ml",
+            "description": "descripcion general del producto, Ayuda a reparar y fortalecer las hebras desde la raíz hasta las puntas. Bonet nutre tu cabello y lo protege contra los daños ambientales",
+            "modeOfUse": "tatatatatatatatatatata  tatatatatatatatatatata  ",
+            "precaution": "descripcion general del producto, Ayuda a reparar y fortalecer las he",
+            "aplication": "se usa asi descripcion general del producto, Ayuda a reparar y fortalecer las he",
+            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684870179/Toque%20de%20Belleza/20230316_001456_worg0r.jpg"
+        },
+        {
+            "title": "Diamond",
+            "price": 800,
+            "size": "250ml",
+            "description": "descripcion general del producto, Ayuda a reparar y fortalecer las hebras desde la raíz hasta las puntas. Bonet nutre tu cabello y lo protege contra los daños ambientales",
+            "modeOfUse": "tatatatatatatatatatata  tatatatatatatatatatata  ",
+            "precaution": "descripcion general del producto, Ayuda a reparar y fortalecer las he",
+            "aplication": "se usa asi descripcion general del producto, Ayuda a reparar y fortalecer las he",
+            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684870205/Toque%20de%20Belleza/20230316_000542_qwhsi7.jpg"
+        }
+    ]
+}

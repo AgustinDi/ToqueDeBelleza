@@ -1,22 +1,19 @@
-const fetching = () => {
-    return fetch('https://jsonplaceholder.typicode.com/posts')
-    .then((response) => response.json())
-}
+import Image from 'next/image'
+import {data} from './Products.json'
 
 export default async function ProductsList() {
-    const result = await fetching();
-
     return (
         <div>
             <h2>fetching:</h2>
             |---------------|
-            {result.slice(0,5).map(value => 
-                <div key={value.id}>
+            {data.map(value => 
+                <div key={value.name}>
+                    <Image src={value.image} width={100} height={100} alt={value.title}/>
                     <h3>
-                        {value.title}
+                        {value.name}
                     </h3>
                     <p>
-                        {value.body}
+                        {value.description}
                     </p>
                     <hr/>
                 </div>  
