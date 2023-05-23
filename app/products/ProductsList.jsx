@@ -12,7 +12,7 @@ export default async function ProductsList() {
             |---------------|
             {result.slice(0,5).map(value => 
                 <div>
-                    <h3>
+                    <h3 key={value.id}>
                         {value.title}
                     </h3>
                     <p>
