@@ -12,7 +12,7 @@ export default async function ProductsList() {
             |---------------|
             {result.slice(0,5).map(value => 
                 <div>
-                    <h3 style={{color: '#fefeee'}}>
+                    <h3>
                         {value.title}
                     </h3>
                     <p>
