@@ -11,6 +11,9 @@ const links = [
     },{
     name: 'products',
     link: '/products'
+    },{
+    name: 'cart',
+    link: '/cart'
     }
 ]
 
