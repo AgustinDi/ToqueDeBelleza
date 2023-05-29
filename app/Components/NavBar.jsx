@@ -12,8 +12,8 @@ const links = [
     name: 'about',
     link: '/about'
     },{
-    name: 'products',
-    link: '/products'
+    name: 'productos',
+    link: '/productos'
     },{
     name: 'cart',
     link: '/cart'

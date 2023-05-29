@@ -1,3 +1,4 @@
+import '../styles/initialize.css';
 import '../styles/globals.css';
 import NavBar from "./Components/NavBar.jsx";
 import Footer from "./Components/Footer.jsx";
