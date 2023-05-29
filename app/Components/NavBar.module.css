@@ -5,6 +5,13 @@
     flex-direction: column;
 }
 
+.nav {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .ul {
     display: flex;
     list-style: none;
