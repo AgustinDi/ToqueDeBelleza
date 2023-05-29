@@ -4,7 +4,7 @@ import css from './Searcher.module.css';
 export default function Searcher() {
   return (
     <div className={css.searcher}>
-        <input className={css.input} placeholder='Que estas buscando?'/>
+        <input className={css.input} placeholder='Que producto estas buscando?'/>
     </div>
   )
 }

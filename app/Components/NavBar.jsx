@@ -3,14 +3,12 @@ import css from './NavBar.module.css';
 import Image from "next/image";
 import Logo from '../../public/Logo.png';
 import LogoDark from '../../public/logoDark.png';
+import LogoText from '../../public/logoText.png';
 
 const links = [
     {
     name: 'Inicio',
     link: '/'
-    },{
-    name: 'about',
-    link: '/about'
     },{
     name: 'productos',
     link: '/productos'
