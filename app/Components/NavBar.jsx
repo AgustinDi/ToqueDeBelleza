@@ -25,7 +25,7 @@ export default function NavBar(){
         <header className={css.header}>
             <nav className={css.nav}>
                 <Link href={'/'}>
-                    <Image className={css.logo} src={LogoDark} width={100} alt={'logo'} priority={true}/>
+                    <Image className={css.logo} src={LogoDark} width={80} alt={'logo'} priority={true}/>
                 </Link> 
                 <ul className={css.ul}>
                     {links.map(({name, link})=>
