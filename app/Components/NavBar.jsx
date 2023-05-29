@@ -1,9 +1,12 @@
 import Link from "next/link";
-import css from './NavBar.module.css'
+import css from './NavBar.module.css';
+import Image from "next/image";
+import Logo from '../../public/Logo.png';
+import LogoDark from '../../public/Logo_dark.png';
 
 const links = [
     {
-    name: 'home',
+    name: 'Inicio',
     link: '/'
     },{
     name: 'about',
@@ -21,6 +24,7 @@ export default function NavBar(){
     return (
         <header className={css.header}>
             <nav>
+                <Image src={LogoDark} className="logo" width={'10px'}/>
                 <ul className={css.ul}>
                     {links.map(({name, link})=>
                     <li key={link}>
