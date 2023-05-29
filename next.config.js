@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    appDir: true,
-    serverActions: true
+    appDir: true
   },
   images: {
       domains: ['res.cloudinary.com']

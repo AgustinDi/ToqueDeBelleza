@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import productsJson from './Products.json'
-import Loading from '../../public/Loading.png'
-
 
 export default async function ProductsList() {
     return (

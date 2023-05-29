@@ -29,7 +29,7 @@ export default function NavBar(){
                 </Link> 
                 <ul className={css.ul}>
                     {links.map(({name, link})=>
-                    <li key={link}>
+                    <li key={name}>
                         <Link href={link}>
                             {name}
                         </Link>
