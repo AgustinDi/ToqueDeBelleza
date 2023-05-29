@@ -1,5 +1,6 @@
-import '../styles/globals.css'
-import NavBar from "./Components/NavBar"
+import '../styles/globals.css';
+import NavBar from "./Components/NavBar.jsx";
+import Footer from "./Components/Footer.jsx";
 
 export const metadata = {
   title: 'Toque de Belleza',
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <NavBar/>
         {children}
+        <Footer/> 
       </body>
     </html>
   )

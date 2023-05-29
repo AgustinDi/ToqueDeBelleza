@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  height: 100vh;
 }
 
 @media (prefers-color-scheme: dark) {
