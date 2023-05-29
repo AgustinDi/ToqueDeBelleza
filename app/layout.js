@@ -2,6 +2,7 @@ import '../styles/initialize.css';
 import '../styles/globals.css';
 import NavBar from "./Components/NavBar.jsx";
 import Footer from "./Components/Footer.jsx";
+import Searcher from './Components/Searcher';
 
 export const metadata = {
   title: 'Toque de Belleza',
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <NavBar/>
+        <Searcher/>
         <center>
           {children}
         </center> 
