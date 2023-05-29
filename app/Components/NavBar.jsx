@@ -2,7 +2,7 @@ import Link from "next/link";
 import css from './NavBar.module.css';
 import Image from "next/image";
 import Logo from '../../public/Logo.png';
-import LogoDark from '../../public/LogoDark.png';
+import LogoDark from '../../public/logoDark.png';
 
 const links = [
     {
