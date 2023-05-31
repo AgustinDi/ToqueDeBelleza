@@ -1,9 +1,11 @@
 import Image from "next/image";
 import css from './ProductCard.module.css';
+import Link from "next/link";
 
 export default function ProductCard({value}){
     return (
         <div key={value.name} className={css.card}>
+            <Link href={'/producto/' + value.name}>
             <Image src={value.image} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" width={150} height={150} alt={value.name}/>
             <div className={css.title}>
                 <h3>
@@ -19,6 +21,7 @@ export default function ProductCard({value}){
                 {value.precaution && (<p>precauciones: <br/> {value.precaution}</p>)}
                 {value.aplication && (<p>aplicacion: <br/> {value.aplication}</p>)}
             </div> */}
+        </Link>
         </div> 
     )
 }
