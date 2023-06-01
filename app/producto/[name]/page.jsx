@@ -1,18 +1,29 @@
 import React from 'react'
-import productsJson from '../../productos/Products.json'
+import Image from 'next/image';
+import productsJson from '../../productos/Products.json';
 
 export default function producto({ params }) {
-  const product = productsJson.data?.filter(value=> value.name = params.name)
+  const nameOfProduct = decodeURI(params.name)
+  const product = productsJson.data?.find(value=> value.name = nameOfProduct)
 
   return (
     <article>
-        {params.name}
-            {/* <div>
-                <p>sobre {value.name}: <br/> {value.description}</p>
-                {value.modeOfUse && (<p>modo de uso: <br/> {value.modeOfUse}</p>)}
-                {value.precaution && (<p>precauciones: <br/> {value.precaution}</p>)}
-                {value.aplication && (<p>aplicacion: <br/> {value.aplication}</p>)}
-            </div> */}
+      <div>
+        <Image width={300} height={300} src={product.image} />
+        <div>
+          <h2>{product.name}</h2>
+          <span>{product.size}</span> - <span>{product.price}$</span>
+          <br/>
+          <button>Añadir al Carrito</button>
+          {/* este boton es un futuro componente 'use client' */}
+        </div>
+      </div>
+      <description>
+        <p>sobre {product.name}: <br/> {product.description}</p>
+        {product.modeOfUse && (<p>modo de uso: <br/> {product.modeOfUse}</p>)}
+        {product.precaution && (<p>precauciones: <br/> {product.precaution}</p>)}
+        {product.aplication && (<p>aplicacion: <br/> {product.aplication}</p>)}
+      </description>
     </article>
   )
 }

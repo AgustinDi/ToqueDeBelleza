@@ -1,5 +1,7 @@
 .productsList {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0px 50px;
+    gap: 20px;
 }

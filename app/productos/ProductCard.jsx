@@ -20,7 +20,7 @@ export default function ProductCard({value}){
     return (
         <div key={value.name} className={css.card}>
             <Link href={'/producto/' + value.name}>
-            <Image src={value.image || loadingImage} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" width={252} height={252} alt={value.name}/>
+            <Image src={value.image || loadingImage} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" width={200} height={200} alt={value.name}/>
             <div className={css.title}>
                 <h3>
                     {value.name} 

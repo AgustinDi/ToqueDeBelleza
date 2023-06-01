@@ -1,6 +1,6 @@
 .card {
     background-color: #222222;
-    margin: 10px 30px;
+    margin-bottom: 20px;
 }
 
 .card:hover {
@@ -19,5 +19,5 @@
 }
 
 .title h3 {
-    width: 252px;
+    width: 200px;
 }
