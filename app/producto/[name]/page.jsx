@@ -7,7 +7,12 @@ export default function producto({ params }) {
   return (
     <article>
         {params.name}
-        {/* {console.log(productsJson)} */}
+            {/* <div>
+                <p>sobre {value.name}: <br/> {value.description}</p>
+                {value.modeOfUse && (<p>modo de uso: <br/> {value.modeOfUse}</p>)}
+                {value.precaution && (<p>precauciones: <br/> {value.precaution}</p>)}
+                {value.aplication && (<p>aplicacion: <br/> {value.aplication}</p>)}
+            </div> */}
     </article>
   )
 }

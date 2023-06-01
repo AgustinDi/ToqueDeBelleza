@@ -17,3 +17,7 @@
 .title * {
     margin: 2px;
 }
+
+.title h3 {
+    width: 252px;
+}
