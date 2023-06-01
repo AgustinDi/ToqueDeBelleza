@@ -4,7 +4,7 @@ import productsJson from '../../productos/Products.json';
 
 export default function producto({ params }) {
   const nameOfProduct = decodeURI(params.name)
-  const product = productsJson.data?.find(value=> value.name = nameOfProduct)
+  const product = productsJson.data?.find(value=> value.name === nameOfProduct)
 
   return (
     <article>
