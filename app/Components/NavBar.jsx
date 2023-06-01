@@ -1,9 +1,6 @@
 import Link from "next/link";
 import css from './NavBar.module.css';
 import Image from "next/image";
-import Logo from '../../public/Logo.png';
-import LogoDark from '../../public/logoDark.png';
-import LogoText from '../../public/logoText.png';
 
 const links = [
     {
@@ -23,7 +20,7 @@ export default function NavBar(){
         <header className={css.header}>
             <nav className={css.nav}>
                 <Link href={'/'}>
-                    <Image className={css.logo} src={LogoDark} width={80} alt={'logo'} priority={true}/>
+                    <Image className={css.logo} src={"/logoDark.png"} height={90} width={80} alt={'logo'} priority={true}/>
                 </Link> 
                 <ul className={css.ul}>
                     {links.map(({name, link})=>
