@@ -9,7 +9,7 @@ export default function producto({ params }) {
   return (
     <article>
       <div>
-        <Image width={300} height={300} src={product.image} />
+        <Image width={300} height={300} src={product.image} alt={product.name}/>
         <div>
           <h2>{product.name}</h2>
           <span>{product.size}</span> - <span>{product.price}$</span>
