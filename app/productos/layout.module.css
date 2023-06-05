@@ -1,0 +1,8 @@
+.sideLayout {
+    display: flex;
+    flex-direction: row;
+}
+
+.sideMenu {
+    width: 300px;
+}

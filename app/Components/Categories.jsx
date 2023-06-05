@@ -30,7 +30,7 @@ export default function Categories() {
 
   return (
     <section className={css.categories}>
-        {categories.map(value=><Category value={value}/>)}
+        {categories.map(value=><Category key={value.code} value={value}/>)}
     </section>
   )
 }
