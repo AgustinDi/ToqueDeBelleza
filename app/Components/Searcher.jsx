@@ -1,4 +1,3 @@
-import React from 'react'
 import css from './Searcher.module.css';
 
 export default function Searcher() {
