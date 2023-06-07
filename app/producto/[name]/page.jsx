@@ -20,7 +20,7 @@ export default function producto({ params }) {
       </div>
       <description>
         <p>sobre {product.name}: <br/> {product.description}</p>
-        {product.modeOfUse && (<p>modo de uso: <br/> {product.modeOfUse}</p>)}
+        {product.howToUse && (<p>modo de uso: <br/> {product.howToUse}</p>)}
         {product.precaution && (<p>precauciones: <br/> {product.precaution}</p>)}
         {product.aplication && (<p>aplicacion: <br/> {product.aplication}</p>)}
       </description>

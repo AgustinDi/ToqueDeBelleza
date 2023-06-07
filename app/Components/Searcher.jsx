@@ -1,9 +1,19 @@
+'use client'
 import css from './Searcher.module.css';
+import { useRouter } from 'next/navigation';
 
 export default function Searcher() {
+  const router = useRouter();
+
+  function submit(e){
+    e.preventDefault();
+    if(!e.target['0'].value) return
+    router.push('/productos/S/' + e.target['0'].value)
+  }
+
   return (
-    <div className={css.searcher}>
-        <input className={css.input} placeholder='Que producto estas buscando?'/>
-    </div>
+      <form className={css.searcher} onSubmit={submit}>
+        <input className={css.input} placeholder='Que producto estas buscando?' name='input'/>
+      </form>
   )
 }
