@@ -4,14 +4,18 @@
 }
 
 .category {
-    width: min-content;
+    display: grid;
+    align-items: center;
+    position: relative;
+    height: 444px;
+    width: 280px;
 }
 
 .categoryTitle {
     position: relative;
-    color: green; 
+    color: black;
+    padding: 20px;
+    font-size:  large;
     background-color: grey;
-    left: 50%;
-    transform: translateX(-50%);
     margin: 0px;
 }
