@@ -1,10 +1,17 @@
 .card {
     background-color: #222222;
     margin-bottom: 20px;
+    width: 200px;
 }
 
 .card:hover {
     cursor: pointer;
+}
+
+.imageContainer{
+    position: relative;
+    width: 198px;
+    height: 198px;
 }
 
 .title {
@@ -19,5 +26,4 @@
 }
 
 .title h3 {
-    width: 200px;
 }
