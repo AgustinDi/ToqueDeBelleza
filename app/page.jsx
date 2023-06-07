@@ -8,7 +8,7 @@ export default function initialApp(){
             <h1>Toque de belleza - Next.js 13 App</h1>
             <p>Proyecto Personal</p>
             <Categories />
-            <ProductsList amount={4}/> 
+            <ProductsList amount={5}/> 
             <div style={{height: '50vh'}}></div>
         </>
     )
