@@ -5,7 +5,8 @@ import css from './Slider.module.css';
 import { useEffect, useState, useRef } from 'react';
 
 export default function Slider() {
-    const cardWidth = 700;
+    const cardWidth = 100;
+    const unit = 'vw';
     const sliderRef = useRef(null);
     const [transformSlider, setTransformSlider] = useState(0);
     const [transitionSlider, setTransitionSlider] = useState('transform 1s');
@@ -80,7 +81,7 @@ export default function Slider() {
 
   return (
     <div className={css.sliderContainer}>
-        <div ref={sliderRef} className={css.slider} style={{transform: `translateX(${transformSlider}px)`,transition: transitionSlider}} onTransitionEnd={reorderSlider}>
+        <div ref={sliderRef} className={css.slider} style={{transform: `translateX(${transformSlider}${unit})`,transition: transitionSlider}} onTransitionEnd={reorderSlider}>
              {images && images.map(({src, name},i)=> <div key={i} className={css.sliderElement}><Image fill src={src} alt={i}/><p style={{position: 'absolute', zIndex: '1000', color: 'green'}}>{name}</p></div>)}
         </div>
         <div className={css.sliderButtons}>

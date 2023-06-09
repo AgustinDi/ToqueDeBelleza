@@ -3,13 +3,13 @@
 }
 
 .sliderContainer {
-    border: 2px solid red;
-    width: 700px;
+    overflow: hidden;
+    width: 100%;
 }
 
 .sliderElement {
     position: relative;
-    min-width: 695px;
+    min-width: 100vw;
     height: 300px;
     border: 1px solid green;
 }
