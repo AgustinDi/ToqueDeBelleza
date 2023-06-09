@@ -86,7 +86,7 @@ export default function Slider() {
         </div>
         <div className={css.sliderButtons}>
             <button className={`${css.button} ${css.buttonLeft}`} onClick={()=>moveSlide(false)}>{'<'}</button>
-            {slideCounter}
+            <div style={{display: 'flex', color: 'red', flexDirection:'flex'}}>{slideCounter}</div>
             <button className={`${css.button} ${css.buttonRight}`}  onClick={()=>moveSlide(true)}>{'>'}</button>
         </div>
     </div>
