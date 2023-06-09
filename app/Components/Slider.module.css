@@ -1,0 +1,15 @@
+.slider {
+    display: flex;
+}
+
+.sliderContainer {
+    border: 2px solid red;
+    width: 700px;
+}
+
+.sliderElement {
+    position: relative;
+    min-width: 695px;
+    height: 300px;
+    border: 1px solid green;
+}
