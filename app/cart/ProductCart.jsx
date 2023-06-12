@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image";
 import { useMyContext } from "../Context/Context"
 
 export default function ProductCart({ data }) {
@@ -8,6 +9,9 @@ export default function ProductCart({ data }) {
     return (
     <div>
         <button onClick={()=> removeToCart(data.name)}>X</button>
+        <div style={{position: 'relative', width:200, height:200}}>
+          <Image src={data.image} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={data.name}/>
+        </div>
         {data.name}
         ${data.price}
         cantidad: {data.amount}
