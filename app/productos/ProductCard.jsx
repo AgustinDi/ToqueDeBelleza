@@ -4,19 +4,6 @@ import Link from "next/link";
 import loadingImage from '../../public/Loading.png';
 import AddToCart from "./AddToCart.jsx";
 
-
-// {
-//     "name": "",
-//     "category": "",
-//     "price": 800,
-//     "size": "250ml",
-//     "description": "",
-//     "howToUse": "",
-//     "precaution": "",
-//     "aplication": "",
-//     "image": ""
-// }
-
 export default function ProductCard({value}){
     return (
         <div key={value.name} className={css.card}>
