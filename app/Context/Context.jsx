@@ -1,5 +1,6 @@
 'use client'
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
+import { cleanCart } from "../helper/functions";
 
 export const context = createContext();
 
@@ -10,21 +11,15 @@ export const useMyContext = () => {
 }
 
 export const Context = ({ children }) => {
+    const [cart, setCart] = useState(cleanCart())
 
-    const [cart, setCart] = useState([])
+    const addToCart = (product) => setCart({...cart, [product]: cart[product] + 1})
 
-    // {
-    //     name: 'bonet',
-    //     amount: 3
-    // }
-
-    const addToCart = (product, amount) => {
-        setCart(products => [...products, product])
-        
-    }
+    const minusToCart = (product) => setCart(cart[product] === 0 ? null : {...cart, [product]: cart[product] - 1})
     
+    const removeToCart = (product) => setCart({...cart, [product]: 0})
 
-    return <context.Provider value={{cart, addToCart}}>
+    return <context.Provider value={{cart, addToCart, minusToCart, removeToCart}}>
         { children }
     </context.Provider>
 }

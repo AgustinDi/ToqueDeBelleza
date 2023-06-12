@@ -13,7 +13,6 @@ export default function Searcher({ isSearching }) {
 
   return (
     <form className={css.searcher} onSubmit={submit} style={{overflowX: 'hidden'}}>
-        {console.log(isSearching)}
         <input className={css.input} placeholder='Que producto estas buscando?' name='input'/>
       </form>
   )

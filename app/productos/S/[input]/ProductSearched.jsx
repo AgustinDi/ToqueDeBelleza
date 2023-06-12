@@ -1,7 +1,7 @@
 import css from '../../ProductList.module.css';
 import ProductCard from '../../ProductCard';
 import productsJson from '../../Products.json';
-import removeAccents from '@/app/helper/functions';
+import { removeAccents } from '@/app/helper/functions';
 
 
 export default function ProductSearched({ search }) {
