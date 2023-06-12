@@ -11,7 +11,7 @@ export const useMyContext = () => {
 
 export const Context = ({ children }) => {
 
-    const [cart, setCart] = useState(['agua de rosas', 'bonet', 'diamond'])
+    const [cart, setCart] = useState([])
 
     const addToCart = (product) => 
         setCart(products => [...products, product])

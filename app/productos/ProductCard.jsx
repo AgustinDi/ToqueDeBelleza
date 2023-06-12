@@ -2,6 +2,7 @@ import Image from "next/image";
 import css from './ProductCard.module.css';
 import Link from "next/link";
 import loadingImage from '../../public/Loading.png';
+import AddToCart from "./AddToCart.jsx";
 
 
 // {
@@ -31,7 +32,8 @@ export default function ProductCard({value}){
                     {value.size} - {value.price + '$'}
                 </h4>
             </div>
-        </Link>
+            </Link>
+            <AddToCart value={value}/>
         </div> 
     )
 }
