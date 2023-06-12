@@ -11,7 +11,7 @@ export default function cart() {
             <h2>Su carrito:</h2>
             <button onClick={()=> addToCart({name: 'nuevo producto'})}> agregar producto nuevo</button>
             <hr />
-            {cart?.map(product=><ProductCard value={product} />)}
+            {cart?.map(product=><ProductCard key={product.name} value={product} />)}
         </>
     )
 }
