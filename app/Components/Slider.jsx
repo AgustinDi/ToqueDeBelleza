@@ -9,7 +9,7 @@ export default function Slider() {
     const unit = 'vw';
     const sliderRef = useRef(null);
     const [transformSlider, setTransformSlider] = useState(0);
-    const [transitionSlider, setTransitionSlider] = useState('transform 1s');
+    const [transitionSlider, setTransitionSlider] = useState('transform 0.4s');
     const [slideCounter, setSlideCounter] = useState(0);
     const [isInTransition, setIsTransition] = useState(false);
     const [images, setImages] = useState([
@@ -68,7 +68,7 @@ export default function Slider() {
     function moveSlide(direction){
         if(isInTransition) return
         // true es derecha, left es izquierda
-        setTransitionSlider('transform 1s')
+        setTransitionSlider('transform 0.4s')
         setIsTransition(true)
         if(direction){ 
             setTransformSlider(value => value - cardWidth)
@@ -82,7 +82,7 @@ export default function Slider() {
   return (
     <div className={css.sliderContainer}>
         <div ref={sliderRef} className={css.slider} style={{transform: `translateX(${transformSlider}${unit})`,transition: transitionSlider}} onTransitionEnd={reorderSlider}>
-             {images && images.map(({src, name},i)=> <div key={i} className={css.sliderElement}><Image fill src={src} alt={i}/><p style={{position: 'absolute', zIndex: '1000', color: 'green'}}>{name}</p></div>)}
+             {images && images.map(({src, name},i)=> <div key={i} className={css.sliderElement}><Image fill src={src} alt={i}/><p style={{position: 'absolute', zIndex: '10', color: 'green'}}>{name}</p></div>)}
         </div>
         <div className={css.sliderButtons}>
             <button className={`${css.button} ${css.buttonLeft}`} onClick={()=>moveSlide(false)}>{'<'}</button>

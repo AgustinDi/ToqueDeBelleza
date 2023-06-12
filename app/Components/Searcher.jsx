@@ -2,7 +2,7 @@
 import css from './Searcher.module.css';
 import { useRouter } from 'next/navigation';
 
-export default function Searcher() {
+export default function Searcher({ isSearching }) {
   const router = useRouter();
 
   function submit(e){
@@ -12,7 +12,8 @@ export default function Searcher() {
   }
 
   return (
-      <form className={css.searcher} onSubmit={submit}>
+    <form className={css.searcher} onSubmit={submit} style={{overflowX: 'hidden'}}>
+        {console.log(isSearching)}
         <input className={css.input} placeholder='Que producto estas buscando?' name='input'/>
       </form>
   )

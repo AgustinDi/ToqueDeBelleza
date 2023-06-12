@@ -20,7 +20,6 @@ export default function RootLayout({ children }) {
     <html lang="es" className={montserrat.className}>
       <body>
         <NavBar/>
-        <Searcher/>
         <center>
           {children}
         </center> 
