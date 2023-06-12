@@ -5,7 +5,7 @@ import { UseMyContext } from "../Context/Context"
 import { getDetailProduct } from "../helper/functions";
 import ProductCart from "./ProductCart";
 
-export default function cart() {
+export default function Cart() {
     const {cart} = UseMyContext();
     const [renderedCart, setRenderedCart] = useState([])
     
