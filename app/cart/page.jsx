@@ -1,7 +1,7 @@
 'use client'
 
 import { useMyContext } from "../Context/Context"
-import ProductCard from "../productos/ProductCard";
+import ProductCart from "./ProductCart";
 
 export default function cart() {
     const {cart, addToCart} = useMyContext();
@@ -9,9 +9,8 @@ export default function cart() {
     return (
         <>
             <h2>Su carrito:</h2>
-            <button onClick={()=> addToCart({name: 'nuevo producto'})}> agregar producto nuevo</button>
             <hr />
-            {cart?.map(product=><ProductCard key={product.name} value={product} />)}
+            {cart?.map(product=><ProductCart key={product.name} product={product} />)}
         </>
     )
 }

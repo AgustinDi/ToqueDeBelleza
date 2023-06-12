@@ -13,8 +13,15 @@ export const Context = ({ children }) => {
 
     const [cart, setCart] = useState([])
 
-    const addToCart = (product) => 
+    // {
+    //     name: 'bonet',
+    //     amount: 3
+    // }
+
+    const addToCart = (product, amount) => {
         setCart(products => [...products, product])
+        
+    }
     
 
     return <context.Provider value={{cart, addToCart}}>
