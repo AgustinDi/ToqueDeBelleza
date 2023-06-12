@@ -1,9 +1,9 @@
 'use client'
 
-import { useMyContext } from "../Context/Context"
+import { UseMyContext } from "../Context/Context"
 
 export default function AddToCart({ value }) {
-    const { addToCart } = useMyContext();
+    const { addToCart } = UseMyContext();
     
     return (
         <button onClick={() => {addToCart(value.name);alert(`Se a agregado ${value.name} al carrito!`)}}>

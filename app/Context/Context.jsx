@@ -4,7 +4,7 @@ import { cleanCart } from "../helper/functions";
 
 export const context = createContext();
 
-export const useMyContext = () => {
+export const UseMyContext = () => {
     const cartContext = useContext(context);
     if(!cartContext) throw new Error('No se encuentra el Provider, deberia usarse dentro de uno.');
     return cartContext

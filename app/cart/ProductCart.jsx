@@ -1,10 +1,10 @@
 'use client'
 
 import Image from "next/image";
-import { useMyContext } from "../Context/Context"
+import { UseMyContext } from "../Context/Context"
 
 export default function ProductCart({ data }) {
-  const { addToCart, removeToCart, minusToCart} = useMyContext();
+  const { addToCart, removeToCart, minusToCart} = UseMyContext();
 
     return (
     <div>

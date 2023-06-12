@@ -1,12 +1,12 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import { useMyContext } from "../Context/Context"
+import { UseMyContext } from "../Context/Context"
 import { getDetailProduct } from "../helper/functions";
 import ProductCart from "./ProductCart";
 
 export default function cart() {
-    const {cart} = useMyContext();
+    const {cart} = UseMyContext();
     const [renderedCart, setRenderedCart] = useState([])
     
     function getCart(){
