@@ -1,0 +1,31 @@
+.productCart {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: 1px solid blue;
+    width: 400px;
+}
+
+.imageContainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.sideInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+}
+
+.topInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleInfo * {
+    margin: 0;
+}

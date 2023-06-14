@@ -11,7 +11,6 @@ export default function Cart() {
     
     function getCart(){
         let products = [];
-        console.log(cart)
         for (const property in cart) {
             if(cart[property] !== 0){
                 let data = getDetailProduct(property)
@@ -30,7 +29,9 @@ export default function Cart() {
         <>
             <h2>Su carrito:</h2>
             <hr />
-            {renderedCart && renderedCart.map(product => <ProductCart data={product} key={product.name}/>)}
+            <div style={{display: 'flex', gap: '30px', paddingBottom: '30px'}}>
+                {renderedCart && renderedCart.map(product => <ProductCart data={product} key={product.name}/>)}
+            </div>
         </>
     )
 }
