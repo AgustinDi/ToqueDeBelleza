@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { UseMyContext } from "../Context/Context"
-import { getDetailProduct } from "../helper/functions";
+import { getDetailProduct, getTotalCart } from "../helper/functions";
 import ProductCart from "./ProductCart";
+import { getNextInternalQuery } from "next/dist/server/request-meta";
 
 export default function Cart() {
     const {cart} = UseMyContext();
@@ -29,8 +30,24 @@ export default function Cart() {
         <>
             <h2>Su carrito:</h2>
             <hr />
-            <div style={{display: 'flex', gap: '30px', paddingBottom: '30px'}}>
-                {renderedCart && renderedCart.map(product => <ProductCart data={product} key={product.name}/>)}
+            <div style={{display: 'flex', justifyContent: 'center', width: '700px'}}>
+                <div>
+                    <h2>
+                        Su compra:
+                    </h2>
+                    <p>
+                        En Toque de Belleza utilizamos Whatsapp para coordinar la compra de productos,
+                    </p>
+                    <p>
+                        Total: ${getTotalCart(renderedCart)}
+                    </p>
+                    <button>
+                        Comprar por wtsp(?)
+                    </button>
+                </div>
+                <div style={{display: 'flex', gap: '30px', paddingBottom: '30px',  flexWrap: 'wrap', flexDirection: 'column', alignItems: 'center'}}>
+                    {renderedCart && renderedCart.map(product => <ProductCart data={product} key={product.name}/>)}
+                </div>
             </div>
         </>
     )
