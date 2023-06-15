@@ -23,11 +23,13 @@ export default function ProductCart({ data }) {
               <h4>
                 {data.size} 
               </h4>
+            </div>
+            <div>
               <span>
                 {data.category}  
               </span> 
+              <button onClick={()=> removeToCart(data.name)}>X</button>
             </div>
-            <button onClick={()=> removeToCart(data.name)}>X</button>
           </div>
         <div className={css.bottomInfo}>
           <div>

@@ -27,15 +27,13 @@ export default function Cart() {
 
     return (
         <>
-            <h2>Su carrito:</h2>
-            <hr />
-            <div style={{display: 'flex', justifyContent: 'center'}}>
+            <div style={{display: 'flex', justifyContent: 'center', marginTop: '20px'}}>
                 <div style={{width: '300px'}}>
                     <h2>
-                        Su compra:
+                        Su carrito:
                     </h2>
                     <p>
-                        En Toque de Belleza utilizamos Whatsapp para coordinar la compra de productos,
+                        En Toque de Belleza utilizamos Whatsapp para coordinar la compra de productos, se recibe transferencia o efectivo, en un futuro sera implementado el pago por tarjeta online.
                     </p>
                     <p>
                         Total: ${getTotalCart(renderedCart)}
@@ -45,7 +43,7 @@ export default function Cart() {
                     </button>
                 </div>
                 <div style={{display: 'flex', gap: '30px', paddingBottom: '30px',  flexWrap: 'wrap', flexDirection: 'column', alignItems: 'center'}}>
-                    {renderedCart && renderedCart.map(product => <ProductCart data={product} key={product.name}/>)}
+                    {renderedCart.lenght === 0 ? <p>carrito vacio</p> : renderedCart.map(product => <ProductCart data={product} key={product.name}/>)}
                 </div>
             </div>
         </>
