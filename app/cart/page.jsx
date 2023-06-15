@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { UseMyContext } from "../Context/Context"
 import { getDetailProduct, getTotalCart } from "../helper/functions";
 import ProductCart from "./ProductCart";
-import { getNextInternalQuery } from "next/dist/server/request-meta";
 
 export default function Cart() {
     const {cart} = UseMyContext();
