@@ -40,3 +40,26 @@
 .buttonRight {
     margin-right: 30px;
 }
+
+
+
+.indexDots {
+    color: black;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.dot {
+    background-color: rgb(170, 170, 170);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    transition: background-color 0.7s;
+    margin: 3px;
+}
+
+.active {
+    background-color: rgb(104, 104, 104);
+}

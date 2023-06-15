@@ -12,26 +12,32 @@ export default function Slider() {
     const [transitionSlider, setTransitionSlider] = useState('transform 0.4s');
     const [slideCounter, setSlideCounter] = useState(0);
     const [isInTransition, setIsTransition] = useState(false);
+    const [dotCounter, setDotCounter] = useState(0);
     const [images, setImages] = useState([
         {
             src: "/Loading.png",
             name: "agua 1",
+            index: 0
         },
         {
             src: "/Loading.png",
             name: "fuego 2",
+            index: 1
         },
         {
             src: "/Loading.png",
             name: "planta 3",
+            index: 2
         },
         {
             src: "/Loading.png",
             name: "aire 4",
+            index: 3
         },
     ])
+    const [dots, setDots] = useState([true, false, false, false])
     
-
+    
     useEffect(()=>{
         reorderSlider();
     },[])
@@ -73,9 +79,30 @@ export default function Slider() {
         if(direction){ 
             setTransformSlider(value => value - cardWidth)
             setSlideCounter(value=> value + 1)
+            refreshDot(direction)
         } else {
             setTransformSlider(value => value + cardWidth)
             setSlideCounter(value=> value - 1)
+            refreshDot(direction)
+        }
+    }
+
+    function refreshDot (action) {
+        dots[dotCounter] = false
+        if(action){
+            if(dotCounter === images.length - 1) {
+            dots[0] = true    
+                return setDotCounter(0)
+            }
+            dots[dotCounter + 1] = true
+            setDotCounter(value => value + 1)
+        } else {
+            if(dotCounter === 0) {
+                dots[images.length - 1] = true
+                return setDotCounter(images.length - 1)
+            }
+            dots[dotCounter - 1] = true
+            setDotCounter(value => value - 1)
         }
     }
 
@@ -86,7 +113,9 @@ export default function Slider() {
         </div>
         <div className={css.sliderButtons}>
             <button className={`${css.button} ${css.buttonLeft}`} onClick={()=>moveSlide(false)}>{'<'}</button>
-            <div style={{display: 'flex', color: 'red', flexDirection:'flex'}}>{slideCounter}</div>
+            <div className={css.indexDots}>
+                {dots && dots.map((value, index)=><div key={index} className={`${css.dot} ${value && css.active}`}></div>)}
+            </div>
             <button className={`${css.button} ${css.buttonRight}`}  onClick={()=>moveSlide(true)}>{'>'}</button>
         </div>
     </div>

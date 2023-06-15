@@ -2,7 +2,6 @@ import Link from "next/link";
 
 
 export default function IndexV({category, individual}) {
-    console.log(category, individual)
   return (
         <h4>
             <Link href={`/productos`}>Productos</Link>
