@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import productsJson from '../../productos/Products.json';
+import IndexV from '@/app/productos/IndexV';
 
 export default function producto({ params }) {
   const nameOfProduct = decodeURI(params.name)
@@ -8,6 +9,7 @@ export default function producto({ params }) {
 
   return (
     <article>
+      <IndexV category={product.category} individual={nameOfProduct}/>
       <div>
         <Image width={300} height={300} src={product.image} alt={product.name}/>
         <div>
