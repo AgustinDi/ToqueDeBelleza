@@ -29,8 +29,8 @@ export default function Cart() {
         <>
             <h2>Su carrito:</h2>
             <hr />
-            <div style={{display: 'flex', justifyContent: 'center', width: '700px'}}>
-                <div>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+                <div style={{width: '300px'}}>
                     <h2>
                         Su compra:
                     </h2>

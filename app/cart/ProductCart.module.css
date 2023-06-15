@@ -3,13 +3,13 @@
     justify-content: space-between;
     padding: 8px;
     border: 1px solid blue;
-    width: 400px;
+    width: 600px;
 }
 
 .imageContainer {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     background-color: green;
 }
 
@@ -28,4 +28,9 @@
 
 .titleInfo * {
     margin: 0;
+}
+
+.bottomInfo {
+    display: flex;
+    justify-content: space-between;
 }
