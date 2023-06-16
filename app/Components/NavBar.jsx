@@ -26,10 +26,14 @@ export default function NavBar(){
 
     const onScroll = () => {
         setScroll(prev =>{
-            setIsSearching(false)
-            setIsScrolling(prev >= window.scrollY)
+            const change = prev >= window.scrollY;
+            if(!change) setIsSearching(false)
+            setIsScrolling(change)
             return window.scrollY
         })
+    }
+    const searched = () => {
+        setIsSearching(false)
     }
 
     useEffect(()=>{
@@ -53,8 +57,8 @@ export default function NavBar(){
                     )}
                 </ul>
             </nav>
-        <div style={{display: isSearching ? '' : 'none', position: 'absolute', overflowX: 'hidden'}}>
-            <Searcher isSearching={isSearching}/>
+        <div className={css.searcher} style={{position: 'absolute', overflowX: 'hidden', top: isSearching ? '110px' : '75px', zIndex: -1}}>
+            <Searcher searched={searched} isSearching={isSearching}/>
         </div>
         </header>
     )
