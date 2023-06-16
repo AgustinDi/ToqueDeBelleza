@@ -50,7 +50,7 @@ export default function NavBar(){
                 <button onClick={()=>setIsSearching(value=>!value)}>searcher</button>
                     {links.map(({name, link})=>
                     <li key={name}>
-                        <Link href={link}>
+                        <Link href={link} onClick={()=>setIsSearching(false)}>
                             {name}
                         </Link>
                     </li>
