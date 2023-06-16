@@ -21,9 +21,23 @@ const links = [
 
 export default function NavBar(){
     const [isSearching, setIsSearching] = useState(false);
+    const [isScrolling, setIsScrolling] = useState(true);
+    const [scroll, setScroll] = useState();
+
+    const onScroll = () => {
+        setScroll(prev =>{
+            setIsSearching(false)
+            setIsScrolling(prev >= window.scrollY)
+            return window.scrollY
+        })
+    }
+
+    useEffect(()=>{
+        window.onscroll = onScroll
+    }, [])
 
     return (
-        <header className={css.header}>
+        <header className={css.header} style={{top: isScrolling ? '0' : '-110px'}}>
             <nav className={css.nav}>
                 <Link href={'/'}>
                     <Image className={css.logo} src={"/logoDark.png"} height={90} width={80} alt={'logo'} priority={true}/>

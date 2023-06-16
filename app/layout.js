@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="es" className={montserrat.className}>
       <body>
         <Context>
+        <div style={{height: '100px'}}></div>
         <NavBar/>
         <center>
           {children}

@@ -20,12 +20,12 @@ export default function producto({ params }) {
           {/* este boton es un futuro componente 'use client' */}
         </div>
       </div>
-      <description>
+      <div>
         <p>sobre {product.name}: <br/> {product.description}</p>
         {product.howToUse && (<p>modo de uso: <br/> {product.howToUse}</p>)}
         {product.precaution && (<p>precauciones: <br/> {product.precaution}</p>)}
         {product.aplication && (<p>aplicacion: <br/> {product.aplication}</p>)}
-      </description>
+      </div>
     </article>
   )
 }

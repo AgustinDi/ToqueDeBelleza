@@ -1,6 +1,11 @@
 .header {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    transition: top 0.3s;
 }
 
 .nav {
@@ -9,7 +14,7 @@
     padding: 10px 10%;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #ececec;
+    border-bottom: 2px solid #686868;
 }
 
 .ul {
