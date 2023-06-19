@@ -1,11 +1,13 @@
-import React from 'react'
-import ProductsList from '../ProductsList'
+import ProductsList from '../ProductsList';
+import IndexV from '../IndexV';
 
 export default function CategorySection({ params }) {
+  const category = decodeURI(params.category);
 
   return (
     <div>
-        <ProductsList filter={decodeURI(params.category)}/>
+        <IndexV category={category}/>
+        <ProductsList filter={category}/>
     </div>
   )
 }

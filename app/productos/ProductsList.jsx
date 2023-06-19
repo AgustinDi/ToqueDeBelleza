@@ -16,7 +16,6 @@ export default async function ProductsList({ filter, amount }) {
 
     return (
         <div>
-            <IndexV category={filter}/>
             <div className={css.productsList} style={styles}>
             {dataFiltered?.map(value => <ProductCard value={value} key={value.name}/>)}
             </div>
