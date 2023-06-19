@@ -1,4 +1,4 @@
-import css from './layout.module.css';
+import css from './SideMenuCategory.module.css';
 import Link from 'next/link';
 import productsJson from './Products.json';
 
@@ -8,8 +8,11 @@ export default function SideMenuCategory() {
 
     return (
         <div className={css.sideMenu}>
-        <Link href={'/productos/'}><p>Todos</p></Link>
-            {categorias.map(categoria => <Link key={categoria} href={'/productos/' + categoria}><p>{categoria}</p></Link>)}
+            <h3>Categorias de Productos:</h3>
+            <ul className={css.ul}>
+                <Link href={'/productos/'}><li>Todos</li></Link>
+                {categorias.map(categoria => <Link key={categoria} href={'/productos/' + categoria}><li>{categoria}</li></Link>)}
+            </ul>
         </div>
   )
 }

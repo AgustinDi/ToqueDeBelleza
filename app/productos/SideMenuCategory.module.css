@@ -1,0 +1,11 @@
+.sideMenu {
+    width: 300px;
+    padding: 30px;
+    background-color: black;
+    border-right: 1px solid #686868;
+}
+
+.ul {
+    list-style: none;
+    padding: 0;
+}
