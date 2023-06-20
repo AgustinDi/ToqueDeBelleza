@@ -1,7 +1,6 @@
 import productsJson from './Products.json'
 import ProductCard from './ProductCard.jsx'
 import css from './ProductList.module.css'
-import IndexV from './IndexV'
 
 export default async function ProductsList({ filter, amount }) {
     let dataFiltered = productsJson.data?.filter(product => filter ? product.category === filter : true)

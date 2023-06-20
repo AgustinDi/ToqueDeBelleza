@@ -1,6 +1,7 @@
 .categories {
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 30px;
 }
 
 .category {
