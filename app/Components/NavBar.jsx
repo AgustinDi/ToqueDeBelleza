@@ -28,7 +28,7 @@ export default function NavBar(){
         setScroll(prev =>{
             const change = prev >= window.scrollY;
             if(!change) setIsSearching(false)
-            setIsScrolling(change)
+            setIsScrolling(prevValue => window.scrollY >= 110 ? change : prevValue)
             return window.scrollY
         })
     }
