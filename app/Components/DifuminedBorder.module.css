@@ -1,0 +1,5 @@
+.difuminedBorder {
+    width: 1px;
+    margin: 10px;
+    background: linear-gradient(transparent 0%, #fff 5%,#fff 95%,transparent 100% );
+}

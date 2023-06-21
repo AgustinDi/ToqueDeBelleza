@@ -3,7 +3,10 @@
 import { useEffect, useState } from "react";
 import { UseMyContext } from "../Context/Context"
 import { getDetailProduct, getTotalCart } from "../helper/functions";
+import css from './page.module.css';
 import ProductCart from "./ProductCart";
+import Image from "next/image";
+import DifuminedBorder from "../Components/difuminedBorder";
 
 export default function Cart() {
     const {cart} = UseMyContext();
@@ -26,26 +29,42 @@ export default function Cart() {
     },[cart])
 
     return (
-        <>
-            <div style={{display: 'flex', justifyContent: 'center', marginTop: '20px'}}>
-                <div style={{width: '300px'}}>
+        <section className={css.container}>
+          <div className={css.pageContainer}>
+                <div className={css.sideCart}>
                     <h2>
                         Su carrito:
                     </h2>
                     <p>
-                        En Toque de Belleza utilizamos Whatsapp para coordinar la compra de productos, se recibe transferencia o efectivo, en un futuro sera implementado el pago por tarjeta online.
+                        En Toque de Belleza utilizamos Whatsapp para coordinar la compra de productos, se recibe transferencia o efectivo, en un futuro sera implementado el pago por tarjeta y envio online.
                     </p>
+                    {
+                        !!renderedCart.length &&
+                    <>
                     <p>
                         Total: ${getTotalCart(renderedCart)}
                     </p>
                     <button>
                         Comprar por wtsp(?)
                     </button>
+                    </>
+                    }
                 </div>
-                <div style={{display: 'flex', gap: '30px', paddingBottom: '30px',  flexWrap: 'wrap', flexDirection: 'column', alignItems: 'center'}}>
+                <DifuminedBorder horizontal={false}/>
+                {
+                renderedCart.length ? 
+                <div className={css.cartContainer}>
                     {renderedCart.lenght === 0 ? <p>carrito vacio</p> : renderedCart.map(product => <ProductCart data={product} key={product.name}/>)}
                 </div>
+                :
+                <div className={css.emptyCartContainer}>
+                    <h2> Tus productos aparecerán aquí:</h2>
+                    <div className={css.emptyCartImageContainer}>
+                        <Image src={'/granCarrito.png'} alt="carrito vacio" fill />
+                    </div>   
+                </div>
+                }
             </div>
-        </>
+        </section>
     )
 }
