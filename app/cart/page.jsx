@@ -6,7 +6,7 @@ import { getDetailProduct, getTotalCart } from "../helper/functions";
 import css from './page.module.css';
 import ProductCart from "./ProductCart";
 import Image from "next/image";
-import DifuminedBorder from "../Components/difuminedBorder";
+import DifuminedBorder from "../Components/DifuminedBorder";
 
 export default function Cart() {
     const {cart} = UseMyContext();
