@@ -5,6 +5,7 @@ import Link from "next/link";
 import css from './NavBar.module.css';
 import Image from "next/image";
 import Searcher from "./Searcher";
+import { useRouter, usePathname } from "next/navigation";
 
 const links = [
     {
@@ -19,10 +20,12 @@ const links = [
     }
 ]
 
-export default function NavBar(){
+export default function NavBar(props){
     const [isSearching, setIsSearching] = useState(false);
     const [isScrolling, setIsScrolling] = useState(true);
     const [scroll, setScroll] = useState();
+    const router = usePathname();
+    const [url, setUrl] = useState(router)
 
     const onScroll = () => {
         setScroll(prev =>{
@@ -37,6 +40,14 @@ export default function NavBar(){
     }
 
     useEffect(()=>{
+        if(router !== url){
+            setUrl(router)
+            setIsScrolling(true)
+        } 
+    }, [router])
+
+    useEffect(()=>{
+        setUrl(router)
         window.onscroll = onScroll
     }, [])
 
