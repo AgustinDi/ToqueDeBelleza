@@ -14,6 +14,9 @@ const links = [
     },{
     name: 'productos',
     link: '/productos'
+    },{
+    name: 'sobre nosotros',
+    link: '/about'
     }
 ]
 
@@ -55,9 +58,11 @@ export default function NavBar(props){
                     <Image className={css.logo} src={"/logoDark.png"} height={90} width={80} alt={'logo'} priority={true}/>
                 </Link>
                 <ul className={css.ul}>
-                <button onClick={()=>setIsSearching(value=>!value)}>searcher</button>
+                    <li className={css.containerLupaImage}>   
+                        <Image onClick={()=>setIsSearching(value=>!value)} className={css.cartImage} src={'/Lupa.png'} fill alt="Buscador"/>
+                    </li>
                     {links.map(({name, link})=>
-                    <li key={name}>
+                    <li key={name} className={css.navbarText}>
                         <Link href={link} onClick={()=>setIsSearching(false)}>
                             {name}
                         </Link>

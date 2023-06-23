@@ -10,25 +10,37 @@
 .nav {
     background-color: #0A0A0A;
     display: flex;
-    padding: 10px 10%;
+    padding: 10px 5%;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #686868;
 }
 
 .ul {
+    padding: 0;
     display: flex;
     list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: 32px;
 }
 
-.ul li {
-    padding-left: 15px;
+.navbarText {
+    margin: 0 10px;
 }
 
 .searcher {
     position: absolute;
     z-index: 98;
     transition: top 0.2s;
+}
+
+.containerLupaImage {
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 40px;
 }
 
 .containerCartImage{
