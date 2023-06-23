@@ -49,6 +49,24 @@
     height: 40px;
 }
 
+.containerCartImage:before {
+    display: flex;
+    color: green;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    position: absolute;
+    content: '2';
+    bottom: -8px;
+    right: 23px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    z-index: 1000;
+    border-radius: 100%;
+    border: 1px solid black
+}
+
 .cartImage{
     filter: invert(100%);
 }

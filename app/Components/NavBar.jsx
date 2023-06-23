@@ -20,7 +20,7 @@ const links = [
     }
 ]
 
-export default function NavBar(props){
+export default function NavBar(){
     const [isSearching, setIsSearching] = useState(false);
     const [isScrolling, setIsScrolling] = useState(true);
     const [scroll, setScroll] = useState();
