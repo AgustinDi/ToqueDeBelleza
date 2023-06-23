@@ -11,6 +11,7 @@ import DifuminedBorder from "../Components/DifuminedBorder";
 export default function Cart() {
     const {cart} = UseMyContext();
     const [renderedCart, setRenderedCart] = useState([])
+    const [loading, setLoading] = useState(true)
     
     function getCart(){
         let products = [];
@@ -27,6 +28,11 @@ export default function Cart() {
     useEffect(()=>{
         getCart()
     },[cart])
+
+    useEffect(() => {
+      const timer = setTimeout(() => setLoading(false), 200);
+      return () => clearTimeout(timer);
+    }, []);
 
     return (
         <section className={css.container}>
@@ -58,10 +64,10 @@ export default function Cart() {
                 </div>
                 :
                 <div className={css.emptyCartContainer}>
-                    <h2> Tus productos aparecerán aquí:</h2>
-                    <div className={css.emptyCartImageContainer}>
-                        <Image src={'/granCarrito.png'} alt="carrito vacio" fill />
-                    </div>   
+                    <h2>{loading ? 'Cargando...' : 'Tus productos aparecerán aquí:'}</h2>
+                        <div className={css.emptyCartImageContainer}>
+                            <Image src={'/granCarrito.png'} alt="carrito vacio" fill />
+                        </div>
                 </div>
                 }
             </div>
