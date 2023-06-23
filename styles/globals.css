@@ -1,5 +1,11 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
-  margin: 0px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 body::-webkit-scrollbar {
