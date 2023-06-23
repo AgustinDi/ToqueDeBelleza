@@ -37,6 +37,7 @@
 }
 
 .containerLupaImage {
+    margin-right: 7px;
     cursor: pointer;
     position: relative;
     width: 40px;
@@ -44,25 +45,29 @@
 }
 
 .containerCartImage{
+    margin-left: 5px;
     position: relative;
     width: 40px;
     height: 40px;
 }
 
-.containerCartImage:before {
+.containerCartDot {
     display: flex;
-    color: green;
     justify-content: center;
     text-align: center;
-    font-weight: 600;
+    align-items: center;
     position: absolute;
-    content: '2';
     bottom: -8px;
     right: 23px;
+
+    color: green;
     background-color: white;
+    font-weight: 600;
+
     width: 20px;
     height: 20px;
-    z-index: 1000;
+    z-index: 10;
+    
     border-radius: 100%;
     border: 1px solid black
 }

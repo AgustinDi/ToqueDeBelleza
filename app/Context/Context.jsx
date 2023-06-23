@@ -29,7 +29,9 @@ export const Context = ({ children }) => {
     
     const removeToCart = (product) => setCart({...cart, [product]: 0})
 
-    return <context.Provider value={{cart, addToCart, minusToCart, removeToCart}}>
+    const hasProducts = () => Object.values(cart).filter(Boolean)
+
+    return <context.Provider value={{cart, addToCart, minusToCart, removeToCart, hasProducts}}>
         { children }
     </context.Provider>
 }

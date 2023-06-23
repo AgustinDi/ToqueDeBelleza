@@ -6,6 +6,7 @@ import css from './NavBar.module.css';
 import Image from "next/image";
 import Searcher from "./Searcher";
 import { usePathname } from "next/navigation";
+import { UseMyContext } from "../Context/Context";
 
 const links = [
     {
@@ -25,7 +26,8 @@ export default function NavBar(){
     const [isScrolling, setIsScrolling] = useState(true);
     const [scroll, setScroll] = useState();
     const router = usePathname();
-    const [url, setUrl] = useState(router)
+    const { hasProducts } = UseMyContext();
+    const [url, setUrl] = useState(router);
 
     const onScroll = () => {
         setScroll(prev =>{
@@ -70,6 +72,7 @@ export default function NavBar(){
                     )}
                     <li className={css.containerCartImage}>
                         <Link href={'/cart'} onClick={()=>setIsSearching(false)}>
+                            <div className={css.containerCartDot}>{hasProducts().length}</div>
                             <Image className={css.cartImage} src={'/carrito.png'} fill alt="carro de compras"/>
                         </Link>
                     </li> 
