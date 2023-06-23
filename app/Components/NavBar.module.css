@@ -30,3 +30,13 @@
     z-index: 98;
     transition: top 0.2s;
 }
+
+.containerCartImage{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.cartImage{
+    filter: invert(100%);
+}

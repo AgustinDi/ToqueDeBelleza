@@ -5,7 +5,7 @@ import Link from "next/link";
 import css from './NavBar.module.css';
 import Image from "next/image";
 import Searcher from "./Searcher";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const links = [
     {
@@ -14,9 +14,6 @@ const links = [
     },{
     name: 'productos',
     link: '/productos'
-    },{
-    name: 'cart',
-    link: '/cart'
     }
 ]
 
@@ -66,6 +63,11 @@ export default function NavBar(props){
                         </Link>
                     </li>
                     )}
+                    <li className={css.containerCartImage}>
+                        <Link href={'/cart'} onClick={()=>setIsSearching(false)}>
+                            <Image className={css.cartImage} src={'/carrito.png'} fill alt="carro de compras"/>
+                        </Link>
+                    </li> 
                 </ul>
             </nav>
         <div className={css.searcher} style={{position: 'absolute', overflowX: 'hidden', top: isSearching ? '110px' : '75px', zIndex: -1}}>
