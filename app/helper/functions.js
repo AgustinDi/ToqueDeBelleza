@@ -5,14 +5,13 @@ export const removeAccents = function (str) {
 }
 
 export const cleanCart = function () {
-    const cleanedCart = {};
-    productsJson.data.forEach(product => {
-        cleanedCart[product.name] = 0;
-        if(product.name === 'Argán') cleanedCart[product.name] = 3;
-        if(product.name === 'Bonet') cleanedCart[product.name] = 2;
-        if(product.name === 'Blue Protector') cleanedCart[product.name] = 1;
-        if(product.name === 'Diamond') cleanedCart[product.name] = 1;
-    });
+    const actualCart = JSON.parse(localStorage.getItem('cart'))
+    if(actualCart) return actualCart // Si ya existia un carrito en el localStorage se usa ese
+    
+    let cleanedCart = {};
+    productsJson.data.forEach(product => cleanedCart[product.name] = 0); // Se crea el objeto y por cada producto se iguala a 0, teniendo 0 de ese producto en el carrito.
+    localStorage.setItem('cart', JSON.stringify(cleanedCart))
+
     return cleanedCart;
 }
 
@@ -20,7 +19,6 @@ export const getTotalCart = function (productsCart) {
     let totalCart = 0;
     productsCart.forEach(product => totalCart += product.price * product.amount)
     return totalCart
-    // productsJson.data.filter(product=>product.name === name)
 }
 
 export const getDetailProduct = function (name) {

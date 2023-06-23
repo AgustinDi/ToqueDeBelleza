@@ -13,11 +13,29 @@ export const UseMyContext = () => {
 export const Context = ({ children }) => {
     const [cart, setCart] = useState(cleanCart())
 
-    const addToCart = (product) => setCart({...cart, [product]: cart[product] + 1})
+    const addToCart = (product) => {
+        setCart(prevCart => {
+            const result = {...prevCart, [product]: prevCart[product] + 1}
+            localStorage.setItem('cart', JSON.stringify(result))
+            return result   
+        })
+    }
 
-    const minusToCart = (product) => setCart(cart[product] === 0 ? null : {...cart, [product]: cart[product] - 1})
+    const minusToCart = (product) => {
+        setCart(prevCart => {
+            const result = prevCart[product] === 0 ? prevCart : {...prevCart, [product]: prevCart[product] - 1}
+            localStorage.setItem('cart', JSON.stringify(result))
+            return result
+        })
+}
     
-    const removeToCart = (product) => setCart({...cart, [product]: 0})
+    const removeToCart = (product) => {
+        setCart(prevCart => {
+            const result = {...prevCart, [product]: 0}
+            localStorage.setItem('cart', JSON.stringify(result))
+            return result
+        })
+    }
 
     return <context.Provider value={{cart, addToCart, minusToCart, removeToCart}}>
         { children }
