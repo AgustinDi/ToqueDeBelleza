@@ -5,13 +5,9 @@ export const removeAccents = function (str) {
 }
 
 export const cleanCart = function () {
-    const actualCart = JSON.parse(localStorage.getItem('cart'))
-    if(actualCart) return actualCart // Si ya existia un carrito en el localStorage se usa ese
-    
     let cleanedCart = {};
-    productsJson.data.forEach(product => cleanedCart[product.name] = 0); // Se crea el objeto y por cada producto se iguala a 0, teniendo 0 de ese producto en el carrito.
-    localStorage.setItem('cart', JSON.stringify(cleanedCart))
-
+    productsJson.data.forEach(product => cleanedCart[product.name] = 0);
+     // Se crea el objeto y por cada producto se iguala a 0, teniendo 0 de ese producto en el carrito.
     return cleanedCart;
 }
 

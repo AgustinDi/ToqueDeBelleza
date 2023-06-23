@@ -26,8 +26,6 @@ export default function Cart() {
 
     useEffect(()=>{
         getCart()
-        // localStorage.setItem('myData', JSON.stringify({generalData: 'info..'}))
-        // JSON.parse(localStorage.getItem('myData'))
     },[cart])
 
     return (
