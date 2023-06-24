@@ -7,11 +7,15 @@ import css from './page.module.css';
 import ProductCart from "./ProductCart";
 import Image from "next/image";
 import DifuminedBorder from "../Components/DifuminedBorder";
+import { redirect, useRouter } from "next/navigation";
 
 export default function Cart() {
     const {cart} = UseMyContext();
     const [renderedCart, setRenderedCart] = useState([])
     const [loading, setLoading] = useState(true)
+    const router = useRouter()
+
+  
     
     function getCart(){
         let products = [];
@@ -23,17 +27,26 @@ export default function Cart() {
             }
         }
         setRenderedCart(products)
+
     }
 
     useEffect(()=>{
         getCart()
     },[cart])
-
+    
     useEffect(() => {
-      const timer = setTimeout(() => setLoading(false), 200);
-      return () => clearTimeout(timer);
+        const timer = setTimeout(() => setLoading(false), 200);
+        return () => clearTimeout(timer);
     }, []);
 
+    function buy() {
+        if(renderedCart.lenght === 0) return
+        let inicio = `Hola Cande! Me gustaria hacerte un pedido:\r\n`
+        let pedido = renderedCart.map(({amount, size, name}) => `${amount} x ${name} - ${size}\r\n`).join('')
+        let url = `https://wa.me/${5493547673524}?text=${encodeURI(inicio+pedido.substring(0,pedido.length - 2))}`
+        router.push(url)
+    }
+    
     return (
         <section className={css.container}>
           <div className={css.pageContainer}>
@@ -50,7 +63,7 @@ export default function Cart() {
                     <p>
                         Total: ${getTotalCart(renderedCart)}
                     </p>
-                    <button>
+                    <button onClick={buy}>
                         Comprar por wtsp(?)
                     </button>
                     </>
