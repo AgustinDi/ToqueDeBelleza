@@ -41,9 +41,9 @@ export default function Cart() {
 
     function buy() {
         if(renderedCart.lenght === 0) return
-        let inicio = `Hola Cande! Me gustaria hacerte un pedido:\r\n`
-        let pedido = renderedCart.map(({amount, size, name}) => `${amount} x ${name} - ${size}\r\n`).join('')
-        let url = `https://wa.me/${5493547673524}?text=${encodeURI(inicio+pedido.substring(0,pedido.length - 2))}`
+        const inicio = `Hola Cande! Me gustaria hacerte un pedido:\r\n`
+        const pedido = renderedCart.map(({amount, size, name}) => `${amount} x ${name} - ${size}\r\n`).join('')
+        const url = `https://wa.me/${5493547673524}?text=${encodeURI(inicio+pedido.substring(0,pedido.length - 2))}`
         router.push(url)
     }
     
