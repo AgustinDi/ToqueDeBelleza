@@ -8,7 +8,10 @@ export default async function ProductsList({ filter, amount }) {
     if(amount) {
         dataFiltered = dataFiltered.slice(0, amount)
         styles = {
-            gridTemplateColumns: `repeat(${amount}, 1fr)`
+            // gridTemplateColumns: `repeat(${amount}, 1fr)`,
+            display: 'flex',
+            // width: '100%',
+            justifyContent: 'space-evenly'
         }
     }
 
