@@ -25,13 +25,15 @@ export const Context = ({ children }) => {
 
     const addToCart = (product) => setCart({...cart, [product]: cart[product] + 1})
 
+    const addXToCart = (product, amount) => setCart({...cart, [product]: cart[product] + amount})
+
     const minusToCart = (product) => setCart(cart[product] === 0 ? null : {...cart, [product]: cart[product] - 1})
     
     const removeToCart = (product) => setCart({...cart, [product]: 0})
 
     const hasProducts = () => Object.values(cart).filter(Boolean)
 
-    return <context.Provider value={{cart, addToCart, minusToCart, removeToCart, hasProducts}}>
+    return <context.Provider value={{cart, addToCart, minusToCart, removeToCart, hasProducts, addXToCart}}>
         { children }
     </context.Provider>
 }

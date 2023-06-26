@@ -3,6 +3,7 @@ import css from './page.module.css';
 import productsJson from '../../productos/Products.json';
 import IndexV from '@/app/productos/IndexV';
 import Link from 'next/link';
+import BuyButton from './BuyButton';
 
 export default function producto({ params }) {
   const nameOfProduct = decodeURI(params.name)
@@ -25,7 +26,7 @@ export default function producto({ params }) {
           <h4>{product.size} - {product.price}$</h4>
           <h5>Sobre {product.name}: <br/> {product.description}</h5>
           <div className={css.buttonAddToCart}>
-          <button>Añadir al Carrito</button> {/* este boton es un futuro componente 'use client' */}
+          <BuyButton name={product.name}/> {/* este boton es un futuro componente 'use client' */}
           </div>
         </div>
       </div>
