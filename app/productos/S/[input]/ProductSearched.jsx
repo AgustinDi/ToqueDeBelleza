@@ -2,6 +2,7 @@ import css from '../../ProductList.module.css';
 import ProductCard from '../../ProductCard';
 import productsJson from '../../Products.json';
 import { removeAccents } from '@/app/helper/functions';
+import IndexV from '../../IndexV';
 
 
 export default function ProductSearched({ search }) {
@@ -25,15 +26,15 @@ export default function ProductSearched({ search }) {
         result.length 
         ? 
         <div>
-        <h3>Resultados de la busqueda:</h3>
-        <span>{search}</span>
+          <IndexV category={search}/> 
+          {/* en un futuro hacer que el nombre de la busqueda en el indexV empieze con mayus  */}
           <div className={css.productsList}>
             {result?.map(value => <ProductCard value={value} key={value.name}/>)}
           </div>
         </div>
         :
         <div>
-          <p>Lo sentimos, no encontramos resultados para:</p>
+          <h3>Lo sentimos, no encontramos resultados para su busqueda:</h3>
           <p>{search}</p>
         </div>
       }
