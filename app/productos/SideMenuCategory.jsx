@@ -8,7 +8,7 @@ export default function SideMenuCategory() {
 
     return (
         <div className={css.sideMenu}>
-            <h3>Nuestras categorias:</h3>
+            <h3>Filtro por Categoria:</h3>
             <ul className={css.ul}>
                 <Link href={'/productos/'}><li>Todos</li></Link>
                 {categorias.map(categoria => <Link key={categoria} href={'/productos/' + categoria}><li>{categoria}</li></Link>)}
