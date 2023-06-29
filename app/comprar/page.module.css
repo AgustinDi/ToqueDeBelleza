@@ -1,0 +1,10 @@
+.cardsContainer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.card {
+    max-width: 30vw;
+    max-width: 30%;
+}

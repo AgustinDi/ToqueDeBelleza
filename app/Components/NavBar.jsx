@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 'use client'
 
 import { useEffect, useState } from "react";
@@ -13,11 +14,11 @@ const links = [
     name: 'Inicio',
     link: '/'
     },{
-    name: 'productos',
+    name: 'Nuestros productos',
     link: '/productos'
     },{
-    name: 'sobre nosotros',
-    link: '/about'
+    name: 'Como comprar?',
+    link: '/comprar'
     }
 ]
 
