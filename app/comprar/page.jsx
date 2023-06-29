@@ -30,6 +30,10 @@ export default function Page(){
             <div className={css.cardsContainer}>
                 {cards.map(value => <Card key={value.title} data={value} style={css.card}/>)}
             </div>
+            <div>
+                Si necesitás más información, no dudes en <a href='./'>dejarnos un mensaje</a>
+                {/* falta agregar el redirect a wtsp */}
+            </div>
         </div>
     )
 }
