@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 'use client'
 
 import { useEffect, useState } from "react";
@@ -8,6 +9,7 @@ import ProductCart from "./ProductCart";
 import Image from "next/image";
 import DifuminedBorder from "../Components/DifuminedBorder";
 import { redirect, useRouter } from "next/navigation";
+import Button from "../Components/Button";
 
 export default function Cart() {
     const {cart} = UseMyContext();
@@ -60,12 +62,7 @@ export default function Cart() {
                     {
                         !!renderedCart.length &&
                     <>
-                    <p>
-                        Total: ${getTotalCart(renderedCart)}
-                    </p>
-                    <button onClick={buy}>
-                        Comprar por wtsp(?)
-                    </button>
+                    <Button click={buy} content={'Realizar compra'}/>
                     </>
                     }
                 </div>
@@ -74,6 +71,23 @@ export default function Cart() {
                 renderedCart.length ? 
                 <div className={css.cartContainer}>
                     {renderedCart.lenght === 0 ? <p>carrito vacio</p> : renderedCart.map(product => <ProductCart data={product} key={product.name}/>)}
+                    {renderedCart.length !== 0 && 
+                    <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'end', padding: '0 20px', width: '100%', borderTop: '1px solid white'}}>
+                        <div style={{width: '100%'}}>
+                            <div style={{display: 'flex', fontSize: '22px', justifyContent: 'space-between'}}>
+                            <p>    
+                            Total: 
+                            </p>
+                            <p>
+                            ${getTotalCart(renderedCart)}
+                            </p>
+                            </div>
+                            <div>
+                            <Button click={buy} content={'Realizar compra'}/>
+                            </div> 
+                        </div>
+                    </div>
+                    }
                 </div>
                 :
                 <div className={css.emptyCartContainer}>

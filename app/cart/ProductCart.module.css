@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-between;
     padding: 8px;
-    border: 1px solid blue;
     width: 600px;
+    padding-bottom: 9px;
+    border-top: 1px solid white;
 }
 
 .imageContainer {
