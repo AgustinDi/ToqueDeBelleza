@@ -2,32 +2,18 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import css from './NavBar.module.css';
-import Image from "next/image";
-import Searcher from "./Searcher";
 import { usePathname } from "next/navigation";
-import { UseMyContext } from "../Context/Context";
-
-const links = [
-    {
-    name: 'Inicio',
-    link: '/'
-    },{
-    name: 'Nuestros productos',
-    link: '/productos'
-    },{
-    name: 'Como comprar?',
-    link: '/comprar'
-    }
-]
+import Link from "next/link";
+import Image from "next/image";
+import css from './NavBar.module.css';
+import Searcher from "./Searcher";
+import Navigation from "./Navigation.jsx";
 
 export default function NavBar(){
     const [isSearching, setIsSearching] = useState(false);
     const [isScrolling, setIsScrolling] = useState(true);
     const [scroll, setScroll] = useState();
     const router = usePathname();
-    const { hasProducts } = UseMyContext();
     const [url, setUrl] = useState(router);
 
     const onScroll = () => {
@@ -60,24 +46,7 @@ export default function NavBar(){
                 <Link href={'/'}>
                     <Image className={css.logo} src={"/logoDark.png"} height={90} width={80} alt={'logo'} priority={true}/>
                 </Link>
-                <ul className={css.ul}>
-                    <li className={css.containerLupaImage}>   
-                        <Image onClick={()=>setIsSearching(value=>!value)} className={css.cartImage} src={'/Lupa.png'} fill alt="Buscador"/>
-                    </li>
-                    {links.map(({name, link})=>
-                    <li key={name} className={css.navbarText}>
-                        <Link href={link} onClick={()=>setIsSearching(false)}>
-                            {name}
-                        </Link>
-                    </li>
-                    )}
-                    <li className={css.containerCartImage}>
-                        <Link href={'/cart'} onClick={()=>setIsSearching(false)}>
-                            {hasProducts().length ? <div className={css.containerCartDot}>{hasProducts().length}</div> : null}
-                            <Image className={css.cartImage} src={'/carrito.png'} fill alt="carro de compras"/>
-                        </Link>
-                    </li> 
-                </ul>
+                <Navigation css={css} setIsSearching={setIsSearching}/>
             </nav>
         <div className={css.searcher} style={{position: 'absolute', overflowX: 'hidden', top: isSearching ? '110px' : '75px', zIndex: -1}}>
             <Searcher searched={searched} isSearching={isSearching}/>

@@ -1,6 +1,6 @@
 import '../styles/initialize.css';
 import '../styles/globals.css';
-import NavBar from "./Components/NavBar.jsx";
+import NavBar from "./Components/NavBar/NavBar.jsx";
 import Footer from "./Components/Footer.jsx";
 import { Montserrat } from 'next/font/google';
 import { Context } from './Context/Context';
