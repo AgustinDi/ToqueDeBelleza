@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { UseMyContext } from "@/app/Context/Context";
 
-export default function CartDot({ css }) {
+export default function CartDot({ css, setIsSearching }) {
     const { hasProducts } = UseMyContext();
 
     return (

@@ -51,6 +51,14 @@
     height: 40px;
 }
 
+.containerBurgerImage {
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+}
+
 .containerCartDot {
     display: flex;
     justify-content: center;
@@ -74,4 +82,27 @@
 
 .cartImage{
     filter: invert(100%);
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+.containerLupaImage {
+    margin: 0;
+}
+
+.containerCartImage{
+    margin: 0;
+    margin-left: 2px;
+}
+
+.containerBurgerImage {
+    margin: 0;
+}
+
+.ul {
+    width: 150px;
+}
+
+
 }
