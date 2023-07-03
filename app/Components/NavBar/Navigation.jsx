@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import CartDot from "./CartDot";
+import { useState } from "react";
 import { UseMyContext } from "@/app/Context/Context";
 import Burger from "./Burger";
+import BurgerMenu from "./BurgerMenu";
 
 const links = [
     {
@@ -18,6 +20,7 @@ const links = [
 ]
 
 export default function Navigation({ css, setIsSearching }) {
+    const [ openMenu, setOpenMenu ] = useState(false)
     const { isMobile } = UseMyContext()
 
   return (
@@ -40,7 +43,11 @@ export default function Navigation({ css, setIsSearching }) {
                         <CartDot css={css} setIsSearching={setIsSearching}/>
                         
                         {
-                            isMobile && <Burger css={css} links={links}/>
+                            isMobile && <Burger css={css} links={links} setOpenMenu={setOpenMenu}/>
+                        }
+
+                        {
+                            (isMobile && openMenu) && <BurgerMenu css/>
                         }
 
             </ul>
