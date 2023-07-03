@@ -46,11 +46,10 @@ export default function Navigation({ css, setIsSearching }) {
                             isMobile && <Burger css={css} links={links} setOpenMenu={setOpenMenu}/>
                         }
 
-                        {
-                            (isMobile && openMenu) && <BurgerMenu links={links} css={css}/>
-                        }
-
             </ul>
+            {
+                (isMobile && openMenu) && <BurgerMenu links={links} css={css}/>
+            }
         </>
   )
 }
