@@ -12,7 +12,7 @@ export const UseMyContext = () => {
 
 export const Context = ({ children }) => {
     const [cart, setCart] = useState(cleanCart())
-    const [isMobile, setIsMobile] = useState()
+    const [isMobile, setIsMobile] = useState(true)
 
     useEffect(()=>{
         resize();    

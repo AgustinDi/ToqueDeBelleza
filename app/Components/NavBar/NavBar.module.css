@@ -51,12 +51,9 @@
     height: 40px;
 }
 
+
 .containerBurgerImage {
-    cursor: pointer;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    filter: invert(100%);
+    display: none;
 }
 
 .containerCartDot {
@@ -86,23 +83,35 @@
 
 
 @media only screen and (max-width: 768px) {
+
+    .containerBurgerImage {
+        display: inherit;
+        cursor: pointer;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        filter: invert(100%);
+    }
     
-.containerLupaImage {
-    margin: 0;
-}
+    .containerLupaImage {
+        margin: 0;
+    }
 
-.containerCartImage{
-    margin: 0;
-    margin-left: 2px;
-}
+    .containerCartImage{
+        margin: 0;
+        margin-left: 2px;
+    }
 
-.containerBurgerImage {
-    margin: 0;
-}
+    .containerBurgerImage {
+        margin: 0;
+    }
 
-.ul {
-    width: 150px;
-}
+    .ul {
+        width: 150px;
+    }
 
 
+    .BurgerMenu {
+    
+    }
 }

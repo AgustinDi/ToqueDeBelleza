@@ -1,5 +1,17 @@
-export default function BurgerMenu() {
+import Link from "next/link";
+
+export default function BurgerMenu({ links, css }) {
   return (
-    <div>BurgerMenu</div>
+    <div>
+        {
+        links.map(({name, link})=>
+        <li key={name} className={css.BurgerMenu}>
+            <Link href={link}>
+                {name}
+            </Link>
+        </li>
+        )
+        }
+    </div>
   )
 }
