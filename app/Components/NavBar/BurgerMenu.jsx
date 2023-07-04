@@ -15,23 +15,32 @@ export default function BurgerMenu({ links, css }) {
         )
         }
         <li>
-        <a href="#">Copiar nuestro CVU</a>
+        <a href="#">Copiá nuestro CVU</a>
         </li>
       </ul>
       <div>
-        {/* <a href='tel:3547598556' className={css.iconPlusText}>
-            <div className={css.containers}>
-                <Image alt={'instagram'} src={'/instagramm.png'} fill/>
-            </div>
-            Nuestro Instagram
-        </a>
-        <a href='tel:3547598556' className={css.iconPlusText}>
-            <div className={css.containers}>
-                <Image alt={'whatsapp'} src={'/whatsapp.png'} fill/>
-            </div>
-            Consultas por Whatsapp
-        </a> */}
-
+        <ul>  
+          <li>
+            <a href='tel:3547598556' className={css.iconPlusText}>
+                <div className={css.containers}>
+                    <Image alt={'instagram'} src={'/instagramm.png'} fill/>
+                </div>
+                Nuestro Instagram
+            </a>  
+          </li>
+          <li>
+            <a href='tel:3547598556' className={css.iconPlusText}>
+                <div className={css.containers}>
+                    <Image alt={'whatsapp'} src={'/whatsapp.png'} fill/>
+                </div>
+                Consultas por Whatsapp
+            </a>
+          </li>
+        </ul>
+          <div className={css.derechosMenu}>
+              Copyright Toque de Belleza - 2023.
+              Todos los derechos reservados ®
+          </div>
       </div>
     </div>
   )

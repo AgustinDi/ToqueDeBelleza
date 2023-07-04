@@ -81,6 +81,34 @@
     filter: invert(100%);
 }
 
+.BurgerMenuContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.iconPlusText {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 2px;
+    gap: 10px;
+    max-width: max-content;
+}
+
+.containers {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.derechosMenu {
+    display: flex;
+    font-size: 10px;
+    border-top: 1px solid #686868;
+    width: 100%;
+    justify-content: center;
+}
+
 
 @media only screen and (max-width: 768px) {
 
@@ -113,11 +141,14 @@
     .BurgerMenuContainer {
         position: absolute;
         width: 400px;
-        height: 100vh;
+        height: 80vh;
+        height: calc(100vh - 110px);
         top: 110px;
-        right: 0px;
+        right: 400px;
         background-color: #0A0A0A;
         border-top: 2px solid #686868;
+
+        transition: right 1s ease;
     }
 
     .BurgerMenuContainer ul {
