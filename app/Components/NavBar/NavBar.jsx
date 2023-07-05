@@ -46,7 +46,7 @@ export default function NavBar(){
                 <Link href={'/'}>
                     <Image className={css.logo} src={"/logoDark.png"} height={90} width={80} alt={'logo'} priority={true}/>
                 </Link>
-                <Navigation css={css} setIsSearching={setIsSearching}/>
+                <Navigation css={css} setIsSearching={setIsSearching} isSearching={isSearching}/>
             </nav>
         <div className={css.searcher} style={{position: 'absolute', overflowX: 'hidden', top: isSearching ? '110px' : '75px', zIndex: -1}}>
             <Searcher searched={searched} isSearching={isSearching}/>

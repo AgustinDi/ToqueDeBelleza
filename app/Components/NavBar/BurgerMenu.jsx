@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function BurgerMenu({ links, css }) {
+export default function BurgerMenu({ links, setOpenMenu, css }) {
   return (
     <div className={css.BurgerMenuContainer}>
       <ul>
         {
         links.map(({name, link})=>
         <li key={name}>
-            <Link href={link}>
+            <Link href={link} onClick={()=>setOpenMenu(false)}>
                 {name}
             </Link>
         </li>
@@ -21,7 +21,7 @@ export default function BurgerMenu({ links, css }) {
       <div>
         <ul>  
           <li>
-            <a href='tel:3547598556' className={css.iconPlusText}>
+            <a href='tel:3547598556' className={css.iconPlusText} onClick={()=>setOpenMenu(false)}>
                 <div className={css.containers}>
                     <Image alt={'instagram'} src={'/instagramm.png'} fill/>
                 </div>
@@ -29,7 +29,7 @@ export default function BurgerMenu({ links, css }) {
             </a>  
           </li>
           <li>
-            <a href='tel:3547598556' className={css.iconPlusText}>
+            <a href='tel:3547598556' className={css.iconPlusText} onClick={()=>setOpenMenu(false)}>
                 <div className={css.containers}>
                     <Image alt={'whatsapp'} src={'/whatsapp.png'} fill/>
                 </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import CartDot from "./CartDot";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { UseMyContext } from "@/app/Context/Context";
 import Burger from "./Burger";
 import BurgerMenu from "./BurgerMenu";
@@ -19,9 +19,17 @@ const links = [
     }
 ]
 
-export default function Navigation({ css, setIsSearching }) {
+export default function Navigation({ css, setIsSearching, isSearching }) {
     const [ openMenu, setOpenMenu ] = useState(false)
     const { isMobile } = UseMyContext()
+    
+    useEffect(()=>{
+        if(isSearching && openMenu) {
+            setIsSearching(true)
+            setOpenMenu(false)
+        }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [isSearching, openMenu])
 
   return (
         <>
@@ -43,12 +51,12 @@ export default function Navigation({ css, setIsSearching }) {
                         <CartDot css={css} setIsSearching={setIsSearching}/>
                         
                         {
-                            isMobile && <Burger css={css} links={links} setOpenMenu={setOpenMenu}/>
+                            isMobile && <Burger css={css} links={links} setOpenMenu={setOpenMenu} setIsSearching={setIsSearching}/>
                         }
 
             </ul>
             {
-                (isMobile && openMenu) && <BurgerMenu links={links} css={css}/>
+                (isMobile && openMenu) && <BurgerMenu links={links} css={css} setOpenMenu={setOpenMenu}/>
             }
         </>
   )
