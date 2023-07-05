@@ -21,14 +21,67 @@
 
 /* mobile */
 
-.mobileSideMenu {
-    
+.containerMobileSideMenu {
+    position: fixed;
+    height: max-content;
+    z-index: 1000;
+    margin-top: 40px;
 }
 
+.mobileSideMenu {
+    position: absolute;
+    left: -50px;
+    cursor: pointer;
+
+
+    background-color: black;
+    padding-left: 50px;
+}
+
+.titleMobileSideMenu {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.titleMobileSideMenu h4 {
+    margin: auto 0px;
+    padding-right: 10px;
+}
+
+.titleMobileSideMenu button {
+    padding-left: 120px;
+    background-color: black;
+    border: none;
+    height: 30px;
+    position: absolute;
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+.mobileSideMenu li {
+    font-size:  small;
+}
 
 
 @media only screen and (max-width: 768px) {
     .sideMenu {
-        position: absolute
+        position: absolute;
+        width: 0;
+        padding: 0;
+    }
+
+    .ul {
+        margin: 0;
+        position: absolute;
+        top: 26px;
+        left: -100px;
+        padding-left: 100px;
+        background-color: black;
+        margin: 2px;
+
+        width: max-content;
+        transition: transform .3s ease;
     }
 }
