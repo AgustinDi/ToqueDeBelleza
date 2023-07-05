@@ -144,11 +144,11 @@
         height: 80vh;
         height: calc(100vh - 110px);
         top: 110px;
-        right: 0px;  /* Editar en el proximo commit */
+        right: -400px;
         background-color: #0A0A0A;
         border-top: 2px solid #686868;
 
-        transition: right 1s ease;
+        transition: right 0.4s ease;
     }
 
     .BurgerMenuContainer ul {

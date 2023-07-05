@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function BurgerMenu({ links, setOpenMenu, css }) {
+export default function BurgerMenu({ links, setOpenMenu, openMenu, css }) {
   return (
-    <div className={css.BurgerMenuContainer}>
+    <div className={css.BurgerMenuContainer} style={{right: openMenu ? '0px' : '-400px'}}>
       <ul>
         {
         links.map(({name, link})=>
