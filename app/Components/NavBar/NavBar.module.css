@@ -144,7 +144,7 @@
         height: 80vh;
         height: calc(100vh - 110px);
         top: 110px;
-        right: 400px;
+        right: 0px;  /* Editar en el proximo commit */
         background-color: #0A0A0A;
         border-top: 2px solid #686868;
 
