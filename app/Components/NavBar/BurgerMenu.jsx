@@ -1,7 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function BurgerMenu({ links, setOpenMenu, openMenu, css }) {
+
+  useEffect(()=>{
+    openMenu 
+    ? document.body.style.overflow = 'hidden'
+    : document.body.style.overflow = 'unset';
+  },[openMenu])
+
   return (
     <div className={css.BurgerMenuContainer} style={{right: openMenu ? '0px' : '-400px'}}>
       <ul>
