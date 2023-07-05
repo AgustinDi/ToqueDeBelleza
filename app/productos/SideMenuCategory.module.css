@@ -36,6 +36,7 @@
 
     background-color: black;
     padding-left: 50px;
+    border-radius: 10px;
 }
 
 .titleMobileSideMenu {
@@ -58,6 +59,7 @@
     position: absolute;
     z-index: -1;
     transition: transform .3s ease;
+    border-radius:  0 10px 0 0;
 }
 
 .mobileSideMenu li {
@@ -77,11 +79,12 @@
         position: absolute;
         top: 26px;
         left: -100px;
-        padding-left: 100px;
+        padding: 5px 30px 5px 100px;
         background-color: black;
         margin: 2px;
 
         width: max-content;
         transition: transform .3s ease;
+        border-radius:  0 10px 10px 0;
     }
 }
