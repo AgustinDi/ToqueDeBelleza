@@ -82,7 +82,7 @@
 }
 
 .BurgerMenuContainer {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -139,6 +139,7 @@
     }
 
     .BurgerMenuContainer {
+        display: inherit;
         position: absolute;
         max-width: 400px;
         min-width: 200px;
