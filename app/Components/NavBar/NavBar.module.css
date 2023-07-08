@@ -141,7 +141,7 @@
     .BurgerMenuContainer {
         position: absolute;
         max-width: 400px;
-        min-width: 320px;
+        min-width: 200px;
         height: 80vh;
         height: calc(100vh - 110px);
         top: 110px;

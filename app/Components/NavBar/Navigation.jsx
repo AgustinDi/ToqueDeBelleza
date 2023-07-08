@@ -31,6 +31,10 @@ export default function Navigation({ css, setIsSearching, isSearching }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isSearching, openMenu])
 
+    function setOverflow() {
+        document.body.style.overflow = 'unset';
+    }
+
   return (
         <>
             <ul className={css.ul}>
@@ -55,8 +59,9 @@ export default function Navigation({ css, setIsSearching, isSearching }) {
                         }
 
             </ul> 
-            {/* (isMobile && openMenu) &&  */}
-                <BurgerMenu links={links} css={css} setOpenMenu={setOpenMenu} openMenu={openMenu}/>
+            {
+                (isMobile && window.innerWidth < 780) ? <BurgerMenu links={links} css={css} setOpenMenu={setOpenMenu} openMenu={openMenu}/> : setOverflow()
+            }
         </>
   )
 }
