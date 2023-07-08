@@ -5,7 +5,7 @@ import { useEffect } from "react";
 export default function BurgerMenu({ links, setOpenMenu, openMenu, css }) {
 
   useEffect(()=>{
-    (openMenu && Window.innerWidth < 768)
+    openMenu
     ? document.body.style.overflow = 'hidden'
     : document.body.style.overflow = 'unset';
   },[openMenu])
