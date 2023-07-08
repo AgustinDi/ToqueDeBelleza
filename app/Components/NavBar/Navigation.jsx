@@ -60,7 +60,7 @@ export default function Navigation({ css, setIsSearching, isSearching }) {
 
             </ul> 
             {
-                (isMobile && window.innerWidth < 780) ? <BurgerMenu links={links} css={css} setOpenMenu={setOpenMenu} openMenu={openMenu}/> : setOverflow()
+                (isMobile && Window.innerWidth < 780) ? <BurgerMenu links={links} css={css} setOpenMenu={setOpenMenu} openMenu={openMenu}/> : setOverflow()
             }
         </>
   )
