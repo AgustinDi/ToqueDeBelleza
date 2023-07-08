@@ -47,6 +47,7 @@ export default function NavBar(){
                     <Image className={css.logo} src={"/logoDark.png"} height={90} width={80} alt={'logo'} priority={true}/>
                 </Link>
                 <Navigation css={css} setIsSearching={setIsSearching} isSearching={isSearching}/>
+                <button onClick={()=>window.scrollTo({ top: 0, behavior: 'smooth' })}>top</button> 
             </nav>
         <div className={css.searcher} style={{position: 'absolute', overflowX: 'hidden', top: isSearching ? '110px' : '75px', zIndex: -1}}>
             <Searcher searched={searched} isSearching={isSearching}/>
