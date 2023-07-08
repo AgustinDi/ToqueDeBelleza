@@ -25,3 +25,39 @@
 .title * {
     margin: 2px;
 }
+
+@media only screen and (max-width: 460px) {
+    .card {
+        width: 180px;
+    }
+
+    .imageContainer{
+        width: 178px;
+        height: 178px;
+    }
+
+}
+
+
+@media only screen and (max-width: 400px) {
+    .card {
+        width: 160px;
+    }
+    .imageContainer{
+        width: 158px;
+        height: 158px;
+    }
+
+}
+
+
+@media only screen and (max-width: 345px) {
+    .card {
+        width: 220px;
+    }
+    .imageContainer{
+        width: 218px;
+        height: 218px;
+    }
+
+}

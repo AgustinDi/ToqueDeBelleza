@@ -5,3 +5,18 @@
   align-content: flex-start;
   justify-content: center;
 }
+
+@media only screen and (max-width: 460px) {
+  .productsList {
+    align-content: center;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, max-content));
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .productsList {
+    grid-template-columns: repeat(auto-fill, minmax(160px, max-content));
+  }
+}
