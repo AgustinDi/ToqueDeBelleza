@@ -1,6 +1,7 @@
 'use client'
 import { createContext, useContext, useEffect, useState } from "react";
 import { cleanCart } from "../helper/functions";
+import { usePathname } from "next/navigation";
 
 export const context = createContext();
 
@@ -13,6 +14,7 @@ export const UseMyContext = () => {
 export const Context = ({ children }) => {
     const [cart, setCart] = useState(cleanCart())
     const [isMobile, setIsMobile] = useState(true)
+    const pathnmae = usePathname()
 
     useEffect(()=>{
         resize();    
@@ -20,8 +22,17 @@ export const Context = ({ children }) => {
         if(localCart) setCart(localCart);
         
         window.addEventListener('resize', resize);
-        return () => window.removeEventListener('resize', resize);
+        // router.events.on('routeChangeComplete', (x)=>{
+        //     console.log('routeChangeComplete:' + console.log(x))
+        // });
+        return () => {
+            window.removeEventListener('resize', resize);
+        }
     }, [])
+
+    useEffect(()=>{
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, [pathnmae])
 
     const resize = () => {
       setIsMobile(window.innerWidth <= 768); // Define el ancho máximo para considerar como dispositivo móvil
