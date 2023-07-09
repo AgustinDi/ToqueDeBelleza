@@ -1,6 +1,6 @@
 import productsJson from './Products.json'
 import ProductCard from './ProductCard.jsx'
-import css from '../productos/ProductList.module.css'
+import '../productos/ProductList.css'
 
 export default async function ProductsList({ filter, amount }) {
     let dataFiltered = productsJson.data?.filter(product => filter ? product.category === filter : true)
@@ -14,7 +14,7 @@ export default async function ProductsList({ filter, amount }) {
     }
 
     return (
-            <div className={css.productsList} style={styles}>
+            <div className='productsList' style={styles}>
             {dataFiltered?.map(value => <ProductCard value={value} key={value.name}/>)}
             </div>
     )

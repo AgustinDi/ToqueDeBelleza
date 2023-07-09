@@ -1,17 +1,17 @@
 import Image from "next/image";
-import css from './ProductCard.module.css';
+import './ProductCard.css';
 import Link from "next/link";
 import loadingImage from '../../public/Loading.png';
 import AddToCart from "./AddToCart.jsx";
 
 export default function ProductCard({value}){
     return (
-        <div key={value.name} className={css.card}>
+        <div key={value.name} className={'card'}>
             <Link href={'/producto/' + value.name}>
-            <div className={css.imageContainer}>
+            <div className={'imageContainer'}>
                 <Image src={value.image || loadingImage} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill alt={value.name}/>
             </div>
-            <div className={css.title}>
+            <div className={'title'}>
                 <h3>
                     {value.name} 
                 </h3>

@@ -8,7 +8,11 @@ body {
   margin-bottom: 300px;
 }
 
-
+:root {
+  --color-primary: blue;
+  --color-secondary: red;
+  --font-size: 16px;
+}
 
 @media only screen and (max-width: 625px) {
   body {
