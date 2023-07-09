@@ -8,6 +8,20 @@ body {
   margin-bottom: 300px;
 }
 
+
+
+@media only screen and (max-width: 625px) {
+  body {
+    margin-bottom: 500px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    margin-bottom: 600px;
+  }
+}
+
 body::-webkit-scrollbar {
   /* edit scrollbar */
 }

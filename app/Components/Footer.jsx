@@ -13,14 +13,18 @@ export default function Footer () {
                         <div className={css.containers}>
                             <Image alt={'telephone redirect'} src={'/telephone.png'} fill/>
                         </div>
-                        3547598556
+                        <span>
+                            3547598556
+                        </span>
                     </a>
                     <a href='https://goo.gl/maps/fyJAKU1shv8dYq3n8' className={css.iconPlusText}>
                         <div className={css.containers}>
                             <Image alt={'google maps'} src={'/ubication.png'} fill/>
-                        </div>  
-                        Calle 4 entre 7 y Brochero N°430
-                        Santa Ana, Córdoba, Argentina
+                        </div>
+                        <span>
+                            Calle 4 entre 7 y Brochero N°430
+                            Santa Ana, Córdoba, Argentina
+                        </span>
                     </a>
             </div>
             <div className={css.stayContact}>
@@ -31,13 +35,17 @@ export default function Footer () {
                         <div className={css.containers}>
                             <Image alt={'instagram'} src={'/instagramm.png'} fill/>
                         </div>
-                        Nuestro Instagram
+                        <span>
+                            Nuestro Instagram
+                        </span>
                     </a>
                     <a href='tel:3547598556' className={css.iconPlusText}>
                         <div className={css.containers}>
                             <Image alt={'whatsapp'} src={'/whatsapp.png'} fill/>
                         </div>
-                        Consultas por Whatsapp
+                        <span>
+                            Consultas por Whatsapp
+                        </span>
                     </a>
             </div>
             </div>
