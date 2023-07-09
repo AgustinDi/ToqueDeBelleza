@@ -1,7 +1,7 @@
 'use client'
 import { createContext, useContext, useEffect, useState } from "react";
 import { cleanCart } from "../helper/functions";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 
 export const context = createContext();
 
@@ -14,6 +14,7 @@ export const UseMyContext = () => {
 export const Context = ({ children }) => {
     const [cart, setCart] = useState(cleanCart())
     const [isMobile, setIsMobile] = useState(true)
+    const searchParams = useSearchParams()
     const pathnmae = usePathname()
 
     useEffect(()=>{
@@ -32,7 +33,8 @@ export const Context = ({ children }) => {
 
     useEffect(()=>{
         window.scrollTo({ top: 0, behavior: 'smooth' })
-    }, [pathnmae])
+        
+    }, [pathnmae, searchParams])
 
     const resize = () => {
       setIsMobile(window.innerWidth <= 768); // Define el ancho máximo para considerar como dispositivo móvil
