@@ -1,10 +1,10 @@
-import css from './layout.module.css'
+import './layout.css'
 import SideMenuCategory from './SideMenuCategory';
 
 export default function sideLayout({ children }) {
 
   return (
-    <div className={css.sideLayout}>
+    <div className='sideLayout'>
         <SideMenuCategory />
         {children}
     </div>

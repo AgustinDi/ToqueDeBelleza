@@ -9,9 +9,10 @@ body {
 }
 
 :root {
-  --color-primary: blue;
-  --color-secondary: red;
-  --font-size: 16px;
+  --color-primary: #3c3c3c;
+  --color-secondary: #666;
+  --color-third: #666;
+  --color-fourth: #666;
 }
 
 @media only screen and (max-width: 625px) {
