@@ -46,11 +46,40 @@
 
 .containers {
     position: relative;
-    width: 30px;
-    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
 }
 
 .contact {
     display: flex;
     
+}
+
+@media only screen and (max-width: 830px) {
+
+    .bottomFooter {
+        flex-direction: column;
+    }
+
+    .bottomFooter h5 {
+        margin: 5px 0px
+    }
+
+}
+
+
+@media only screen and (max-width: 625px) {
+    .topFooter {
+        flex-direction: column;
+    }
+    
+    .contactUs {
+        width: 100%;
+        padding-top: 6px;
+    }
+
+    .stayContact {
+        width: 100%;
+        padding-top: 0;
+    }
 }

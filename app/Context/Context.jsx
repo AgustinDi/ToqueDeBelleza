@@ -33,7 +33,6 @@ export const Context = ({ children }) => {
 
     useEffect(()=>{
         window.scrollTo({ top: 0, behavior: 'smooth' })
-        
     }, [pathnmae, searchParams])
 
     const resize = () => {
