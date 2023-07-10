@@ -1,4 +1,4 @@
-.header {
+.navBheader {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -7,7 +7,7 @@
     transition: top 0.3s;
 }
 
-.nav {
+.navBnav {
     background-color: #0A0A0A;
     display: flex;
     padding: 10px 5%;
@@ -16,7 +16,7 @@
     border-bottom: 2px solid #686868;
 }
 
-.ul {
+.navBul {
     padding: 0;
     display: flex;
     list-style: none;
@@ -26,17 +26,17 @@
     border-radius: 32px;
 }
 
-.navbarText {
+.navBnavbarText {
     margin: 0 10px;
 }
 
-.searcher {
+.navBsearcher {
     position: absolute;
     z-index: 98;
     transition: top 0.2s;
 }
 
-.containerLupaImage {
+.navBcontainerLupaImage {
     margin-right: 7px;
     cursor: pointer;
     position: relative;
@@ -44,7 +44,7 @@
     height: 40px;
 }
 
-.containerCartImage{
+.navBcontainerCartImage{
     margin-left: 5px;
     position: relative;
     width: 40px;
@@ -52,11 +52,11 @@
 }
 
 
-.containerBurgerImage {
+.navBcontainerBurgerImage {
     display: none;
 }
 
-.containerCartDot {
+.navBcontainerCartDot {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -77,17 +77,17 @@
     border: 1px solid black
 }
 
-.cartImage{
+.navBcartImage{
     filter: invert(100%);
 }
 
-.BurgerMenuContainer {
+.navBBurgerMenuContainer {
     display: none;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.iconPlusText {
+.navBiconPlusText {
     display: inline-flex;
     align-items: center;
     padding: 10px 2px;
@@ -95,13 +95,13 @@
     max-width: max-content;
 }
 
-.containers {
+.navBcontainers {
     position: relative;
     width: 30px;
     height: 30px;
 }
 
-.derechosMenu {
+.navBderechosMenu {
     display: flex;
     font-size: 10px;
     border-top: 1px solid #686868;
@@ -112,7 +112,7 @@
 
 @media only screen and (max-width: 768px) {
 
-    .containerBurgerImage {
+    .navBcontainerBurgerImage {
         display: inherit;
         cursor: pointer;
         position: relative;
@@ -121,24 +121,24 @@
         filter: invert(100%);
     }
     
-    .containerLupaImage {
+    .navBcontainerLupaImage {
         margin: 0;
     }
 
-    .containerCartImage{
+    .navBcontainerCartImage{
         margin: 0;
         margin-left: 2px;
     }
 
-    .containerBurgerImage {
+    .navBcontainerBurgerImage {
         margin: 0;
     }
 
-    .ul {
+    .navBul {
         width: 150px;
     }
 
-    .BurgerMenuContainer {
+    .navBBurgerMenuContainer {
         display: inherit;
         position: absolute;
         max-width: 400px;
@@ -153,11 +153,11 @@
         transition: right 0.4s ease;
     }
 
-    .BurgerMenuContainer ul {
+    .navBBurgerMenuContainer ul {
     list-style: none;
     }
 
-    .BurgerMenuContainer ul li {
+    .navBBurgerMenuContainer ul li {
         padding: 8px;
     }
 }

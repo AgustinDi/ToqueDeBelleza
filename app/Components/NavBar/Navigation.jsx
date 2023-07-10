@@ -19,7 +19,7 @@ const links = [
     }
 ]
 
-export default function Navigation({ css, setIsSearching, isSearching }) {
+export default function Navigation({ setIsSearching, isSearching }) {
     const [ openMenu, setOpenMenu ] = useState(false)
     const { isMobile } = UseMyContext()
     
@@ -41,14 +41,14 @@ export default function Navigation({ css, setIsSearching, isSearching }) {
 
   return (
         <>
-            <ul className={css.ul}>
-                        <li className={css.containerLupaImage}>
-                            <Image onClick={()=>setIsSearching(value=>!value)} className={css.cartImage} src={'/Lupa.png'} fill alt="Buscador"/>
+            <ul className='navBul'>
+                        <li className='navBcontainerLupaImage'>
+                            <Image onClick={()=>setIsSearching(value=>!value)} className='navBcartImage' src={'/Lupa.png'} fill alt="Buscador"/>
                         </li>
                         {
                             !isMobile &&
                         (links.map(({name, link})=>
-                        <li key={name} className={css.navbarText}>
+                        <li key={name} className='navBnavbarText'>
                             <Link href={link} onClick={()=>setIsSearching(false)}>
                                 {name}
                             </Link>
@@ -56,15 +56,15 @@ export default function Navigation({ css, setIsSearching, isSearching }) {
                         ))
                         }
 
-                        <CartDot css={css} setIsSearching={setIsSearching}/>
+                        <CartDot setIsSearching={setIsSearching}/>
                         
                         {
-                            isMobile && <Burger css={css} links={links} setOpenMenu={setOpenMenu} setIsSearching={setIsSearching}/>
+                            isMobile && <Burger links={links} setOpenMenu={setOpenMenu} setIsSearching={setIsSearching}/>
                         }
 
             </ul> 
             {
-                isMobile ? <BurgerMenu links={links} css={css} setOpenMenu={setOpenMenu} openMenu={openMenu}/> : setOverflow()
+                isMobile ? <BurgerMenu links={links} setOpenMenu={setOpenMenu} openMenu={openMenu}/> : setOverflow()
             }
         </>
   )

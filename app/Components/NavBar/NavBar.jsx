@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import css from './NavBar.module.css';
+import './NavBar.css';
 import Searcher from "./Searcher";
 import Navigation from "./Navigation.jsx";
 
@@ -41,14 +41,14 @@ export default function NavBar(){
     }, [])
 
     return (
-        <header className={css.header} style={{top: isScrolling ? '0' : '-110px'}}>
-            <nav className={css.nav}>
+        <header className='navBheader' style={{top: isScrolling ? '0' : '-110px'}}>
+            <nav className='navBnav'>
                 <Link href={'/'}>
-                    <Image className={css.logo} src={"/logoDark.png"} height={90} width={80} alt={'logo'} priority={true}/>
+                    <Image className='navBlogo' src={"/logoDark.png"} height={90} width={80} alt={'logo'} priority={true}/>
                 </Link>
-                <Navigation css={css} setIsSearching={setIsSearching} isSearching={isSearching}/>
+                <Navigation setIsSearching={setIsSearching} isSearching={isSearching}/>
             </nav>
-        <div className={css.searcher} style={{position: 'absolute', overflowX: 'hidden', top: isSearching ? '110px' : '75px', zIndex: -1}}>
+        <div className='navBsearcher' style={{position: 'absolute', overflowX: 'hidden', top: isSearching ? '110px' : '75px', zIndex: -1}}>
             <Searcher searched={searched} isSearching={isSearching}/>
         </div>
         </header>
