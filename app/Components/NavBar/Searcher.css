@@ -1,10 +1,10 @@
-.searcher {
+.searsearcher {
     width: 100vw;
     display: flex;
     justify-content: center;
 }
 
-.input {
+.searinput {
     border: 0;
     box-shadow: 2px 10px 5px 0px rgba(0,0,0,0.75);
     padding: 8px;
@@ -13,13 +13,13 @@
 }
 
 @media only screen and (max-width: 1100px) {
-    .input {
+    .searinput {
         width: 70%;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .input {
+    .searinput {
         width: 90%;
     }
 }

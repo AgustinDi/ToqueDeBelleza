@@ -4,7 +4,7 @@
 import { useEffect, useState } from "react";
 import { UseMyContext } from "../Context/Context"
 import { getDetailProduct, getTotalCart } from "../helper/functions";
-import css from './page.module.css';
+import './page.css';
 import ProductCart from "./ProductCart";
 import Image from "next/image";
 import DifuminedBorder from "../Components/DifuminedBorder";
@@ -50,9 +50,9 @@ export default function Cart() {
     }
     
     return (
-        <section className={css.container}>
-          <div className={css.pageContainer}>
-                <div className={css.sideCart}>
+        <section className='container'>
+          <div className='pageContainer'>
+                <div className='sideCart'>
                     <h2>
                         Su carrito:
                     </h2>
@@ -69,7 +69,7 @@ export default function Cart() {
                 <DifuminedBorder horizontal={false}/>
                 {
                 renderedCart.length ? 
-                <div className={css.cartContainer}>
+                <div className='cartContainer'>
                     {renderedCart.lenght === 0 ? <p>carrito vacio</p> : renderedCart.map(product => <ProductCart data={product} key={product.name}/>)}
                     {renderedCart.length !== 0 && 
                     <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'end', padding: '0 20px', width: '100%', borderTop: '1px solid white'}}>
@@ -90,9 +90,9 @@ export default function Cart() {
                     }
                 </div>
                 :
-                <div className={css.emptyCartContainer}>
+                <div className='emptyCartContainer'>
                     <h2>{loading ? 'Cargando...' : 'Tus productos aparecerán aquí:'}</h2>
-                        <div className={css.emptyCartImageContainer}>
+                        <div className='emptyCartImageContainer'>
                             <Image src={'/granCarrito.png'} alt="carrito vacio" fill />
                         </div>
                 </div>

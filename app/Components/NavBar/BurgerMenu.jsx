@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 
-export default function BurgerMenu({ links, setOpenMenu, openMenu, css }) {
+export default function BurgerMenu({ links, setOpenMenu, openMenu }) {
 
   useEffect(()=>{
     openMenu
@@ -11,7 +11,7 @@ export default function BurgerMenu({ links, setOpenMenu, openMenu, css }) {
   },[openMenu])
 
   return (
-    <div className={css.BurgerMenuContainer} style={{right: openMenu ? '0px' : '-400px'}}>
+    <div className='navBBurgerMenuContainer' style={{right: openMenu ? '0px' : '-400px'}}>
       <ul>
         {
         links.map(({name, link})=>
@@ -29,23 +29,23 @@ export default function BurgerMenu({ links, setOpenMenu, openMenu, css }) {
       <div>
         <ul>  
           <li>
-            <a href='tel:3547598556' className={css.iconPlusText} onClick={()=>setOpenMenu(false)}>
-                <div className={css.containers}>
+            <a href='tel:3547598556' className='navBiconPlusText' onClick={()=>setOpenMenu(false)}>
+                <div className='navBcontainers'>
                     <Image alt={'instagram'} src={'/instagramm.png'} fill/>
                 </div>
                 Nuestro Instagram
             </a>  
           </li>
           <li>
-            <a href='tel:3547598556' className={css.iconPlusText} onClick={()=>setOpenMenu(false)}>
-                <div className={css.containers}>
+            <a href='tel:3547598556' className='navBiconPlusText' onClick={()=>setOpenMenu(false)}>
+                <div className='navBcontainers'>
                     <Image alt={'whatsapp'} src={'/whatsapp.png'} fill/>
                 </div>
                 Consultas por Whatsapp
             </a>
           </li>
         </ul>
-          <div className={css.derechosMenu}>
+          <div className='navBderechosMenu'>
               Copyright Toque de Belleza - 2023.
               Todos los derechos reservados ®
           </div>

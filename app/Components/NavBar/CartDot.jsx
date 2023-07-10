@@ -2,14 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { UseMyContext } from "@/app/Context/Context";
 
-export default function CartDot({ css, setIsSearching }) {
+export default function CartDot({ setIsSearching }) {
     const { hasProducts } = UseMyContext();
 
     return (
-        <li className={css.containerCartImage}>
+        <li className='navBcontainerCartImage'>
             <Link href={'/cart'} onClick={()=>setIsSearching(false)}>
-                {hasProducts().length ? <div className={css.containerCartDot}>{hasProducts().length}</div> : null}
-                <Image className={css.cartImage} src={'/carrito.png'} fill alt="carro de compras"/>
+                {hasProducts().length ? <div className='navBcontainerCartDot'>{hasProducts().length}</div> : null}
+                <Image className='navBcartImage' src={'/carrito.png'} fill alt="carro de compras"/>
             </Link>
         </li> 
   )

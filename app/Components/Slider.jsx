@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image';
-import css from './Slider.module.css';
+import './Slider.css';
 import { useEffect, useState, useRef } from 'react';
 
 export default function Slider() {
@@ -107,16 +107,16 @@ export default function Slider() {
     }
 
   return (
-    <div className={css.sliderContainer}>
-        <div ref={sliderRef} className={css.slider} style={{transform: `translateX(${transformSlider}${unit})`,transition: transitionSlider}} onTransitionEnd={reorderSlider}>
-             {images && images.map(({src, name},i)=> <div key={i} className={css.sliderElement}><Image fill src={src} alt={i}/><p style={{position: 'absolute', zIndex: '10', color: 'green'}}>{name}</p></div>)}
+    <div className='slidsliderContainer'>
+        <div ref={sliderRef} className='slidslider' style={{transform: `translateX(${transformSlider}${unit})`,transition: transitionSlider}} onTransitionEnd={reorderSlider}>
+             {images && images.map(({src, name},i)=> <div key={i} className='slidsliderElement'><Image fill src={src} alt={i}/><p style={{position: 'absolute', zIndex: '10', color: 'green'}}>{name}</p></div>)}
         </div>
-        <div className={css.sliderButtons}>
-            <button className={`${css.button} ${css.buttonLeft}`} onClick={()=>moveSlide(false)}>{'<'}</button>
-            <div className={css.indexDots}>
-                {dots && dots.map((value, index)=><div key={index} className={`${css.dot} ${value && css.active}`}></div>)}
+        <div className='slidsliderButtons'>
+            <button className={`slidbutton slidbuttonLeft`} onClick={()=>moveSlide(false)}>{'<'}</button>
+            <div className='slidindexDots'>
+                {dots && dots.map((value, index)=><div key={index} className={`sliddot ${value && 'active'}`}></div>)}
             </div>
-            <button className={`${css.button} ${css.buttonRight}`}  onClick={()=>moveSlide(true)}>{'>'}</button>
+            <button className={`slidbutton slidbuttonRight`}  onClick={()=>moveSlide(true)}>{'>'}</button>
         </div>
     </div>
   )

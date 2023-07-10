@@ -1,26 +1,25 @@
 'use client'
 
-import css from "./ProductCart.module.css"
+import "./ProductCart.css"
 import Image from "next/image";
 import { UseMyContext } from "../Context/Context"
 import Link from "next/link";
-import Categories from "../Components/Categories";
 
 export default function ProductCart({ data }) {
   const { addToCart, removeToCart, minusToCart} = UseMyContext();
 
     return (
-    <div className={css.productCart}>
+    <div className='productCart'>
       <div>
         <Link  href={`/producto/${data.name}`} >
-          <div className={css.imageContainer}>
+          <div className='imageContainer'>
             <Image src={data.image} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={data.name}/>
           </div>
         </Link>
       </div>
-        <div className={css.sideInfo}>
-          <div className={css.topInfo}>
-            <div className={css.titleInfo}>
+        <div className='sideInfo'>
+          <div className='topInfo'>
+            <div className='titleInfo'>
               <Link  href={`/producto/${data.name}`}>
               <h3>
                 {data.name}
@@ -39,7 +38,7 @@ export default function ProductCart({ data }) {
               <button onClick={()=> removeToCart(data.name)}>X</button>
             </div>
           </div>
-        <div className={css.bottomInfo}>
+        <div className='bottomInfo'>
           <div>
             <button onClick={()=>minusToCart(data.name)}>{'<'}</button>
             <span>{data.amount}</span>

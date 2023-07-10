@@ -1,13 +1,13 @@
 import Image from 'next/image';
-import css from './Categories.module.css';
+import './Categories.css';
 import Link from 'next/link';
 
 function Category({value}){
     return (
         <Link href={'/productos/' + value.code}>
-        <article className={css.category}>
+        <article className='category'>
             <Image src='/LoadingVertical.png' alt={value.name} fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
-            <p className={css.categoryTitle}>
+            <p className='categoryTitle'>
                 {value.name}
             </p>
         </article>
@@ -29,7 +29,7 @@ export default function Categories() {
     ]
 
   return (
-    <section className={css.categories}>
+    <section className='categories'>
         {categories.map(value=><Category key={value.code} value={value}/>)}
     </section>
   )
