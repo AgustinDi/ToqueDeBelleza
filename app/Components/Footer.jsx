@@ -1,24 +1,24 @@
-import css from './Footer.module.css';
+import './Footer.css';
 import Image from 'next/image';
 
 export default function Footer () {
     return (
-        <footer className={css.footer}>
-            <div className={css.topFooter}>
-            <div className={css.contactUs}>
+        <footer className='footer'>
+            <div className='topFooter'>
+            <div className='contactUs'>
                 <p>
                     Contactanos:
                 </p>
-                    <a href='tel:3547598556' className={css.iconPlusText}>
-                        <div className={css.containers}>
+                    <a href='tel:3547598556' className='iconPlusText'>
+                        <div className='containers'>
                             <Image alt={'telephone redirect'} src={'/telephone.png'} fill/>
                         </div>
                         <span>
                             3547598556
                         </span>
                     </a>
-                    <a href='https://goo.gl/maps/fyJAKU1shv8dYq3n8' className={css.iconPlusText}>
-                        <div className={css.containers}>
+                    <a href='https://goo.gl/maps/fyJAKU1shv8dYq3n8' className='iconPlusText'>
+                        <div className='containers'>
                             <Image alt={'google maps'} src={'/ubication.png'} fill/>
                         </div>
                         <span>
@@ -27,20 +27,20 @@ export default function Footer () {
                         </span>
                     </a>
             </div>
-            <div className={css.stayContact}>
+            <div className='stayContact'>
                 <p>
                     Sigamos conectados:
                 </p>
-                    <a href='tel:3547598556' className={css.iconPlusText}>
-                        <div className={css.containers}>
+                    <a href='tel:3547598556' className='iconPlusText'>
+                        <div className='containers'>
                             <Image alt={'instagram'} src={'/instagramm.png'} fill/>
                         </div>
                         <span>
                             Nuestro Instagram
                         </span>
                     </a>
-                    <a href='tel:3547598556' className={css.iconPlusText}>
-                        <div className={css.containers}>
+                    <a href='tel:3547598556' className='iconPlusText'>
+                        <div className='containers'>
                             <Image alt={'whatsapp'} src={'/whatsapp.png'} fill/>
                         </div>
                         <span>
@@ -49,7 +49,7 @@ export default function Footer () {
                     </a>
             </div>
             </div>
-            <div className={css.bottomFooter}>
+            <div className='bottomFooter'>
                 <h5>
                     Copyright Toque de Belleza - 2023.
                     Todos los derechos reservados ®

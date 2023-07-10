@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import css from './page.module.css';
+import './page.css';
 import productsJson from '../../productos/Products.json';
 import IndexV from '@/app/productos/IndexV';
 import Link from 'next/link';
@@ -10,14 +10,14 @@ export default function producto({ params }) {
   const product = productsJson.data?.find(value=> value.name === nameOfProduct)
 
   return (
-    <article className={css.article}>
+    <article className='productoarticle'>
       <IndexV category={product.category} individual={nameOfProduct}/>
-      <div className={css.containerPoduct}>
-        <div className={css.containerImage}>
+      <div className='productocontainerPoduct'>
+        <div className='productocontainerImage'>
           <Image fill src={product.image} alt={product.name}/>
         </div> 
-        <div className={css.sideInfo}>
-          <div className={css.titleProduct}>
+        <div className='productosideInfo'>
+          <div className='productotitleProduct'>
             <h2>{product.name}</h2>
             <Link href={`/productos/${product.category}`}>
               <h3>{product.category}</h3>
@@ -25,14 +25,14 @@ export default function producto({ params }) {
           </div> 
           <h4>{product.size} - {product.price}$</h4>
           <h5>Sobre {product.name}: <br/> {product.description}</h5>
-          <div className={css.buttonAddToCart}>
-          <BuyButton name={product.name}/> {/* este boton es un futuro componente 'use client' */}
+          <div className='productobuttonAddToCart'>
+          <BuyButton name={product.name}/>
           </div>
         </div>
       </div>
       { product.howToUse || product.precaution 
       ?
-      <div className={css.containerMoreDescription}>
+      <div className='productocontainerMoreDescription'>
         {product.howToUse && (<div>modo de uso: <br/> {product.howToUse}</div>)}
         {product.precaution && (<div>precauciones: <br/> {product.precaution}</div>)}
       </div>      
