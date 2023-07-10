@@ -44,7 +44,7 @@ export default function NavBar(){
         <header className='navBheader' style={{top: isScrolling ? '0' : '-110px'}}>
             <nav className='navBnav'>
                 <Link href={'/'}>
-                    <Image className='navBlogo' src={"/logoDark.png"} height={90} width={80} alt={'logo'} priority={true}/>
+                    <Image className='navBlogo' src={"/logoDark.png"} height={90} width={80} alt={'logo'} priority={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                 </Link>
                 <Navigation setIsSearching={setIsSearching} isSearching={isSearching}/>
             </nav>

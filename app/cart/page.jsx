@@ -93,7 +93,7 @@ export default function Cart() {
                 <div className='emptyCartContainer'>
                     <h2>{loading ? 'Cargando...' : 'Tus productos aparecerán aquí:'}</h2>
                         <div className='emptyCartImageContainer'>
-                            <Image src={'/granCarrito.png'} alt="carrito vacio" fill />
+                            <Image src={'/granCarrito.png'} alt="carrito vacio" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                         </div>
                 </div>
                 }

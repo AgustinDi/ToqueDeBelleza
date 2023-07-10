@@ -14,7 +14,7 @@ export default function producto({ params }) {
       <IndexV category={product.category} individual={nameOfProduct}/>
       <div className='productocontainerPoduct'>
         <div className='productocontainerImage'>
-          <Image fill src={product.image} alt={product.name}/>
+          <Image fill src={product.image} alt={product.name} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
         </div> 
         <div className='productosideInfo'>
           <div className='productotitleProduct'>

@@ -31,7 +31,7 @@ export default function BurgerMenu({ links, setOpenMenu, openMenu }) {
           <li>
             <a href='tel:3547598556' className='navBiconPlusText' onClick={()=>setOpenMenu(false)}>
                 <div className='navBcontainers'>
-                    <Image alt={'instagram'} src={'/instagramm.png'} fill/>
+                    <Image alt={'instagram'} src={'/instagramm.png'} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                 </div>
                 Nuestro Instagram
             </a>  
@@ -39,7 +39,7 @@ export default function BurgerMenu({ links, setOpenMenu, openMenu }) {
           <li>
             <a href='tel:3547598556' className='navBiconPlusText' onClick={()=>setOpenMenu(false)}>
                 <div className='navBcontainers'>
-                    <Image alt={'whatsapp'} src={'/whatsapp.png'} fill/>
+                    <Image alt={'whatsapp'} src={'/whatsapp.png'} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                 </div>
                 Consultas por Whatsapp
             </a>
