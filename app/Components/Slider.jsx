@@ -114,7 +114,7 @@ export default function Slider() {
         <div className='slidsliderButtons'>
             <button className={`slidbutton slidbuttonLeft`} onClick={()=>moveSlide(false)}>{'<'}</button>
             <div className='slidindexDots'>
-                {dots && dots.map((value, index)=><div key={index} className={`sliddot ${value && 'active'}`}></div>)}
+                {dots && dots.map((value, index)=><div key={index} className={`sliddot ${value && 'slidactive'}`}></div>)}
             </div>
             <button className={`slidbutton slidbuttonRight`}  onClick={()=>moveSlide(true)}>{'>'}</button>
         </div>
