@@ -1,5 +1,5 @@
 import Card from './Card';
-import css from './page.module.css';
+import './page.css';
 
 export default function Page(){
     const cards = [
@@ -27,8 +27,8 @@ export default function Page(){
                 <h4 style={{paddingTop: '10px'}}>
                     En <a href="./">toque de belleza</a> Realizar una compra es muy simple, sigue estos pasos:
                 </h4>
-            <div className={css.cardsContainer}>
-                {cards.map(value => <Card key={value.title} data={value} style={css.card}/>)}
+            <div className='cardsContainer'>
+                {cards.map(value => <Card key={value.title} data={value}/>)}
             </div>
             <div>
                 Si necesitás más información, no dudes en <a href='./'>dejarnos un mensaje</a>
