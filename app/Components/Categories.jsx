@@ -6,7 +6,7 @@ function Category({value}){
     return (
         <Link href={'/productos/' + value.code}>
         <article className='category'>
-            <Image src='/LoadingVertical.png' alt={value.name} fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+            <Image src='/LoadingVertical.png' priority alt={value.name} fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
             <p className='categoryTitle'>
                 {value.name}
             </p>

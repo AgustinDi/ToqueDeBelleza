@@ -43,7 +43,7 @@ export default function Navigation({ setIsSearching, isSearching }) {
         <>
             <ul className='navBul'>
                         <li className='navBcontainerLupaImage'>
-                            <Image onClick={()=>setIsSearching(value=>!value)} className='navBcartImage' src={'/Lupa.png'} fill alt="Buscador"/>
+                            <Image onClick={()=>setIsSearching(value=>!value)} className='navBcartImage' src={'/Lupa.png'} fill alt="Buscador" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                         </li>
                         {
                             !isMobile &&
