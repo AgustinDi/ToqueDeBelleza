@@ -15,12 +15,12 @@ export default function Slider() {
     const [dotCounter, setDotCounter] = useState(0);
     const [images, setImages] = useState([
         {
-            src: "/Loading.png",
+            src: "/Banner 1 - Toque de Belleza.png",
             name: "agua 1",
             index: 0
         },
         {
-            src: "/Loading.png",
+            src: "/Banner 2 - Toque de Belleza.png",
             name: "fuego 2",
             index: 1
         },
@@ -109,7 +109,7 @@ export default function Slider() {
   return (
     <div className='slidsliderContainer'>
         <div ref={sliderRef} className='slidslider' style={{transform: `translateX(${transformSlider}${unit})`,transition: transitionSlider}} onTransitionEnd={reorderSlider}>
-             {images && images.map(({src, name},i)=> <div key={i} className='slidsliderElement'><Image fill src={src} alt={i} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/><p style={{position: 'absolute', zIndex: '10', color: 'green'}}>{name}</p></div>)}
+             {images && images.map(({src, name},i)=> <div key={i} className='slidsliderElement'><Image fill src={src} alt={i} style={{objectFit:"cover"}} quality={100}/><p style={{position: 'absolute', zIndex: '10', color: 'green'}}>{name}</p></div>)}
         </div>
         <div className='slidsliderButtons'>
             <button className={`slidbutton slidbuttonLeft`} onClick={()=>moveSlide(false)}>{'<'}</button>

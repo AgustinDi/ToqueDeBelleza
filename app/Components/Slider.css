@@ -64,3 +64,22 @@
 .slidactive {
     background-color: rgb(104, 104, 104);
 }
+
+@media only screen and (max-width: 740px) {
+    .slidsliderElement {
+        aspect-ratio: 2/1;
+        height: 100%;
+    }
+    .slidsliderContainer {
+        object-fit: contain;   
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .slidsliderElement {
+        aspect-ratio: 4/3;
+    }
+    .slidsliderContainer {
+        object-fit: contain;   
+    }
+}
