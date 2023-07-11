@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { UseMyContext } from "@/app/Context/Context";
 
-export default function CartDot({ setIsSearching }) {
+export default function CartDot({ setIsSearching, setOpenMenu }) {
     const { hasProducts } = UseMyContext();
 
     return (
         <li className='navBcontainerCartImage'>
-            <Link href={'/cart'} onClick={()=>setIsSearching(false)}>
+            <Link href={'/cart'} onClick={()=>{setIsSearching(false);setOpenMenu(false)}}>
                 {hasProducts().length ? <div className='navBcontainerCartDot'>{hasProducts().length}</div> : null}
                 <div style={{position: 'relative', width: '100%', height: '100%'}}>
                     <Image className='navBcartImage' src={'/carrito.png'} fill alt="carro de compras" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>

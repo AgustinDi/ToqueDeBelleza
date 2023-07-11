@@ -56,7 +56,7 @@ export default function Navigation({ setIsSearching, isSearching }) {
                         ))
                         }
 
-                        <CartDot setIsSearching={setIsSearching}/>
+                        <CartDot setIsSearching={setIsSearching} setOpenMenu={setOpenMenu}/>
                         
                         {
                             isMobile && <Burger links={links} setOpenMenu={setOpenMenu} setIsSearching={setIsSearching}/>
