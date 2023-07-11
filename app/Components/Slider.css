@@ -13,7 +13,6 @@
 .slidsliderElement {
     position: relative;
     min-width: 100vw;
-    border: 1px solid green;
     aspect-ratio: 3/1;
 }
 
@@ -57,7 +56,7 @@
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    transition: background-color 0.sli7s;
+    transition: background-color 0.7s;
     margin: 3px;
 }
 
@@ -73,6 +72,18 @@
     .slidsliderContainer {
         object-fit: contain;   
     }
+
+    .slidbutton {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+    
+    .sliddot {
+        width: 14px;
+        height: 14px;
+        border-radius: 7px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -81,5 +92,22 @@
     }
     .slidsliderContainer {
         object-fit: contain;   
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .slidbuttonRight {
+        border-radius: 20px 0px 0px 20px;
+        margin: 0;
+    }
+
+    .slidbuttonLeft {
+        border-radius: 0px 20px 20px 0px;
+        margin: 0;
+    }
+
+    .slidbutton {
+        width: 40px;
+        height: 40px;
     }
 }
