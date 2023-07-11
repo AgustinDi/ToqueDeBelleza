@@ -66,8 +66,17 @@
     font-size:  small;
 }
 
+/* delete mobile sidemenu when desktop */
+.sidcontainerMobileSideMenu {
+    visibility: hidden;
+}
+
 
 @media only screen and (max-width: 768px) {
+    .sidcontainerMobileSideMenu {
+        visibility: visible;
+    }
+
     .sidsideMenu {
         position: absolute;
         width: 0;
