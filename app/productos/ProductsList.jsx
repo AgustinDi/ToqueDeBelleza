@@ -9,7 +9,7 @@ export default async function ProductsList({ filter, amount }) {
         dataFiltered = dataFiltered.slice(0, amount)
         styles = {
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(200px, max-content))'
+            gridTemplateColumns: 'repeat(auto-fill, minmax(min-content, max-content))'
         }
     }
 
