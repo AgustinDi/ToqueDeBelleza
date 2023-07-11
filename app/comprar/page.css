@@ -1,10 +1,52 @@
 .cardsContainer {
     display: flex;
+    width: 100%;
     justify-content: space-around;
-    padding-top: 50px;
+    justify-items: center;
+    padding-top: 20px;
 }
 
+/* complete later */
+
 .dataCard {
-    max-width: 30vw;
-    max-width: 30%;
+    width: max-content;
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.dataImageContainer {
+    width: 150px;
+    height: 150px;
+}
+
+.dataCard h5 {
+    margin: 0;
+    padding: 20px 10px;
+    margin-top: 10px;
+    height: 20px;
+}
+
+.dataCard h6 {
+    margin-top: 30px;
+}
+
+.bottomMessage {
+    margin: 1em 10px
+}
+
+
+@media only screen and (max-width: 920px) {
+    .cardsContainer {
+        /* flex-direction: column; */
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media only screen and (max-width: 310px) {
+    .dataCard {
+        max-width: 200px;
+        min-width: 200px;
+    }
 }

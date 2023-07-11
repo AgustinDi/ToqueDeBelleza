@@ -6,7 +6,7 @@ export default function Card({ data }) {
 
   return (
     <div className='dataCard'>
-        <img src={image} width={150} alt={alt}/>
+        <img className='dataImageContainer' src={image} alt={alt}/>
         <h5>{title}</h5>
         <h6>
             {subTitle}
