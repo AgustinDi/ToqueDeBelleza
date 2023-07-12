@@ -6,6 +6,10 @@
     padding-bottom: 9px;
 }
 
+.cartproductCart * {
+
+}
+
 .cartimageContainer {
     position: relative;
     aspect-ratio: 1/1;
@@ -30,7 +34,7 @@
 .carttitleInfo * {
     margin: 0;
     text-align: start;
-    margin-right: 10px;
+    overflow-wrap: break-word;
 }
 
 .cartcategoryAndX {
@@ -43,6 +47,7 @@
     margin: 0;
     padding-right: 9px;
     text-align: end;
+    overflow-wrap: break-word;
 }
 
 .cartbottomInfo {
@@ -74,13 +79,11 @@
     }
 }
 
-
 @media only screen and (max-width: 600px) {
     .cartproductCart {
         width: 100%;
     }
 }
-
 
 @media only screen and (max-width: 500px) {
     .cartproductCart {
@@ -95,14 +98,13 @@
 }
 
 @media only screen and (max-width: 360px) {
-    .cartproductCart {
-        padding-right: 0px;
+    .cartsideInfo {
+        padding: 0 ;
     }
 }
 
-
 @media only screen and (max-width: 350px) {
-    .cartproductCart {
-        padding-left: 0px;
+    .cartCategoryP {
+        display: none;
     }
 }

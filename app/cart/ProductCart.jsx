@@ -30,7 +30,7 @@ export default function ProductCart({ data }) {
               </h4>
             </div>
             <div className='cartcategoryAndX'>
-              <Link  href={`/productos/${data.category}`}>
+              <Link  href={`/productos/${data.category}`} className='cartCategoryP'>
               <p>
                 {data.category}  
               </p> 
