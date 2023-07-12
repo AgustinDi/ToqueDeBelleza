@@ -46,7 +46,9 @@ export default function ProductCart({ data }) {
             <span>{data.amount}</span>
             <button onClick={()=>addToCart(data.name)}>{'>'}</button>
           </div>
-          Subtotal: ${data.price * data.amount}
+          <div className="subTotalContainer">
+            <p className="subTotal">Subtotal: </p><p>${data.price * data.amount}</p>
+          </div>
         </div>
         </div>
     </div>

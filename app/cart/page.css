@@ -18,7 +18,6 @@
 }
 
 .sideCart {
-    min-width: 300px;
     width: 300px;
     margin-right: 20px;
 }
@@ -59,5 +58,7 @@
 }
 
 @media only screen and (max-width: 650px) {
-
+    .pageContainer {
+        margin-top: 10px;
+    }
 }

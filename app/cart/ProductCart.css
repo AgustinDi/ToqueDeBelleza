@@ -4,7 +4,6 @@
     padding: 8px;
     width: 600px;
     padding-bottom: 9px;
-    border-top: 1px solid white;
 }
 
 .imageContainer {
@@ -49,6 +48,15 @@
 .bottomInfo {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.subTotalContainer {
+    display: flex;
+}
+
+.subTotalContainer * {
+    margin: 0;
 }
 
 @media only screen and (max-width: 650px) {
@@ -77,5 +85,24 @@
 @media only screen and (max-width: 500px) {
     .productCart {
         width: 100%;
+    }
+    .subTotal {
+        display: none;
+    }
+    .titleInfo h4 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .productCart {
+        padding-right: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 350px) {
+    .productCart {
+        padding-left: 0px;
     }
 }
