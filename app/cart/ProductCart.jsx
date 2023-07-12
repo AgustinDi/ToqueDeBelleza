@@ -41,10 +41,10 @@ export default function ProductCart({ data }) {
             </div>
           </div>
         <div className='cartbottomInfo'>
-          <div>
-            <button onClick={()=>minusToCart(data.name)}>{'<'}</button>
-            <span>{data.amount}</span>
-            <button onClick={()=>addToCart(data.name)}>{'>'}</button>
+          <div className='cartsetAmount'>
+            <button className="cartamountButtonLeft" onClick={()=>minusToCart(data.name)}>{'<'}</button>
+            <p>{data.amount}</p>
+            <button className="cartamountButtonRight" onClick={()=>addToCart(data.name)}>{'>'}</button>
           </div>
           <div className="cartsubTotalContainer">
             <p className="cartsubTotal">Subtotal: </p><p>${data.price * data.amount}</p>
