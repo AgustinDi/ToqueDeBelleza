@@ -3,6 +3,7 @@ import ProductCard from '../../ProductCard';
 import productsJson from '../../Products.json';
 import { removeAccents } from '@/app/helper/functions';
 import IndexV from '../../IndexV';
+import Image from 'next/image';
 
 
 export default function ProductSearched({ search }) {
@@ -33,9 +34,12 @@ export default function ProductSearched({ search }) {
           </div>
         </div>
         :
-        <div>
-          <h3>Lo sentimos, no encontramos resultados para su busqueda:</h3>
-          <p>{search}</p>
+        <div >
+          <button style={{position: 'absolute', top: '0px'}}>Volver</button>
+          <div style={{position: 'relative', width: '200px', height: '200px', marginTop: '100px'}}>
+            <Image fill src={'/error 404.png'} alt='error 404' />
+          </div>
+          <h3 style={{marginBottom: '0px'}}>Lo sentimos, no encontramos resultados para su busqueda</h3>
         </div>
       }
       
