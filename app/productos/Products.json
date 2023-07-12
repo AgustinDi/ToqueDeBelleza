@@ -100,8 +100,8 @@
             "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885529/Toque%20de%20Belleza/20230316_002646_8_11zon_nwwqhe.jpg"
         },
         {
-            "name": "Kit - Shampoo y Acondicionador de Biotina",
-            "category": "Shampoo y Acondicionador",
+            "name": "Shampoo y Acondicionador de Biotina",
+            "category": "Kit",
             "price": 800,
             "size": "250ml",
             "description": "Enriquecido con Biotina refuerza la estructura interna de las fibras para un cabello más fuerte. Para cabello normal a seco.",
@@ -111,8 +111,8 @@
             "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885531/Toque%20de%20Belleza/20230316_003028_9_11zon_ryb6ii.jpg"
         },
         {
-            "name": "Kit - Shampoo y Acondicionador Anticaida",
-            "category": "Shampoo y Acondicionador",
+            "name": "Shampoo y Acondicionador Anticaida",
+            "category": "Kit",
             "price": 800,
             "size": "250ml",
             "description": "Uso diario, el poder de la ortiga estimula la circulación sanguínea en el cuero cabelludo ayudando al crecimiento y previniendo la caida de cabello.",
@@ -122,8 +122,8 @@
             "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885532/Toque%20de%20Belleza/20230316_003312_10_11zon_xobnvf.jpg"
         },
         {
-            "name": "Kit - Shampoo y Acondicionador Argán",
-            "category": "Shampoo y Acondicionador",
+            "name": "Shampoo y Acondicionador Argán",
+            "category": "Kit",
             "price": 800,
             "size": "250ml",
             "description": "Anti Frizz, Perfecto para Cabellos rebeldes",

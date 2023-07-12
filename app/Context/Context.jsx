@@ -2,6 +2,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { cleanCart } from "../helper/functions";
 import { usePathname, useSearchParams } from "next/navigation";
+import { data } from "../productos/Products.json";
 
 export const context = createContext();
 
@@ -19,13 +20,15 @@ export const Context = ({ children }) => {
 
     useEffect(()=>{
         resize();    
+
         const localCart = JSON.parse(localStorage.getItem('cart'))
-        if(localCart) setCart(localCart);
+        if(localCart) {
+            const arrCleanCart = JSON.stringify(Object.keys(cleanCart()))
+            const arrLocalCart = JSON.stringify(Object.keys(localCart))
+            if(arrCleanCart === arrLocalCart) setCart(localCart)
+        };
         
         window.addEventListener('resize', resize);
-        // router.events.on('routeChangeComplete', (x)=>{
-        //     console.log('routeChangeComplete:' + console.log(x))
-        // });
         return () => {
             window.removeEventListener('resize', resize);
         }
