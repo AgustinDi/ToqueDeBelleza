@@ -29,13 +29,15 @@ export default function ProductCart({ data }) {
                 {data.size} 
               </h4>
             </div>
-            <div>
+            <div className='categoryAndX'>
               <Link  href={`/productos/${data.category}`}>
-              <span>
+              <p>
                 {data.category}  
-              </span> 
+              </p> 
               </Link>
-              <button onClick={()=> removeToCart(data.name)}>X</button>
+              <div>
+                <button onClick={()=> removeToCart(data.name)}>X</button>
+              </div>
             </div>
           </div>
         <div className='bottomInfo'>

@@ -59,12 +59,6 @@ export default function Cart() {
                     <p>
                         En Toque de Belleza utilizamos Whatsapp para coordinar la compra de productos, se recibe transferencia o efectivo, en un futuro sera implementado el pago por tarjeta y envio online.
                     </p>
-                    {
-                        !!renderedCart.length &&
-                    <>
-                    <Button click={buy} content={'Realizar compra'}/>
-                    </>
-                    }
                 </div>
                 <DifuminedBorder horizontal={false}/>
                 {
@@ -75,15 +69,15 @@ export default function Cart() {
                     <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'end', padding: '0 20px', width: '100%', borderTop: '1px solid white'}}>
                         <div style={{width: '100%'}}>
                             <div style={{display: 'flex', fontSize: '22px', justifyContent: 'space-between'}}>
-                            <p>    
-                            Total: 
-                            </p>
-                            <p>
-                            ${getTotalCart(renderedCart)}
-                            </p>
+                                <p>    
+                                    Total: 
+                                </p>
+                                <p>
+                                    ${getTotalCart(renderedCart)}
+                                </p>
                             </div>
-                            <div>
-                            <Button click={buy} content={'Realizar compra'}/>
+                            <div className='buttonBuy'>
+                                <Button click={buy} content={'Realizar compra'}/>
                             </div> 
                         </div>
                     </div>

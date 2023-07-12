@@ -20,6 +20,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 5px;
+    margin-left: 5px;
 }
 
 .topInfo {
@@ -29,9 +30,31 @@
 
 .titleInfo * {
     margin: 0;
+    text-align: start;
+    margin-right: 10px;
+}
+
+.categoryAndX {
+    display: flex;
+    height: min-content;
+    align-items: center;
+}
+
+.categoryAndX p {
+    margin: 0;
+    padding-right: 9px;
+    text-align: end;
 }
 
 .bottomInfo {
     display: flex;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 650px) {
+    .productCart {
+        width: 90vw;
+        width: calc(100vw - 50px);
+        margin: auto;
+    }
 }
