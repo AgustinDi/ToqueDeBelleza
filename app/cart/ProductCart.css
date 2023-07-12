@@ -9,8 +9,8 @@
 
 .imageContainer {
     position: relative;
+    aspect-ratio: 1/1;
     width: 140px;
-    height: 140px;
     background-color: green;
 }
 
@@ -56,5 +56,26 @@
         width: 90vw;
         width: calc(100vw - 50px);
         margin: auto;
+    }
+    .imageContainer {
+        width: 24vw;
+    }
+    .sideCart {
+        width: 90vw;
+        width: calc(100vw - 50px);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .productCart {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .productCart {
+        width: 100%;
     }
 }
