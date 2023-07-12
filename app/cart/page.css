@@ -1,11 +1,11 @@
-.container {
+.cartcontainer {
     justify-content: center;
     margin: auto;
     min-height: 420px;
     padding-top: 10px;
 }
 
-.pageContainer {
+.cartpageContainer {
     display: flex;
     position: relative;
     justify-content: center;
@@ -13,32 +13,32 @@
     width: 100%;
 }
 
-.buttonBuy {
+.cartbuttonBuy {
     display: flex;
     justify-content: end;
 }
 
-.sideCart {
+.cartsideCart {
     width: 300px;
     margin-right: 20px;
 }
 
-.sideCart p {
+.cartsideCart p {
     text-align: start;
 }
 
-.cartContainer{
+.cartcartContainer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
 
-.emptyCartContainer {
+.cartemptyCartContainer {
     width: 600px;
 }
 
-.emptyCartImageContainer {
+.cartemptyCartImageContainer {
     position: relative;
     margin: 20px 0px;
     width: 300px;
@@ -46,38 +46,38 @@
     aspect-ratio: 1/1;
 }
 
-.emptyCartImageContainer img {
+.cartemptyCartImageContainer img {
     left: -15px !important;
 }
 
 @media only screen and (max-width: 1000px) {
-    .pageContainer {
+    .cartpageContainer {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
     }
-    .emptyCartContainer {
+    .cartemptyCartContainer {
         width: 100%;
     }
 
-    .sideCart {
+    .cartsideCart {
         width: 600px;
         margin: 0;
     }
 }
 
 @media only screen and (max-width: 650px) {
-    .pageContainer {
+    .cartpageContainer {
         margin-top: 10px;
     }
 }
 
 @media only screen and (max-width: 360px) {
-    .emptyCartImageContainer {
+    .cartemptyCartImageContainer {
         width: 90vw;
     }
     
-    .emptyCartImageContainer img {
+    .cartemptyCartImageContainer img {
         left: 0px !important;
     }
 }

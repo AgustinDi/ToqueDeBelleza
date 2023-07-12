@@ -1,4 +1,4 @@
-.productCart {
+.cartproductCart {
     display: flex;
     justify-content: space-between;
     padding: 8px;
@@ -6,14 +6,14 @@
     padding-bottom: 9px;
 }
 
-.imageContainer {
+.cartimageContainer {
     position: relative;
     aspect-ratio: 1/1;
     width: 140px;
     background-color: green;
 }
 
-.sideInfo {
+.cartsideInfo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,53 +22,53 @@
     margin-left: 5px;
 }
 
-.topInfo {
+.carttopInfo {
     display: flex;
     justify-content: space-between;
 }
 
-.titleInfo * {
+.carttitleInfo * {
     margin: 0;
     text-align: start;
     margin-right: 10px;
 }
 
-.categoryAndX {
+.cartcategoryAndX {
     display: flex;
     height: min-content;
     align-items: center;
 }
 
-.categoryAndX p {
+.cartcategoryAndX p {
     margin: 0;
     padding-right: 9px;
     text-align: end;
 }
 
-.bottomInfo {
+.cartbottomInfo {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.subTotalContainer {
+.cartsubTotalContainer {
     display: flex;
 }
 
-.subTotalContainer * {
+.cartsubTotalContainer * {
     margin: 0;
 }
 
 @media only screen and (max-width: 650px) {
-    .productCart {
+    .cartproductCart {
         width: 90vw;
         width: calc(100vw - 50px);
         margin: auto;
     }
-    .imageContainer {
+    .cartimageContainer {
         width: 24vw;
     }
-    .sideCart {
+    .cartsideCart {
         width: 90vw;
         width: calc(100vw - 50px);
     }
@@ -76,33 +76,33 @@
 
 
 @media only screen and (max-width: 600px) {
-    .productCart {
+    .cartproductCart {
         width: 100%;
     }
 }
 
 
 @media only screen and (max-width: 500px) {
-    .productCart {
+    .cartproductCart {
         width: 100%;
     }
-    .subTotal {
+    .cartsubTotal {
         display: none;
     }
-    .titleInfo h4 {
+    .carttitleInfo h4 {
         display: none;
     }
 }
 
 @media only screen and (max-width: 360px) {
-    .productCart {
+    .cartproductCart {
         padding-right: 0px;
     }
 }
 
 
 @media only screen and (max-width: 350px) {
-    .productCart {
+    .cartproductCart {
         padding-left: 0px;
     }
 }

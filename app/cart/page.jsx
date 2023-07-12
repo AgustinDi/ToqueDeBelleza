@@ -50,9 +50,9 @@ export default function Cart() {
     }
     
     return (
-        <section className='container'>
-          <div className='pageContainer'>
-                <div className='sideCart'>
+        <section className='cartcontainer'>
+          <div className='cartpageContainer'>
+                <div className='cartsideCart'>
                     <h2>
                         Su carrito:
                     </h2>
@@ -63,7 +63,7 @@ export default function Cart() {
                 <DifuminedBorder horizontal={false}/>
                 {
                 renderedCart.length ? 
-                <div className='cartContainer'>
+                <div className='cartcartContainer'>
                     {renderedCart.lenght === 0 ? <p>carrito vacio</p> : renderedCart.map(product => <ProductCart data={product} key={product.name}/>)}
                     {renderedCart.length !== 0 && 
                     <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'end', padding: '0 20px', width: '100%', borderTop: '1px solid white'}}>
@@ -76,7 +76,7 @@ export default function Cart() {
                                     ${getTotalCart(renderedCart)}
                                 </p>
                             </div>
-                            <div className='buttonBuy'>
+                            <div className='cartbuttonBuy'>
                                 <Button click={buy} content={'Realizar compra'}/>
                             </div> 
                         </div>
@@ -84,9 +84,9 @@ export default function Cart() {
                     }
                 </div>
                 :
-                <div className='emptyCartContainer'>
+                <div className='cartemptyCartContainer'>
                     <h2>{loading ? 'Cargando...' : 'Tus productos aparecerán aquí:'}</h2>
-                        <div className='emptyCartImageContainer'>
+                        <div className='cartemptyCartImageContainer'>
                             <Image src={'/granCarrito.png'} alt="carrito vacio" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                         </div>
                 </div>

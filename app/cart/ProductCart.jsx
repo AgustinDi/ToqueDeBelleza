@@ -9,17 +9,17 @@ export default function ProductCart({ data }) {
   const { addToCart, removeToCart, minusToCart} = UseMyContext();
 
     return (
-    <div className='productCart'>
+    <div className='cartproductCart'>
       <div>
         <Link  href={`/producto/${data.name}`} >
-          <div className='imageContainer'>
+          <div className='cartimageContainer'>
             <Image src={data.image} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={data.name}/>
           </div>
         </Link>
       </div>
-        <div className='sideInfo'>
-          <div className='topInfo'>
-            <div className='titleInfo'>
+        <div className='cartsideInfo'>
+          <div className='carttopInfo'>
+            <div className='carttitleInfo'>
               <Link  href={`/producto/${data.name}`}>
               <h3>
                 {data.name}
@@ -29,7 +29,7 @@ export default function ProductCart({ data }) {
                 {data.size} 
               </h4>
             </div>
-            <div className='categoryAndX'>
+            <div className='cartcategoryAndX'>
               <Link  href={`/productos/${data.category}`}>
               <p>
                 {data.category}  
@@ -40,14 +40,14 @@ export default function ProductCart({ data }) {
               </div>
             </div>
           </div>
-        <div className='bottomInfo'>
+        <div className='cartbottomInfo'>
           <div>
             <button onClick={()=>minusToCart(data.name)}>{'<'}</button>
             <span>{data.amount}</span>
             <button onClick={()=>addToCart(data.name)}>{'>'}</button>
           </div>
-          <div className="subTotalContainer">
-            <p className="subTotal">Subtotal: </p><p>${data.price * data.amount}</p>
+          <div className="cartsubTotalContainer">
+            <p className="cartsubTotal">Subtotal: </p><p>${data.price * data.amount}</p>
           </div>
         </div>
         </div>
