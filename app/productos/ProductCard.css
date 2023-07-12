@@ -2,7 +2,10 @@
     background-color: var(--color-primary);
     margin-bottom: 20px;
     width: 200px;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
+    border: 1px solid rgb(229, 229, 229, 0.1);
+    border-radius: 12px;
+    height: min-content;
 }
 
 .card:hover {
@@ -13,6 +16,12 @@
     position: relative;
     width: 198px;
     height: 198px;
+    border-radius: 12px;
+}
+
+.imageContainer img {
+    border-radius: 11px 11px 0px 0px;
+    border: 1px solid rgb(229, 229, 229, 0.1);
 }
 
 .title {

@@ -35,6 +35,7 @@ export default function ProductSearched({ search }) {
         </div>
         :
         <div >
+          {/* agregar a futuro classnames a todo esto */}
           <button style={{position: 'absolute', top: '0px'}}>Volver</button>
           <div style={{position: 'relative', width: '200px', height: '200px', marginTop: '100px'}}>
             <Image fill src={'/error 404.png'} alt='error 404' />
