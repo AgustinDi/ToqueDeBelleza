@@ -24,7 +24,7 @@ export default function producto({ params }) {
             </Link>
           </div> 
           <h4>{product.size} - {product.price}$</h4>
-          <h5>Sobre {product.name}: <br/> {product.description}</h5>
+          <h5>Sobre {product.name} 💖: <br/> {product.description}</h5>
           <div className='productobuttonAddToCart'>
           <BuyButton name={product.name}/>
           </div>
@@ -33,8 +33,8 @@ export default function producto({ params }) {
       { product.howToUse || product.precaution 
       ?
       <div className='productocontainerMoreDescription'>
-        {product.howToUse && (<div>modo de uso: <br/> {product.howToUse}</div>)}
-        {product.precaution && (<div>precauciones: <br/> {product.precaution}</div>)}
+        {product.howToUse && (<div>modo de uso ❤️: <br/> {product.howToUse}</div>)}
+        {product.precaution && (<div>precauciones 🚧: <br/> {product.precaution}</div>)}
       </div>      
       : null}
     </article>

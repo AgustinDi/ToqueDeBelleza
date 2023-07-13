@@ -1,7 +1,4 @@
 .productoarticle {
-    padding: 40px;
-    padding-top: 0px;
-    padding-right: 70px;
 }
 
 .productocontainerImage {
@@ -39,8 +36,6 @@
     margin: 0px;
 }
 
-
-
 .productobuttonAddToCart {
     height: 100%;
     width: 100%;
@@ -51,4 +46,3 @@
 .productobuttonAddToCart button {
     margin-bottom: 15px;
 }
-

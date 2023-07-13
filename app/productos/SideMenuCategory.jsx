@@ -6,7 +6,7 @@ import productsJson from './Products.json';
 import { UseMyContext } from '../Context/Context';
 import { useState } from 'react';
 
-export default function SideMenuCategory() {
+export default function SideMenuCategory({ params }) {
     const categoriesSet = new Set(productsJson.data.map(product => product.category))
     const categorias = [...categoriesSet];
     const [open, setOpen] = useState(false);
@@ -26,8 +26,8 @@ export default function SideMenuCategory() {
     }
 
     return (
-        <div className='sidsideMenu'>
-            { !isMobile 
+        <div className='sidsideMenu' style={{display: ( !isMobile && params ) ? 'none' : 'initial'}}>
+            { !isMobile
             ? <>
             <h3>Filtro por Categoria:</h3>
             <ul className='sidul'>
