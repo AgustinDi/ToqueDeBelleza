@@ -1,4 +1,5 @@
 .productoarticle {
+    max-width: 950px;
 }
 
 .productocontainerImage {
@@ -45,4 +46,8 @@
 
 .productobuttonAddToCart button {
     margin-bottom: 15px;
+}
+
+.productocontainerMoreDescription {
+    display: flex;
 }

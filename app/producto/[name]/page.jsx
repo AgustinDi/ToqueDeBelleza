@@ -33,8 +33,8 @@ export default function producto({ params }) {
       { product.howToUse || product.precaution 
       ?
       <div className='productocontainerMoreDescription'>
-        {product.howToUse && (<div>modo de uso ❤️: <br/> {product.howToUse}</div>)}
-        {product.precaution && (<div>precauciones 🚧: <br/> {product.precaution}</div>)}
+        {product.howToUse ? (<div>modo de uso ❤️: <br/> {product.howToUse}</div>) : <div/>}
+        {product.precaution ? (<div>precauciones 🚧: <br/> {product.precaution}</div>) : <div/>}
       </div>      
       : null}
     </article>

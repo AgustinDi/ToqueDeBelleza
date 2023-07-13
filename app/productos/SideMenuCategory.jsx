@@ -26,7 +26,7 @@ export default function SideMenuCategory({ params }) {
     }
 
     return (
-        <div className='sidsideMenu' style={{display: ( !isMobile && params ) ? 'none' : 'initial'}}>
+        <div className='sidsideMenu' style={ ( !isMobile && params ) ? {display: 'none'} : {}}>
             { !isMobile
             ? <>
             <h3>Filtro por Categoria:</h3>
