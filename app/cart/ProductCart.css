@@ -115,14 +115,12 @@
 
 @media only screen and (max-width: 600px) {
     .cartproductCart {
-        width: 100%;
+        width: 90vw;
+        width: calc(100vw - 50px);
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .cartproductCart {
-        width: 100%;
-    }
     .cartsubTotal {
         display: none;
     }
