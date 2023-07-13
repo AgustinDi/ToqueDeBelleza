@@ -3,7 +3,7 @@ import './page.css';
 import productsJson from '../../productos/Products.json';
 import IndexV from '@/app/productos/IndexV';
 import Link from 'next/link';
-import BuyButton from './BuyButton';
+import PickAndBuy from './PickAndBuy';
 
 export default function producto({ params }) {
   const nameOfProduct = decodeURI(params.name)
@@ -27,9 +27,7 @@ export default function producto({ params }) {
             <div className='productocontainerDescription'>
               <h3 >Sobre {product.name} 💖: </h3><p>{product.description}</p>
             </div>
-          <div className='productobuttonAddToCart'>
-            <BuyButton name={product.name}/>
-          </div>
+          <PickAndBuy data={product}/>
         </div>
       </div>
       { product.howToUse || product.precaution 

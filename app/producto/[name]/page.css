@@ -47,6 +47,8 @@
     width: 100%;
     display: flex;
     align-items: flex-end;
+    margin-bottom: 10px;
+    justify-content: space-between;
 }
 
 .productocontainerDescription {
@@ -57,10 +59,6 @@
 .productocontainerDescription * {
     margin: 0;
     margin-top: 15px;
-}
-
-.productobuttonAddToCart button {
-    margin-bottom: 15px;
 }
 
 .productocontainerMoreDescription {

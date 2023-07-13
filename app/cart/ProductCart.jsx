@@ -4,9 +4,10 @@ import "./ProductCart.css"
 import Image from "next/image";
 import { UseMyContext } from "../Context/Context"
 import Link from "next/link";
+import PickAmount from "./PickAmount.jsx";
 
 export default function ProductCart({ data }) {
-  const { addToCart, removeToCart, minusToCart} = UseMyContext();
+  const { removeToCart } = UseMyContext();
 
     return (
     <div className='cartproductCart'>
@@ -41,11 +42,8 @@ export default function ProductCart({ data }) {
             </div>
           </div>
         <div className='cartbottomInfo'>
-          <div className='cartsetAmount'>
-            <button className="cartamountButtonLeft" onClick={()=>minusToCart(data.name)}>{'<'}</button>
-            <p>{data.amount}</p>
-            <button className="cartamountButtonRight" onClick={()=>addToCart(data.name)}>{'>'}</button>
-          </div>
+          {console.log(data)}
+          <PickAmount data={data && data} />
           <div className="cartsubTotalContainer">
             <p className="cartsubTotal">Subtotal: </p><p>${data.price * data.amount}</p>
           </div>
