@@ -1,12 +1,13 @@
 'use client'
 
-import { UseMyContext } from "../Context/Context"
+import { UseMyContext } from "../Context/Context";
+import { fireAlert } from "../helper/functions";
 
 export default function AddToCart({ value }) {
-    const { addToCart } = UseMyContext();
+    const { addToCart, isMobile } = UseMyContext();
     
     return (
-        <button onClick={() => {addToCart(value.name);alert(`Se a agregado ${value.name} al carrito!`)}}>
+        <button onClick={() => {addToCart(value.name);fireAlert(value.name,isMobile)}}>
             Agregar al carrito
         </button>
     )

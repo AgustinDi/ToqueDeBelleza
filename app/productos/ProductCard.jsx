@@ -20,7 +20,7 @@ export default function ProductCard({value}){
                 </h4>
             </div>
             </Link>
-            <AddToCart value={value}/>
+            <AddToCart url={value.image} value={value}/>
         </div> 
     )
 }

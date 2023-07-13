@@ -1,4 +1,5 @@
-import productsJson from '../productos/Products.json'
+import productsJson from '../productos/Products.json';
+import Swal from "sweetalert2";
 
 export const removeAccents = function (str) {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -19,4 +20,16 @@ export const getTotalCart = function (productsCart) {
 
 export const getDetailProduct = function (name) {
     return productsJson.data.filter(product=>product.name === name)[0];
+}
+
+export const fireAlert = function (name, isMobile) {
+    const html = `${isMobile ? '<h5>' : '<h3>'}Se a agregado ${name} al carrito!${isMobile ? '</h5>' : '</h3>'}`
+    
+    Swal.fire({
+        position: 'bottom-end',
+        title: ``,
+        showConfirmButton: false,
+        timer: 1200,
+        html 
+      })
 }
