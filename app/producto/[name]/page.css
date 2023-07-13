@@ -4,8 +4,9 @@
 
 .productocontainerImage {
     position: relative;
-    min-width: 300px;
-    height: 300px;
+    aspect-ratio: 1/1;
+    width: 60vw;
+    height: min-content;
 }
 
 .productocontainerPoduct {
@@ -37,11 +38,25 @@
     margin: 0px;
 }
 
+.productotitleProduct a {
+    padding-top: 5px
+}
+
 .productobuttonAddToCart {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: flex-end;
+}
+
+.productocontainerDescription {
+    text-align: start;
+    height: min-content;
+}
+
+.productocontainerDescription * {
+    margin: 0;
+    margin-top: 15px;
 }
 
 .productobuttonAddToCart button {
@@ -50,4 +65,17 @@
 
 .productocontainerMoreDescription {
     display: flex;
+    text-align: start;
+    padding-top: 20px;
+}
+
+
+.productocontainerDescription h3 {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 950px) {
+    .productosideInfo h4 {
+        margin: 10px 0px
+    }
 }

@@ -24,9 +24,11 @@ export default function producto({ params }) {
             </Link>
           </div> 
           <h4>{product.size} - {product.price}$</h4>
-          <h5>Sobre {product.name} 💖: <br/> {product.description}</h5>
+            <div className='productocontainerDescription'>
+              <h3 >Sobre {product.name} 💖: </h3><p>{product.description}</p>
+            </div>
           <div className='productobuttonAddToCart'>
-          <BuyButton name={product.name}/>
+            <BuyButton name={product.name}/>
           </div>
         </div>
       </div>
