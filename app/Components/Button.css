@@ -1,23 +1,20 @@
 .button {
-    min-width: 130px;
     height: 30px;
     color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
+    /* font-weight: bold; */
     cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
     outline: none;
-    border-radius: 5px;
-    border: none;
-    background: #5D5D5D;
-    box-shadow: 0 5px #333333;
+    background-color: #5D5D5D;
+    border: 2px solid rgb(43, 43, 43);
+    border-radius: 20px;
+    min-height: 41px;
+    padding: 5px;
+    width: 100%;
+    margin-left: 10px;
 }
 .button:hover {
-  box-shadow: 0 4px #333333;
+  background-color: rgb(129, 129, 129);
 }
 .button:active {
-  box-shadow: 0 3px #333333;
   top: 3px;
 }

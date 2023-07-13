@@ -10,7 +10,7 @@ export default function PickAndBuy({ data }) {
     return (
         <div className='productobuttonAddToCart'>
             <PickAmountToBuy setAmount={setAmount} amount={amount}/>
-            <Button />
+            <Button content={'Agregar al Carrito'}/>
         </div>
     )
 }
