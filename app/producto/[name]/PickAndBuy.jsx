@@ -13,6 +13,7 @@ export default function PickAndBuy({ data }) {
     function buy (){
         addXToCart(data.name, amount)
         fireAlert(data.name , isMobile, amount)
+        setAmount(1)
     }
 
     return (
