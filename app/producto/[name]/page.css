@@ -123,3 +123,17 @@
         gap: 10px;
     }
 }
+
+
+@media only screen and (max-width: 500px) {
+    .productoarticle {
+        width: 90vw;
+        margin: auto;
+    }
+    .productoarticle * {
+        width: 100%;
+    }
+    .productosideInfo h4 {
+        text-align: start;
+    }
+}

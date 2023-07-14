@@ -42,7 +42,6 @@ export default function ProductCart({ data }) {
             </div>
           </div>
         <div className='cartbottomInfo'>
-          {console.log(data)}
           <PickAmount data={data && data} />
           <div className="cartsubTotalContainer">
             <p className="cartsubTotal">Subtotal: </p><p>${data.price * data.amount}</p>
