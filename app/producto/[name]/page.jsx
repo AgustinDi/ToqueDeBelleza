@@ -30,11 +30,11 @@ export default function producto({ params }) {
           <PickAndBuy data={product}/>
         </div>
       </div>
-      { product.howToUse || product.precaution 
+      { product.howToUse || product.precaution
       ?
       <div className='productocontainerMoreDescription'>
-        {product.howToUse ? (<div>modo de uso ❤️: <br/> {product.howToUse}</div>) : <div/>}
-        {product.precaution ? (<div>precauciones 🚧: <br/> {product.precaution}</div>) : <div/>}
+        {product.howToUse ? (<div>Modo de uso ❤️: <br/> {product.howToUse}</div>) : <div/>}
+        {product.precaution ? (<div>Precauciones 🚧: <br/> {product.precaution}</div>) : <div/>}
       </div>      
       : null}
     </article>
