@@ -35,7 +35,8 @@ export const fireAlert = function (name, isMobile, amount) {
         position: 'bottom-end',
         title: ``,
         showConfirmButton: false,
-        timer: 1200,
+        timer: 1800,
+        allowOutsideClick: false,
         html 
       })
 }
