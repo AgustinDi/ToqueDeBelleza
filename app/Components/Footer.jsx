@@ -9,12 +9,12 @@ export default function Footer () {
                 <p>
                     Contactanos:
                 </p>
-                    <a href='tel:3547598556' className='iconPlusText'>
+                    <a href='tel:3547667348' className='iconPlusText'>
                         <div className='containers'>
                             <Image alt={'telephone redirect'} src={'/telephone.png'} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                         </div>
                         <span>
-                            3547598556
+                            3547667348
                         </span>
                     </a>
                     <a href='https://goo.gl/maps/fyJAKU1shv8dYq3n8' className='iconPlusText'>
@@ -31,15 +31,15 @@ export default function Footer () {
                 <p>
                     Sigamos conectados:
                 </p>
-                    <a href='tel:3547598556' className='iconPlusText'>
+                    <a href='https://www.instagram.com/ttoquedebelleza/' target='_BLANK' className='iconPlusText'>
                         <div className='containers'>
                             <Image alt={'instagram'} src={'/instagramm.png'} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                         </div>
                         <span>
-                            Nuestro Instagram
+                            @ttoquedebelleza
                         </span>
                     </a>
-                    <a href='tel:3547598556' className='iconPlusText'>
+                    <a href='https://wa.me/5493547667348?text=Hola cande, tengo una consulta:' className='iconPlusText'>
                         <div className='containers'>
                             <Image alt={'whatsapp'} src={'/whatsapp.png'} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                         </div>
