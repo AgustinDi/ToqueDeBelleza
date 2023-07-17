@@ -31,10 +31,6 @@ export default function Navigation({ setIsSearching, isSearching }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isSearching, openMenu])
 
-    useEffect(()=>{
-        
-    },[])
-
     function setOverflow() {
         document.body.style.overflow = 'unset';
     }

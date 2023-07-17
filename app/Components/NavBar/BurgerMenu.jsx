@@ -29,7 +29,7 @@ export default function BurgerMenu({ links, setOpenMenu, openMenu }) {
       <div>
         <ul>  
           <li>
-            <a href='tel:3547598556' className='navBiconPlusText' onClick={()=>setOpenMenu(false)}>
+            <a href='https://www.instagram.com/ttoquedebelleza/' target='_blank' className='navBiconPlusText' onClick={()=>setOpenMenu(false)}>
                 <div className='navBcontainers'>
                     <Image alt={'instagram'} src={'/instagramm.png'} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                 </div>
@@ -37,7 +37,7 @@ export default function BurgerMenu({ links, setOpenMenu, openMenu }) {
             </a>  
           </li>
           <li>
-            <a href='tel:3547598556' className='navBiconPlusText' onClick={()=>setOpenMenu(false)}>
+            <a href='https://wa.me/5493547667348?text=Hola cande, tengo una consulta:' className='navBiconPlusText' onClick={()=>setOpenMenu(false)}>
                 <div className='navBcontainers'>
                     <Image alt={'whatsapp'} src={'/whatsapp.png'} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                 </div>
