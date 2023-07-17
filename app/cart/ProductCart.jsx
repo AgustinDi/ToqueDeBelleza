@@ -21,25 +21,25 @@ export default function ProductCart({ data }) {
         <div className='cartsideInfo'>
           <div className='carttopInfo'>
             <div className='carttitleInfo'>
-              <Link  href={`/producto/${data.name}`}>
-              <h3>
-                {data.name}
-              </h3>
-              </Link>
-              <h4>
-                {data.size} 
-              </h4>
-            </div>
+              <div>
+                <Link  href={`/producto/${data.name}`}>
+                <h3>
+                  {data.name}
+                </h3>
+                </Link>
+                <h4>
+                  {data.size} 
+                </h4>
+              </div>
             <div className='cartcategoryAndX'>
               <Link  href={`/productos/${data.category}`} className='cartCategoryP'>
               <p>
                 {data.category}  
               </p> 
               </Link>
-              <div>
-                <button onClick={()=> removeToCart(data.name)}>X</button>
-              </div>
             </div>
+            </div>
+                <button className='cartdeleteButton' onClick={()=> removeToCart(data.name)}>X</button>
           </div>
         <div className='cartbottomInfo'>
           <PickAmount data={data && data} />

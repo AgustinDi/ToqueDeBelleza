@@ -1,6 +1,5 @@
 .button {
     color: #fff;
-    /* font-weight: bold; */
     cursor: pointer;
     outline: none;
     background-color: #5D5D5D;
@@ -9,11 +8,12 @@
     min-height: 41px;
     padding: 5px;
     width: 100%;
-    margin-left: 10px;
 }
+
 .button:hover {
   background-color: rgb(129, 129, 129);
 }
+
 .button:active {
   top: 3px;
 }
