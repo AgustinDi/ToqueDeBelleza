@@ -8,12 +8,12 @@
 }
 
 .navBnav {
-    background-color: #0A0A0A;
+    background-color: var(--color-fifth);
     display: flex;
     padding: 10px 5%;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #686868;
+    border-bottom: 2px solid var(--color-fourth);
 }
 
 .navBul {
@@ -22,7 +22,7 @@
     list-style: none;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid white;
+    border: 1px solid var(--color-fourth);
     border-radius: 32px;
 }
 
@@ -65,8 +65,8 @@
     bottom: -8px;
     right: 23px;
 
-    color: green;
-    background-color: white;
+    color: var(--color-dot);
+    background-color: var(--color-primary);
     font-weight: 600;
 
     width: 20px;
@@ -104,7 +104,7 @@
 .navBderechosMenu {
     display: flex;
     font-size: 10px;
-    border-top: 1px solid #686868;
+    border-top: 1px solid var(--color-fourth);
     width: 100%;
     justify-content: center;
 }
@@ -147,14 +147,14 @@
         height: calc(100vh - 110px);
         top: 110px;
         right: -400px;
-        background-color: #0A0A0A;
-        border-top: 2px solid #686868;
+        background-color: var(--color-third);
+        border-top: 2px solid var(--color-fourth);
 
         transition: right 0.4s ease;
     }
 
     .navBBurgerMenuContainer ul {
-    list-style: none;
+        list-style: none;
     }
 
     .navBBurgerMenuContainer ul li {

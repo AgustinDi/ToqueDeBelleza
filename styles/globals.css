@@ -1,3 +1,13 @@
+:root {
+  --color-primary: #dedede;
+  --color-secondary: #ccc;
+  --color-third: #999;
+  --color-fourth: #666;
+  --color-fifth: #0a0a0a;
+  --color-dot: #111;
+  /* 0A0A0A or 111 */
+}
+
 html {
   min-height: 100%;
   position: relative;
@@ -6,13 +16,7 @@ html {
 body {
   margin: 0;
   margin-bottom: 300px;
-}
-
-:root {
-  --color-primary: #3c3c3c;
-  --color-secondary: #666;
-  --color-third: #666;
-  --color-fourth: #666;
+  background-color: var(--color-primary);
 }
 
 @media only screen and (max-width: 625px) {
@@ -33,17 +37,5 @@ body::-webkit-scrollbar {
 
 a {
   text-decoration: none;
+  color: inherit
 }
-
-/* @media (prefers-color-scheme: dark) { */
-  html {
-    color-scheme: dark;
-  }
-/* } */
-
-
-/* @media (prefers-color-scheme: light) {
-  html {
-    color-scheme: light;
-  }
-} */
