@@ -33,6 +33,21 @@
     align-items: center;
 }
 
+.cartbigcartContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 0 20px;
+    width: 100%;
+    border-top: 1px solid white;
+}
+
+.carttotalContainer {
+    display: flex; 
+    font-size: 22px;
+    justify-content: space-between;
+}
+
 .cartemptyCartContainer {
     width: 600px;
 }
@@ -74,6 +89,10 @@
 @media only screen and (max-width: 360px) {
     .cartemptyCartImageContainer {
         width: 90vw;
+    }
+
+    .cartbigcartContainer {
+        padding: 0 8px;
     }
     
     .cartemptyCartImageContainer img {

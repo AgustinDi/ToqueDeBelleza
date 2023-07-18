@@ -66,9 +66,9 @@ export default function Cart() {
                 <div className='cartcartContainer'>
                     {renderedCart.lenght === 0 ? <p>carrito vacio</p> : renderedCart.map(product => <ProductCart data={product} key={product.name}/>)}
                     {renderedCart.length !== 0 && 
-                    <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'end', padding: '0 20px', width: '100%', borderTop: '1px solid white'}}>
+                    <div className='cartbigcartContainer'>
                         <div style={{width: '100%'}}>
-                            <div style={{display: 'flex', fontSize: '22px', justifyContent: 'space-between'}}>
+                            <div className='carttotalContainer'>
                                 <p>    
                                     Total: 
                                 </p>
