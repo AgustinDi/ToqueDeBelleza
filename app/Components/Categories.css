@@ -9,15 +9,16 @@
     align-items: center;
     position: relative;
     width: 280px;
+    border-radius: 10px; /* cambiar en un futuro */
     aspect-ratio: 9/14;
 }
 
 .categoryTitle {
     position: relative;
-    color: black;
+    color: inherit;
     padding: 20px;
     font-size:  large;
-    background-color: grey;
+    background-color: var(--color-fourth);
     margin: 0px;
 }
 
