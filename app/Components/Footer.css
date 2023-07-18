@@ -1,14 +1,18 @@
 .footer {
     display: flex;
     flex-direction: column;
-    background-color: #121212;
+    background-color: var(--color-fifth);
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-top:  2px solid #ececec;
+    border-top:  2px solid var(--color-fourth);
 
     align-items: center;
     justify-content:space-between;
+}
+
+.footer * {
+    color: var(--color-primary)
 }
 
 .topFooter {
@@ -22,6 +26,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 0 30px;
+    border-top:  2px solid var(--color-fourth);
 }
 
 .contactUs {
@@ -48,6 +53,7 @@
     position: relative;
     min-width: 30px;
     min-height: 30px;
+    filter: invert(75%)
 }
 
 .contact {
@@ -81,5 +87,6 @@
     .stayContact {
         width: 100%;
         padding-top: 0;
+        padding-bottom: 10px;
     }
 }

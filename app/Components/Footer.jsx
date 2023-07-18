@@ -7,7 +7,7 @@ export default function Footer () {
             <div className='topFooter'>
             <div className='contactUs'>
                 <p>
-                    Contactanos:
+                    Contáctanos:
                 </p>
                     <a href='tel:3547667348' className='iconPlusText'>
                         <div className='containers'>
@@ -55,7 +55,7 @@ export default function Footer () {
                     Todos los derechos reservados ®
                 </h5> 
                 <h5>
-                    Desarrollado por <a href='https://www.linkedin.com/in/agustin-digiacinto/' target='_BLANK'>@Agustin Di giacinto</a>
+                    Desarrollado por <a href='https://www.linkedin.com/in/agustin-digiacinto/' target='_BLANK' style={{textDecoration: 'underline'}}>@Agustin Di giacinto</a> 🚀
                 </h5>
             </div>
         </footer>
