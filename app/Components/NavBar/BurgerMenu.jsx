@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
+import CopyClipboard from "./CopyClipboard";
 
 export default function BurgerMenu({ links, setOpenMenu, openMenu }) {
 
@@ -23,7 +24,7 @@ export default function BurgerMenu({ links, setOpenMenu, openMenu }) {
         )
         }
         <li>
-        <a href="#">Copiá nuestro CVU</a>
+          <CopyClipboard content={'nuestro alias!'} copy={'alias de cande:'} popUpInfo={'Copiado al portapapeles'}/>
         </li>
       </ul>
       <div>

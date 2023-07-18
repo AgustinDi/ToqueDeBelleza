@@ -24,7 +24,7 @@ export default function Categories() {
             code: "Ampolla emulsionante"
         },{
             name: "Shampoo y Acondicionadores",
-            code: "Shampoo y Acondicionador"
+            code: "Kit"
         },
     ]
 

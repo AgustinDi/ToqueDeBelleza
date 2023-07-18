@@ -31,9 +31,8 @@ export default function Page(){
                 {cards.map(value => <Card key={value.title} data={value}/>)}
             </div>
             <p className='bottomMessage'>
-                Si necesitás más información, no dudes en <a href='./'>dejarnos un mensaje</a>
+                Si necesitás más información, no dudes en <a href='https://wa.me/5493547667348?text=Hola cande, tengo una consulta:'>dejarnos un mensaje</a>
             </p>
-                {/* falta agregar el redirect a wtsp */}
         </div>
     )
 }
