@@ -1,9 +1,9 @@
 .button {
-    color: #fff;
+    color: inherit;
     cursor: pointer;
     outline: none;
-    background-color: #5D5D5D;
-    border: 2px solid rgb(43, 43, 43);
+    background-color: var(--color-third);
+    border: 2px solid var(--color-fourth);
     border-radius: 20px;
     min-height: 41px;
     padding: 5px;
@@ -11,7 +11,7 @@
 }
 
 .button:hover {
-  background-color: rgb(129, 129, 129);
+  background-color: var(--color-secondary);
 }
 
 .button:active {
