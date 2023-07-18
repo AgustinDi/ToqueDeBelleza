@@ -4,8 +4,8 @@
     align-items: center;
     min-height: 35px;
     max-width: 130px;
-    background-color: rgb(129, 129, 129);
-    border: 2px solid rgb(43, 43, 43);
+    background-color: var(--color-third);
+    border: 2px solid var(--color-fourth);
     border-radius: 20px;
     padding: 5px;
 }
