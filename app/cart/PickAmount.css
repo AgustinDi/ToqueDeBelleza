@@ -7,26 +7,26 @@
 .cartsetAmount p {
     margin: 0;
     min-width: 25px;
-    background-color: rgb(129, 129, 129);
-    border-top: 2px solid rgb(43, 43, 43);
-    border-bottom: 2px solid rgb(43, 43, 43);
+    background-color: var(--color-third);
+    border-top: 2px solid var(--color-fourth);
+    border-bottom: 2px solid var(--color-fourth);
 }
 
 .cartsetAmount button {
-    background-color: rgb(129, 129, 129);
+    background-color: var(--color-third);
     padding-top: 0;
     padding-bottom: 0;
     min-height: 25px;
 }
 
 .cartamountButtonLeft {
-    border: 2px solid rgb(43, 43, 43);
+    border: 2px solid var(--color-fourth);
     border-radius: 20px 0px 0px 20px;
     border-right: 0;
 }
 
 .cartamountButtonRight {
-    border: 2px solid rgb(43, 43, 43);
+    border: 2px solid var(--color-fourth);
     border-radius: 0px 20px 20px 0px;
     border-left: 0;
 }
