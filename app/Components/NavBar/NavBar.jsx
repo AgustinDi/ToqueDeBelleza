@@ -48,7 +48,7 @@ export default function NavBar(){
                 </Link>
                 <Navigation setIsSearching={setIsSearching} isSearching={isSearching}/>
             </nav>
-        <div className='navBsearcher' style={{position: 'absolute', overflowX: 'hidden', top: isSearching ? '110px' : '75px', zIndex: -1}}>
+        <div className='navBsearcher' style={{position: 'absolute', overflowX: 'hidden', top: isSearching ? '110px' : '65px', zIndex: -1}}>
             <Searcher searched={searched} isSearching={isSearching}/>
         </div>
         </header>
