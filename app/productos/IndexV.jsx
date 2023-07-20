@@ -1,14 +1,15 @@
 import Link from "next/link";
 
+import './IndexV.css';
 
 export default function IndexV({category, individual}) {
   return (
-        <h4>
-            <Link href={`/productos`}>Productos</Link>
+        <h4 className="indexVcontainer">
+            <Link className="indexVitem" href={`/productos`}>Productos</Link>
              {category && ' > '} 
-             {category && <Link href={`/productos/${category}`}>{category}</Link>}
+             {category && <Link className="indexVitem" href={`/productos/${category}`}>{category}</Link>}
              {individual && ' > '} 
-             {individual && <Link href={`/producto/${individual}`}>{individual}</Link>}
+             {individual && <Link className="indexVitem" href={`/producto/${individual}`}>{individual}</Link>}
         </h4>
   )
 }
