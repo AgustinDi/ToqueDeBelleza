@@ -6,21 +6,28 @@ import AddToCart from "./AddToCart.jsx";
 
 export default function ProductCard({value}){
     return (
-        <div key={value.name} className='card'>
+        <div key={value.name} className='prccard'>
             <Link href={'/producto/' + value.name}>
-            <div className='imageContainer'>
+            <div className='prcimageContainer'>
                 <Image src={value.image || loadingImage} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill alt={value.name}/>
             </div>
-            <div className='title'>
+            <div className='prctitle'>
                 <h3>
                     {value.name} 
                 </h3>
-                <h4>
-                    {value.size} - {value.price + '$'}
-                </h4>
+                <div className="prcsubtitle">
+                    <h4>
+                        {value.size} 
+                    </h4>
+                    <h4>
+                        {value.price + '$'}
+                    </h4>
+                </div>
             </div>
             </Link>
-            <AddToCart url={value.image} value={value}/>
+            <div className="prcbuttonContainer">
+                <AddToCart url={value.image} value={value}/>
+            </div>
         </div> 
     )
 }

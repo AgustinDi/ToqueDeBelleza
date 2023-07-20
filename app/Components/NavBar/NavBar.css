@@ -20,6 +20,7 @@
     position: relative;
     height: 90px;
     width: 180px;
+    /* transform: scale(1.2); */
 }
 
 .navBul {
