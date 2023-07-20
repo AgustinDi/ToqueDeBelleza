@@ -27,6 +27,7 @@
 
 .navBnavbarText {
     margin: 0 10px;
+    color: var(--color-primary);
 }
 
 .navBsearcher {
@@ -73,7 +74,7 @@
     z-index: 10;
     
     border-radius: 100%;
-    border: 1px solid black
+    border: 1px solid var(--color-fifth)
 }
 
 .navBcartImage{
