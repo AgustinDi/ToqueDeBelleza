@@ -8,10 +8,11 @@
     min-height: 41px;
     padding: 5px;
     width: 100%;
+    transition: background-color 0.2s ease-in;
 }
 
 .button:hover {
-  background-color: var(--color-secondary);
+  background-color: var(--color-pinky);
 }
 
 .button:active {
