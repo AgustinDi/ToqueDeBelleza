@@ -20,7 +20,7 @@ export default function producto({ params }) {
           <div className='productotitleProduct'>
             <h2>{product.name}</h2>
             <Link href={`/productos/${product.category}`}>
-              <h3>{product.category}</h3>
+              <h3 style={{color: 'var(--color-pinky)'}}>{product.category}</h3>
             </Link>
           </div> 
           <h4>{product.size} - {product.price}$</h4>
