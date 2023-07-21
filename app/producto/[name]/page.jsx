@@ -4,6 +4,7 @@ import productsJson from '../../productos/Products.json';
 import IndexV from '@/app/productos/IndexV';
 import Link from 'next/link';
 import PickAndBuy from './PickAndBuy';
+import ShowImage from './ShowImage';
 
 export default function producto({ params }) {
   const nameOfProduct = decodeURI(params.name)
@@ -14,7 +15,7 @@ export default function producto({ params }) {
       <IndexV category={product.category} individual={nameOfProduct}/>
       <div className='productocontainerPoduct'>
         <div className='productocontainerImage'>
-          <Image fill src={product.image} alt={product.name} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+          <ShowImage product={product}/>
         </div> 
         <div className='productosideInfo'>
           <div className='productotitleProduct'>
