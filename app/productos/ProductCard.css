@@ -42,6 +42,10 @@
     padding: 0px 10px 5px;
 }
 
+.prcsubtitle * {
+    font-weight: 500;
+}
+
 .prcbuttonContainer {
     position: relative;
 }
