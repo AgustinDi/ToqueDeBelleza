@@ -45,7 +45,7 @@ export default function NavBar(){
             <nav className='navBnav'>
                 <Link href={'/'}>
                     <div className='navBlogo'>
-                        <Image src={"/LogoToquedeBelleza.svg"} quality={100} fill alt={'logo'} priority={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+                        <Image src={"/LogoToquedeBellezaPink.svg"} quality={100} fill alt={'logo'} priority={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                     </div>
                 </Link>
                 <Navigation setIsSearching={setIsSearching} isSearching={isSearching}/>
