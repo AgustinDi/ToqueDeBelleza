@@ -1,5 +1,6 @@
 import productsJson from '../productos/Products.json';
-import Swal from "sweetalert2";
+import Toastify from 'toastify-js';
+import "toastify-js/src/toastify.css";
 
 export const removeAccents = function (str) {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -22,21 +23,31 @@ export const getDetailProduct = function (name) {
     return productsJson.data.filter(product=>product.name === name)[0];
 }
 
-export const fireAlert = function (name, isMobile, amount) {
-    const html = amount 
-    ? `
-    ${isMobile ? '<h5>' : '<h3>'}Se han agregado x ${amount} ${name} al carrito!${isMobile ? '</h5>' : '</h3>'}
-    ` 
-    : `
-    ${isMobile ? '<h5>' : '<h3>'}Se a agregado ${name} al carrito!${isMobile ? '</h5>' : '</h3>'}
-    `
-    
-    Swal.fire({
-        position: 'bottom-end',
-        title: ``,
-        showConfirmButton: false,
-        timer: 1800,
-        allowOutsideClick: false,
-        html 
-      })
+export const fireAlert = function ({name, amount, cb, urlImage}) {
+    const text = amount 
+    ? ` Se han agregado x ${amount} ${name} al carrito!` 
+    : ` Se a agregado un ${name} al carrito!`
+
+    Toastify({
+        text,
+        avatar: urlImage,
+        duration: 2300,
+        destination: "/cart",
+        gravity: "bottom",
+        position: "right",
+        stopOnFocus: true,
+        style: {
+            color: 'var(--color-primary)',
+            background: 'var(--color-pinky)',
+            padding: '14px',
+            borderRadius: '7px',
+            fontSize: 'medium',
+            // border: '2px solid var(--color-fourth)'
+        }, 
+        offset: {
+          x: 15,
+          y: 10
+        },
+        onClick: function(){cb && cb()}
+      }).showToast();
 }

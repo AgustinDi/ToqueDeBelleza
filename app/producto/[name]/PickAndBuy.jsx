@@ -12,7 +12,8 @@ export default function PickAndBuy({ data }) {
 
     function buy (){
         addXToCart(data.name, amount)
-        fireAlert(data.name , isMobile, amount)
+        fireAlert({name: data.name,amount,urlImage: data.image})
+        console.log(data)
         setAmount(1)
     }
 
