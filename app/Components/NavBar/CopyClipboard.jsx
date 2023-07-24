@@ -1,21 +1,11 @@
 'use client'
 
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import Swal from 'sweetalert2';
+import { fireAlert } from '@/app/helper/functions';
 
 export default function CopyClipboard({ content, copy, popUpInfo }) {
-    function fire(){
-        Swal.fire({
-            position: 'bottom-end',
-            title: '',
-            showConfirmButton: false,
-            timer: 800,
-            html: `<p>${popUpInfo}</p>`
-        })
-    }
-
     return (
-        <CopyToClipboard text={copy} onCopy={fire} style={{cursor: 'pointers'}}>
+        <CopyToClipboard text={copy} onCopy={()=>fireAlert(popUpInfo)} style={{cursor: 'pointer'}}>
             <a>{content}</a>
         </CopyToClipboard>
     )

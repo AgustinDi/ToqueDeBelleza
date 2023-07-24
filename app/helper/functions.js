@@ -23,7 +23,7 @@ export const getDetailProduct = function (name) {
     return productsJson.data.filter(product=>product.name === name)[0];
 }
 
-export const fireAlert = function ({name, amount, cb, urlImage}) {
+export const fireNotification = function ({name, amount, cb, urlImage}) {
     const text = amount 
     ? ` Se han agregado x ${amount} ${name} al carrito!` 
     : ` Se a agregado un ${name} al carrito!`
@@ -50,4 +50,28 @@ export const fireAlert = function ({name, amount, cb, urlImage}) {
         },
         onClick: function(){cb && cb()}
       }).showToast();
+}
+
+export const fireAlert = function (text) {
+    Toastify({
+        text,
+        duration: 1000,
+        gravity: "top",
+        position: "center",
+        stopOnFocus: false,
+        style: {
+            color: 'var(--color-primary)',
+            background: 'var(--color-fifth)',
+            padding: '5px',
+            borderRadius: '2px',
+            fontSize: 'medium',
+            boxShadow: 'none'
+            // border: '2px solid var(--color-fourth)'
+        }, 
+        offset: {
+          x: 15,
+          y: 10
+        }
+      }).showToast();
+
 }
