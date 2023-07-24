@@ -1,6 +1,7 @@
 import productsJson from '../productos/Products.json';
 import Toastify from 'toastify-js';
 import "toastify-js/src/toastify.css";
+import './functions.css';
 
 export const removeAccents = function (str) {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -30,18 +31,20 @@ export const fireNotification = function ({name, amount, cb, urlImage}) {
 
     Toastify({
         text,
+        className: 'popUpNotification',
         avatar: urlImage,
-        duration: 2300,
+        duration: 2000,
         destination: "/cart",
         gravity: "bottom",
         position: "right",
         stopOnFocus: true,
+        close: true,
         style: {
             color: 'var(--color-primary)',
             background: 'var(--color-pinky)',
             padding: '14px',
             borderRadius: '7px',
-            fontSize: 'medium',
+            fontSize: 'medium'
             // border: '2px solid var(--color-fourth)'
         }, 
         offset: {
