@@ -13,7 +13,7 @@ export default function SideMenuCategory({ params }) {
     const { isMobile } = UseMyContext();
 
     const xActive = {
-        transform: 'translate(0px, 0px)'
+        transform: 'translate(-10px, 0px)'
     }
     const xInactive = {
         transform: 'translate(-100px, 0px)'

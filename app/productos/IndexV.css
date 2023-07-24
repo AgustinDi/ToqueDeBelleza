@@ -1,3 +1,28 @@
 .indexVitem {
     color: var(--color-pinky);
 }
+
+/* .indexVitemProduct::after {
+    content: ' > ';
+    color: var(--color-fifth);
+} */
+
+.indexVcontainer {
+    line-height: 26px;
+    margin-bottom: 10px
+}
+
+.indexVBr {
+    display: none;
+}
+
+.indexVitemProduct {
+    display: inline;
+    text-align:start;
+}
+
+@media only screen and (max-width: 768px) {
+    .indexVBr {
+        display: inherit;
+    }
+}

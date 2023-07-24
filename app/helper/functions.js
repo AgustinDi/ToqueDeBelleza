@@ -1,7 +1,10 @@
+'use client'
+
 import productsJson from '../productos/Products.json';
 import Toastify from 'toastify-js';
 import "toastify-js/src/toastify.css";
 import './functions.css';
+import { UseMyContext } from '../Context/Context';
 
 export const removeAccents = function (str) {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -76,5 +79,4 @@ export const fireAlert = function (text) {
           y: 10
         }
       }).showToast();
-
 }
