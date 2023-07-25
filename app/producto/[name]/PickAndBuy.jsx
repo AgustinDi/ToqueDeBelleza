@@ -4,7 +4,7 @@ import Button from "@/app/Components/Button";
 import PickAmountToBuy from "@/app/Components/PickAmountToBuy.jsx";
 import { useState } from "react";
 import { UseMyContext } from "@/app/Context/Context";
-import { fireAlert } from "@/app/helper/functions";
+import { fireNotification } from "@/app/helper/functions";
 
 export default function PickAndBuy({ data }) {
     const { addXToCart, isMobile } = UseMyContext();
@@ -12,7 +12,8 @@ export default function PickAndBuy({ data }) {
 
     function buy (){
         addXToCart(data.name, amount)
-        fireAlert(data.name , isMobile, amount)
+        fireNotification({name: data.name,amount,urlImage: data.image})
+        console.log(data)
         setAmount(1)
     }
 

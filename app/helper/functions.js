@@ -1,5 +1,10 @@
+'use client'
+
 import productsJson from '../productos/Products.json';
-import Swal from "sweetalert2";
+import Toastify from 'toastify-js';
+import "toastify-js/src/toastify.css";
+import './functions.css';
+import { UseMyContext } from '../Context/Context';
 
 export const removeAccents = function (str) {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -22,21 +27,56 @@ export const getDetailProduct = function (name) {
     return productsJson.data.filter(product=>product.name === name)[0];
 }
 
-export const fireAlert = function (name, isMobile, amount) {
-    const html = amount 
-    ? `
-    ${isMobile ? '<h5>' : '<h3>'}Se han agregado x ${amount} ${name} al carrito!${isMobile ? '</h5>' : '</h3>'}
-    ` 
-    : `
-    ${isMobile ? '<h5>' : '<h3>'}Se a agregado ${name} al carrito!${isMobile ? '</h5>' : '</h3>'}
-    `
-    
-    Swal.fire({
-        position: 'bottom-end',
-        title: ``,
-        showConfirmButton: false,
-        timer: 1800,
-        allowOutsideClick: false,
-        html 
-      })
+export const fireNotification = function ({name, amount, cb, urlImage}) {
+    const text = amount 
+    ? ` Se han agregado x ${amount} ${name} al carrito!` 
+    : ` Se a agregado un ${name} al carrito!`
+
+    Toastify({
+        text,
+        className: 'popUpNotification',
+        avatar: urlImage,
+        duration: 2000,
+        destination: "/cart",
+        gravity: "bottom",
+        position: "right",
+        stopOnFocus: true,
+        close: true,
+        style: {
+            color: 'var(--color-primary)',
+            background: 'var(--color-pinky)',
+            padding: '14px',
+            borderRadius: '7px',
+            fontSize: 'medium'
+            // border: '2px solid var(--color-fourth)'
+        }, 
+        offset: {
+          x: 15,
+          y: 10
+        },
+        onClick: function(){cb && cb()}
+      }).showToast();
+}
+
+export const fireAlert = function (text) {
+    Toastify({
+        text,
+        duration: 1000,
+        gravity: "top",
+        position: "center",
+        stopOnFocus: false,
+        style: {
+            color: 'var(--color-primary)',
+            background: 'var(--color-fifth)',
+            padding: '5px',
+            borderRadius: '2px',
+            fontSize: 'medium',
+            boxShadow: 'none'
+            // border: '2px solid var(--color-fourth)'
+        }, 
+        offset: {
+          x: 15,
+          y: 10
+        }
+      }).showToast();
 }

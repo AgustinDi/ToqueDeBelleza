@@ -23,10 +23,12 @@
 /* mobile */
 
 .sidcontainerMobileSideMenu {
-    position: fixed;
+    position: absolute;
     height: max-content;
     z-index: 10;
-    margin-top: 50px;
+    top: 15px;
+    left: 20px;
+    color: var(--color-primary);
 }
 
 .sidmobileSideMenu {
@@ -35,7 +37,7 @@
     cursor: pointer;
 
 
-    background-color: black;
+    background-color: var(--color-fifth);
     padding-left: 50px;
     border-radius: 10px;
 }
@@ -53,8 +55,9 @@
 }
 
 .sidtitleMobileSideMenu button {
+    color: var(--color-primary);
     padding-left: 120px;
-    background-color: black;
+    background-color: var(--color-fifth);
     border: none;
     height: 30px;
     position: absolute;
@@ -90,11 +93,17 @@
         top: 26px;
         left: -100px;
         padding: 5px 30px 5px 100px;
-        background-color: black;
+        background-color: var(--color-fifth);
         margin: 2px;
 
         width: max-content;
         transition: transform .3s ease;
         border-radius:  0 10px 10px 0;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .sidcontainerMobileSideMenu {
+    left: 5px;
     }
 }

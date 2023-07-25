@@ -1,0 +1,23 @@
+@media only screen and (max-width: 500px) {
+    .popUpNotification {
+        transform: none !important;
+    }
+}
+
+.popUpNotification {
+    display: flex;
+    align-items: center;
+    text-align: end;
+    max-width: 96vw;
+    gap: 10px;
+    margin: auto;
+}
+
+.toastify-avatar {
+    aspect-ratio: 1/1;
+    width: 50px;
+    height: 100%;
+    text-align: start;
+    margin-right: auto;
+    margin-left: 0px;
+}

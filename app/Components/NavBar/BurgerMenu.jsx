@@ -24,7 +24,7 @@ export default function BurgerMenu({ links, setOpenMenu, openMenu }) {
         )
         }
         <li>
-          <CopyClipboard content={'nuestro alias!'} copy={'alias de cande:'} popUpInfo={'Copiado al portapapeles'}/>
+          <CopyClipboard content={'Nuestro alias!'} copy={'alias de cande:'} popUpInfo={'Copiado al Portapapeles'}/>
         </li>
       </ul>
       <div>

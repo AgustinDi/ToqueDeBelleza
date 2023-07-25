@@ -17,7 +17,6 @@ export default function Cart() {
     const [loading, setLoading] = useState(true)
     const router = useRouter()
 
-  
     
     function getCart(){
         let products = [];
