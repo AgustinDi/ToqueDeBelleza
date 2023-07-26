@@ -28,7 +28,6 @@ export default function ShowImages({ product }) {
     return (
         <>
             <div className="f-carousel" ref={container}>
-                {console.log(product.images)}
                     {product.images.map((src, index)=> 
                         <a key={index} data-src={src} data-fancybox={`gallery`} data-caption={`${product.name} - ${index + 1}`} className="f-carousel__slide">
                             <Image fill src={src} alt={product.name} quality={100} className='f-carousel__imageContainer'  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
