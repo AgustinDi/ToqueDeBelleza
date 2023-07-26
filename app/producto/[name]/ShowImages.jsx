@@ -1,19 +1,40 @@
 'use client'
 
 import Image from "next/image";
-// import Carousel from "@/app/Components/Carousel";
-import { Fancybox } from "@fancyapps/ui";
+import { Fancybox, Carousel } from "@fancyapps/ui";
+import { useRef, useEffect } from "react";
+import "@fancyapps/ui/dist/carousel/carousel.css";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import './ShowImages.css'
 
 export default function ShowImages({ product }) {
+    const container = useRef(null)
 
-    Fancybox.bind(`[data-fancybox]="gallery-${product.name}"`, {
+    Fancybox.bind(`[data-fancybox]`, {
+        Toolbar: {
+          display: {
+            left: ["infobar"],
+            middle: [],
+            right: ["close"],
+          },
+        },
     });
 
+    useEffect(()=>{
+      const options = { };
+      const result = new Carousel(container.current, options)
+    },[])
+
     return (
-        <a data-src={product.image} data-fancybox={`gallery-${product.name}`} data-caption={product.name}>
-            <Image fill src={product.images[0]} alt={product.name} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
-            {/* complete later...*/}
-        </a> 
-  )
+        <>
+            <div className="f-carousel" ref={container}>
+                {console.log(product.images)}
+                    {product.images.map((src, index)=> 
+                        <a key={index} data-src={src} data-fancybox={`gallery`} data-caption={`${product.name} - ${index + 1}`} className="f-carousel__slide">
+                            <Image fill src={src} alt={product.name} quality={100} className='f-carousel__imageContainer'  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+                        </a>
+                    )}
+            </div>
+        </>
+    )
 }

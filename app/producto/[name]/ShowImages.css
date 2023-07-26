@@ -1,0 +1,62 @@
+.f-carousel {
+     margin-bottom: 50px;
+     height: 100%;
+}
+
+.f-button {
+     color: var(--color-pinky);
+     background-color: rgb(255, 255, 255, 0.2);
+     border-radius: 50%;
+     padding: 10px;
+     margin: 20px;
+}
+
+.f-button:hover {
+     background-color: rgb(255, 255, 255, 0.5) !important;
+     color: var(--color-pinky) !important;
+}
+
+.f-carousel__slide {
+     height: 100%;
+}
+
+.f-carousel__imageContainer {
+     object-fit: cover;
+}
+
+
+.f-carousel__dots li {
+     width: min-content !important;
+}
+
+.is-next {
+     border-radius: 20px 0px 0px 20px;
+     margin: 0;
+     right: 0 !important;
+}
+
+.is-prev {
+    border-radius: 0px 20px 20px 0px;
+    margin: 0;
+    left: 0 !important;
+}
+
+.f-button {
+    width: 30px;
+    height: 30px;
+}
+
+
+@media only screen and (max-width: 740px) {
+     .f-carousel__slide {
+          
+     }
+}
+
+
+@media only screen and (max-width: 450px) {
+     .f-button {
+         width: 26px;
+         height: 26px;
+     }
+}
