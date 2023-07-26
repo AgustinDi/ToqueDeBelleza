@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { UseMyContext } from "@/app/Context/Context";
 import Burger from "./Burger";
 import BurgerMenu from "./BurgerMenu";
+import { usePathname, useSearchParams } from "next/navigation";
 
 const links = [
     {
@@ -22,6 +23,8 @@ const links = [
 export default function Navigation({ setIsSearching, isSearching }) {
     const [ openMenu, setOpenMenu ] = useState(false)
     const { isMobile } = UseMyContext()
+    const searchParams = useSearchParams()
+    const pathnmae = usePathname()
     
     useEffect(()=>{
         if(isSearching && openMenu) {
@@ -30,6 +33,10 @@ export default function Navigation({ setIsSearching, isSearching }) {
         }
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isSearching, openMenu])
+
+    useEffect(()=>{
+        setOpenMenu(false)
+    },[pathnmae, searchParams])
 
     function setOverflow() {
         document.body.style.overflow = 'unset';
