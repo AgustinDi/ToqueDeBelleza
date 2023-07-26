@@ -6,6 +6,10 @@
     padding-top: 20px;
 }
 
+.comprarPinky {
+    color: var(--color-pinky);
+}
+
 /* complete later */
 
 .dataCard {

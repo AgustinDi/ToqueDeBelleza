@@ -25,13 +25,13 @@ export default function Page(){
         <div>
             <h1 style={{paddingTop: '10px'}}>¿Cómo comprar?</h1>
                 <h4 style={{paddingTop: '10px', margin: '1rem 10px'}}>
-                    En <a href="./">toque de belleza</a> Realizar una compra es muy simple, sigue estos pasos:
+                    En <a className='comprarPinky' href="./">toque de belleza</a> Realizar una compra es muy simple, sigue estos pasos:
                 </h4>
             <div className='cardsContainer'>
                 {cards.map(value => <Card key={value.title} data={value}/>)}
             </div>
             <p className='bottomMessage'>
-                Si necesitás más información, no dudes en <a href='https://wa.me/5493547667348?text=Hola cande, tengo una consulta:'>dejarnos un mensaje</a>
+                Si necesitás más información, no dudes en <a className='comprarPinky' href='https://wa.me/5493547667348?text=Hola cande, tengo una consulta:'>dejarnos un mensaje</a>
             </p>
         </div>
     )
