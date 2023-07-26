@@ -5,9 +5,34 @@ import Image from "next/image";
 import { UseMyContext } from "../Context/Context"
 import Link from "next/link";
 import PickAmount from "./PickAmount.jsx";
+import Swal from "sweetalert2";
 
 export default function ProductCart({ data }) {
-  const { removeToCart } = UseMyContext();
+  const { removeToCart, minusToCart } = UseMyContext();
+
+  function verifyToDeleteAmount(destroy){
+    const {name, amount} = data;
+    if(amount <= 1 || destroy) {
+    Swal.fire({
+      title: '¿Estás seguro que quieres eliminar este producto?',
+      showConfirmButton: true,
+      showCancelButton: true,
+      confirmButtonText: 'Si quiero!',
+      cancelButtonText: 'No, gracias',
+
+      buttonsStyling: true,
+      customClass: {
+        confirmButton: 'cartbtn cartbtn-success',
+        denyButton: 'cartbtn cartbtn-danger'
+      },
+    }).then((result) => {
+      if (!result.isConfirmed) return
+      removeToCart(name)
+    })
+    } else { 
+      minusToCart(name)
+    }
+  }
 
     return (
     <div className='cartproductCart'>
@@ -39,10 +64,10 @@ export default function ProductCart({ data }) {
               </Link>
             </div>
             </div>
-                <button className='cartdeleteButton' onClick={()=> removeToCart(data.name)}>X</button>
+                <button className='cartdeleteButton' onClick={()=>verifyToDeleteAmount(true)}>X</button>
           </div>
         <div className='cartbottomInfo'>
-          <PickAmount data={data && data} />
+          <PickAmount data={data && data} deleteAmount={verifyToDeleteAmount} />
           <div className="cartsubTotalContainer">
             <p className="cartsubTotal">Subtotal: </p><p>${data.price * data.amount}</p>
           </div>
