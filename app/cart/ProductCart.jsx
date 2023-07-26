@@ -14,7 +14,7 @@ export default function ProductCart({ data }) {
       <div>
         <Link  href={`/producto/${data.name}`} >
           <div className='cartimageContainer'>
-            <Image src={data.image} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={data.name}/>
+            <Image src={data.images[0]} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={data.name}/>
           </div>
         </Link>
       </div>

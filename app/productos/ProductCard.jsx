@@ -9,7 +9,7 @@ export default function ProductCard({value}){
         <div key={value.name} className='prccard'>
             <Link href={'/producto/' + value.name}>
             <div className='prcimageContainer'>
-                <Image src={value.image || loadingImage} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill alt={value.name}/>
+                <Image src={value.images[0] || loadingImage} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill alt={value.name}/>
             </div>
             <div className='prctitle'>
                 <h3>
@@ -26,7 +26,7 @@ export default function ProductCard({value}){
             </div>
             </Link>
             <div className="prcbuttonContainer">
-                <AddToCart url={value.image} value={value}/>
+                <AddToCart value={value}/>
             </div>
         </div> 
     )

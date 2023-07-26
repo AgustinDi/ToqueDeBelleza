@@ -9,7 +9,7 @@
             "howToUse": "Lavar el cabello con shampoo neutro, luego aplicar mecha por mecha, dejar reposar de 20min a 40min con gorro térmico, enjuagar, brushinar y opcional planchar.",
             "precaution": "",
             "aplication": "",
-            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885533/Toque%20de%20Belleza/20230316_001456_6_11zon_w1glcq.jpg"
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885533/Toque%20de%20Belleza/20230316_001456_6_11zon_w1glcq.jpg"]
         },
         {
             "name": "Diamond",
@@ -20,7 +20,7 @@
             "howToUse": "Lavar el cabello 2 veces con shampoo de uso diario, secar con toalla sin dejar agua aplicar el producto mecha por mecha sin tocar raiz, dejar actuar de 5min a 10min, luego procedemos al secado y planchado, ambos procesos hacerlos dividiendo en sectores ordenadamente hasta secar y planchar al %100. ",
             "precaution": "",
             "aplication": "",
-            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885535/Toque%20de%20Belleza/20230316_000542_4_11zon_iry82m.jpg"
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885535/Toque%20de%20Belleza/20230316_000542_4_11zon_iry82m.jpg"]
         },
         {
             "name": "Hialuronic",
@@ -31,7 +31,7 @@
             "howToUse": "Diluir contenido en dos partes de agua tibia, hasta formar una crema, se aplica sobre cabello humedo, dejar actuar unos minutos y proceder al enjuage. Finalizar con secador.",
             "precaution": "Diluir contenido en dos partes de agua tibia, hasta formar una crema, se aplica sobre cabello humedo, dejar actuar unos minutos y proceder al enjuage. Finalizar.",
             "aplication": "",
-            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885538/Toque%20de%20Belleza/20230316_004716_15_11zon_lhit7p.jpg"
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885538/Toque%20de%20Belleza/20230316_004716_15_11zon_lhit7p.jpg"]
         },
         {
             "name": "Blue Protector",
@@ -42,7 +42,7 @@
             "howToUse": "Atomizar sobre el cabello humedo o seco y proceder al secado o planchado del mismo.",
             "precaution": "",
             "aplication": "",
-            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885528/Toque%20de%20Belleza/20230315_234612_1_11zon_ea9pre.jpg"
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885528/Toque%20de%20Belleza/20230315_234612_1_11zon_ea9pre.jpg"]
         },
         {
             "name": "El rulo Perfecto",
@@ -53,7 +53,7 @@
             "howToUse": "Pulverizar en largos *****, en cabello limpio, húmedo o seco, luego proceder al peinado",
             "precaution": "",
             "aplication": "",
-            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885528/Toque%20de%20Belleza/20230315_235534_2_11zon_th8i6a.jpg"
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885528/Toque%20de%20Belleza/20230315_235534_2_11zon_th8i6a.jpg"]
         },
         {
             "name": "Cherry Protector",
@@ -64,7 +64,7 @@
             "howToUse": "Pulverizar sobre el cabello limpio y proceder al secado o planchado.",
             "precaution": "",
             "aplication": "",
-            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885528/Toque%20de%20Belleza/20230315_235815_3_11zon_baqzhe.jpg"
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885528/Toque%20de%20Belleza/20230315_235815_3_11zon_baqzhe.jpg"]
         },
         {
             "name": "Brillo de Frezas",
@@ -75,7 +75,7 @@
             "howToUse": "Lavar el cabello con shampoo neutro, luego aplicar mecha por mecha, dejar reposar de 20min a 40min con gorro térmico, enjuagar, brushinar y opcional planchar.",
             "precaution": "",
             "aplication": "",
-            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885538/Toque%20de%20Belleza/20230316_001225_5_11zon_mdqncd.jpg"
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885538/Toque%20de%20Belleza/20230316_001225_5_11zon_mdqncd.jpg"]
         },
         {
             "name": "Argán",
@@ -86,7 +86,7 @@
             "howToUse": "Lavar el cabello con shampoo neutro, luego aplicar mecha por mecha, dejar reposar de 20min a 40min con gorro térmico, enjuagar, brushinar y opcional planchar.",
             "precaution": "",
             "aplication": "",
-            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885530/Toque%20de%20Belleza/20230316_002023_7_11zon_bgi8xd.jpg"
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885530/Toque%20de%20Belleza/20230316_002023_7_11zon_bgi8xd.jpg"]
         },
         {
             "name": "Lenien",
@@ -97,7 +97,7 @@
             "howToUse": "Lavar el cabello con shampoo neutro, luego aplicar mecha por mecha, dejar reposar de 20min a 40min con gorro térmico, enjuagar, brushinar y opcional planchar.",
             "precaution": "",
             "aplication": "",
-            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885529/Toque%20de%20Belleza/20230316_002646_8_11zon_nwwqhe.jpg"
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885529/Toque%20de%20Belleza/20230316_002646_8_11zon_nwwqhe.jpg"]
         },
         {
             "name": "Shampoo y Acondicionador de Biotina",
@@ -108,7 +108,7 @@
             "howToUse": "",
             "precaution": "",
             "aplication": "",
-            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885531/Toque%20de%20Belleza/20230316_003028_9_11zon_ryb6ii.jpg"
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885531/Toque%20de%20Belleza/20230316_003028_9_11zon_ryb6ii.jpg"]
         },
         {
             "name": "Shampoo y Acondicionador Anticaida",
@@ -119,7 +119,7 @@
             "howToUse": "",
             "precaution": "",
             "aplication": "",
-            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885532/Toque%20de%20Belleza/20230316_003312_10_11zon_xobnvf.jpg"
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885532/Toque%20de%20Belleza/20230316_003312_10_11zon_xobnvf.jpg"]
         },
         {
             "name": "Shampoo y Acondicionador Argán",
@@ -130,7 +130,7 @@
             "howToUse": "",
             "precaution": "",
             "aplication": "",
-            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885533/Toque%20de%20Belleza/20230316_003602_11_11zon_ppqboh.jpg"
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885533/Toque%20de%20Belleza/20230316_003602_11_11zon_ppqboh.jpg"]
         },
         {
             "name": "Oleo reparador",
@@ -141,7 +141,7 @@
             "howToUse": "Utilizar sobre el cabello limpio en puntas o de media puntas.",
             "precaution": "",
             "aplication": "Aplicar en las puntas del cabello",
-            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885535/Toque%20de%20Belleza/20230316_003848_12_11zon_dwnqar.jpg"
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885535/Toque%20de%20Belleza/20230316_003848_12_11zon_dwnqar.jpg"]
         },
         {
             "name": "Bye Frizz",
@@ -152,7 +152,7 @@
             "howToUse": "Diluir contenido en dos partes de agua tibia, hasta formar una crema, se aplica sobre cabello humedo, dejar actuar unos minutos y proceder al enjuage. Finalizar con secador.",
             "precaution": "",
             "aplication": "",
-            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885536/Toque%20de%20Belleza/20230316_004315_13_11zon_lcjbte.jpg"
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885536/Toque%20de%20Belleza/20230316_004315_13_11zon_lcjbte.jpg"]
         },
         {
             "name": "Keratin",
@@ -163,7 +163,7 @@
             "howToUse": "Diluir contenido en dos partes de agua tibia, hasta formar una crema, se aplica sobre cabello humedo, dejar actuar unos minutos y proceder al enjuage. Finalizar con secador.",
             "precaution": "",
             "aplication": "",
-            "image": "https://res.cloudinary.com/agustindi/image/upload/v1684885539/Toque%20de%20Belleza/20230316_004445_14_11zon_vz8gxk.jpg"
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885539/Toque%20de%20Belleza/20230316_004445_14_11zon_vz8gxk.jpg"]
         }
     ]
 }

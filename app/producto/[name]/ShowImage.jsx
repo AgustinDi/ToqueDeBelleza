@@ -11,7 +11,8 @@ export default function ShowImage({ product }) {
 
     return (
         <a data-src={product.image} data-fancybox='gallery' data-caption={product.name}>
-            <Image fill src={product.image} alt={product.name} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
-        </a>
+            <Image fill src={product.images[0]} alt={product.name} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+            {/* complete later...*/}
+        </a> 
   )
 }

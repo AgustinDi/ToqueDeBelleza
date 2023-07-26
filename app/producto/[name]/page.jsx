@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import './page.css';
 import productsJson from '../../productos/Products.json';
 import IndexV from '@/app/productos/IndexV';
@@ -15,7 +14,7 @@ export default function producto({ params }) {
       <IndexV category={product.category} individual={nameOfProduct}/>
       <div className='productocontainerPoduct'>
         <div className='productocontainerImage'>
-          <ShowImage product={product}/>
+          <ShowImage product={product}/>  {/* pasar O recibir images y crear la gallery del producto. image */}
         </div> 
         <div className='productosideInfo'>
           <div className='productotitleProduct'>

@@ -12,7 +12,7 @@ export default function PickAndBuy({ data }) {
 
     function buy (){
         addXToCart(data.name, amount)
-        fireNotification({name: data.name,amount,urlImage: data.image})
+        fireNotification({name: data.name,amount,urlImage: data.images[0]})
         console.log(data)
         setAmount(1)
     }
