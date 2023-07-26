@@ -69,6 +69,9 @@ export default function Navigation({ setIsSearching, isSearching }) {
             {
                 isMobile ? <BurgerMenu links={links} setOpenMenu={setOpenMenu} openMenu={openMenu}/> : setOverflow()
             }
+            {
+                (isMobile && openMenu) ? <div onClick={()=>setOpenMenu(false)} className="navBbackgroundTransparent"></div> : null
+            }
         </>
   )
 }
