@@ -15,14 +15,14 @@
 
 .prcimageContainer{
     position: relative;
-    width: 198px;
-    height: 198px;
+    aspect-ratio: 1/1;
+    width: 100%;
     border-radius: 12px;
 }
 
 .prcimageContainer img {
     border-radius: 11px 11px 0px 0px;
-    border-bottom: 5px solid var(--color-fifth);
+    border-bottom: 4px solid var(--color-fifth);
 }
 
 .prctitle {
@@ -78,33 +78,19 @@
         margin-bottom: 5px;
         padding-bottom: 35px;
     }
-    
     .prcaddButton{
         opacity: 1;
     }
-    
-
 }
 
 @media only screen and (max-width: 460px) {
     .prccard {
         width: 180px;
     }
-
-    .prcimageContainer{
-        width: 178px;
-        height: 178px;
-    }
-
 }
 
 @media only screen and (max-width: 369px) {
     .prccard {
         width: 220px;
     }
-    .prcimageContainer{
-        width: 218px;
-        height: 218px;
-    }
-
 }
