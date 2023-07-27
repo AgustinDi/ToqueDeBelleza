@@ -20,10 +20,10 @@ export default function ProductCart({ data }) {
       confirmButtonText: 'Si quiero!',
       cancelButtonText: 'No, gracias',
 
-      buttonsStyling: true,
+      buttonsStyling: false,
       customClass: {
         confirmButton: 'cartbtn cartbtn-success',
-        denyButton: 'cartbtn cartbtn-danger'
+        cancelButton: 'cartbtn cartbtn-danger'
       },
     }).then((result) => {
       if (!result.isConfirmed) return
