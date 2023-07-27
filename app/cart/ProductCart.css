@@ -74,9 +74,14 @@
     height: min-content;
 }
 
+.cartTitle {
+    margin: 0px;
+    color: var(--color-fifth);
+}
+
 .cartbtn {
     background-color: var(--color-fourth);
-    color: var(--color-primary);
+    color: white;
     border: 0;
     border-radius: 0.25em;
     padding: 5px 10px;
@@ -123,6 +128,13 @@
     }
     .carttitleInfo h3 {
         margin-bottom: 5px;
+    }
+    .cartbtn-danger {
+        background-color: var(--color-pinky);
+    }
+    
+    .cartbtn-success {
+        background-color: rgb(194, 12, 12);
     }
 }
 

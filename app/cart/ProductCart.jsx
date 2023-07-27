@@ -14,7 +14,7 @@ export default function ProductCart({ data }) {
     const {name, amount} = data;
     if(amount <= 1 || destroy) {
     Swal.fire({
-      title: '¿Estás seguro que quieres eliminar este producto?',
+      html: '<h3 class="cartTitle">¿Estás segur@ que quieres eliminar este producto?</h3>',
       showConfirmButton: true,
       showCancelButton: true,
       confirmButtonText: 'Si quiero!',
