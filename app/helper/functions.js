@@ -1,5 +1,3 @@
-'use client'
-
 import productsJson from '../productos/Products.json';
 import Toastify from 'toastify-js';
 import "toastify-js/src/toastify.css";
