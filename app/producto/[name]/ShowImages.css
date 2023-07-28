@@ -1,5 +1,4 @@
-.f-carousel {
-     margin-bottom: 50px;
+.sh-carousel {
      height: 100%;
 }
 
@@ -16,11 +15,11 @@
      color: var(--color-pinky) !important;
 }
 
-.f-carousel__slide {
+.sh-slide {
      height: 100%;
 }
 
-.f-carousel__imageContainer {
+.sh-imageContainer {
      object-fit: cover;
 }
 
@@ -48,7 +47,7 @@
 
 
 @media only screen and (max-width: 740px) {
-     .f-carousel__slide {
+     .sh-slide {
           
      }
 }
