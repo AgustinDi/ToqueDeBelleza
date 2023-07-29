@@ -8,12 +8,14 @@
 }
 
 .navBnav {
-    background-color: var(--color-fifth);
+    background-color: var(--color-secondary);
     display: flex;
     padding: 10px 5%;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    border-bottom: 1px solid var(--color-pinky);
+    transition: border-color 0.5s ease;
 }
 
 .navBlogo {
@@ -29,13 +31,13 @@
     list-style: none;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-fifth);
     border-radius: 32px;
 }
 
 .navBnavbarText {
     margin: 0 10px;
-    color: var(--color-primary);
+    color: var(--color-fifth);
 }
 
 .navBsearcher {
@@ -86,7 +88,7 @@
 }
 
 .navBcartImage{
-    filter: invert(100%);
+    /* filter: invert(100%); */
 }
 
 .navBBurgerMenuContainer {
@@ -136,7 +138,7 @@
         position: relative;
         width: 40px;
         height: 40px;
-        filter: invert(100%);
+        /* filter: invert(100%); */
     }
     
     .navBcontainerLupaImage {
