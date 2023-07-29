@@ -42,7 +42,8 @@ export default function NavBar(){
 
     return (
         <header className='navBheader' style={{top: isScrolling ? '0' : '-110px'}}>
-            <nav className='navBnav'>
+            {console.log(isSearching)}
+            <nav className='navBnav' style={{borderBottom: isSearching ? ' 1px solid transparent' : ' 1px solid var(--color-pinky)'}}>
                 <Link href={'/'}>
                     <div className='navBlogo'>
                         <Image src={"/LogoToquedeBellezaPink.svg"} quality={100} fill alt={'logo'} priority={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
