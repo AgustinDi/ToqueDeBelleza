@@ -1,18 +1,19 @@
 .footer {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-fifth);
+    background-color: var(--color-third);
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-top:  2px solid var(--color-fourth);
+    border-top: 1px solid var(--color-pinky);
 
     align-items: center;
     justify-content:space-between;
 }
 
 .footer * {
-    color: var(--color-primary)
+    color: var(--color-fifth);
+    font-weight: 600;
 }
 
 .topFooter {
@@ -26,12 +27,16 @@
     justify-content: space-between;
     width: 100%;
     padding: 0 30px;
-    border-top:  2px solid var(--color-fourth);
+    border-top:  1px solid var(--color-pinky);
 }
 
 .contactUs {
     width: 50%;
     padding: 20px 30px 0px;
+}
+
+.pinkyText {
+    color: var(--color-pinky);
 }
 
 .stayContact {
@@ -53,12 +58,21 @@
     position: relative;
     min-width: 30px;
     min-height: 30px;
-    filter: invert(75%)
+    /* filter: invert(75%) */
 }
 
 .contact {
     display: flex;
     
+}
+
+.redirectLinkedin {
+    text-decoration: underline;
+    color: var(--color-pinky);
+}
+
+.pinky {
+    color: var(--color-pinky);
 }
 
 @media only screen and (max-width: 830px) {
