@@ -13,7 +13,7 @@ export default function BurgerMenu({ links, setOpenMenu, openMenu }) {
 
   return (
     <div className='navBBurgerMenuContainer' style={{right: openMenu ? '0px' : '-400px'}}>
-      <ul>
+      <ul className='navBNavigationLinks'>
         {
         links.map(({name, link})=>
         <li key={name}>

@@ -223,11 +223,22 @@
     .navBBurgerMenuContainer ul {
         list-style: none;
         padding-left: 25px;
+        margin-top: 10px;
     }
 
     .navBBurgerMenuContainer ul li {
+        font-weight: 500;
         padding: 8px;
     }
+
+    .navBNavigationLinks li::before {
+        content: "\2022"; 
+        color: var(--color-pinky);  
+        font-weight: 1000;
+        display: inline-block;
+        width: 1em;
+        margin-left: 3px; 
+    } 
 }
 
 @media only screen and (max-width: 370px) {
