@@ -8,12 +8,12 @@ import './page.css';
 import ProductCart from "./ProductCart";
 import Image from "next/image";
 import DifuminedBorder from "../Components/DifuminedBorder";
-import { redirect, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Button from "../Components/Button";
 import Swal from "sweetalert2";
 
 export default function Cart() {
-    const { cart, cleanAllCart } = UseMyContext();
+    const { cart, cleanAllCart, isMobile } = UseMyContext();
     const [renderedCart, setRenderedCart] = useState([])
     const [loading, setLoading] = useState(true)
     const router = useRouter()
@@ -45,8 +45,8 @@ export default function Cart() {
         Swal.fire({
           html: '<h3>Estas siendo redirigid@!</h3>',
           allowEscapeKey: false,
-          allowOutsideClick: false,
           allowEnterKey: false,
+          timer: 3000,
           didOpen: () => {
             Swal.showLoading()
           }
@@ -60,10 +60,12 @@ export default function Cart() {
         const pedido = renderedCart.map(({amount, price, name}) => `${amount} x ${name} - $${price}\r\n`).join('')
         const total = `\r\nTotal: $${getTotalCart(renderedCart)}`
         const url = `https://wa.me/${5493547667348}?text=${encodeURI(inicio+pedido+total.substring(0,pedido.length - 2))}`
-        router.push(url)
         cleanAllCart();
         showLoading();
-        
+        //En mobile, usando router.push, al volver al sitio deirectamente se vuelve a redirigir a whatsapp
+        isMobile
+        ? window.open(url)
+        : router.push(url)
     }
     
     return (
