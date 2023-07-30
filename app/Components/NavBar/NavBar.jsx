@@ -42,7 +42,7 @@ export default function NavBar(){
 
     return (
         <header className='navBheader' style={{top: isScrolling ? '0' : '-90px'}}>
-            <nav className='navBnav' style={{borderBottom: isSearching ? ' 1px solid transparent' : ' 1px solid var(--color-pinky)', boxShadow: isSearching ? 'none' : ' rgba(0, 0, 0, 0.35) 0px 5px 15px'}}>
+            <nav className='navBnav' style={{borderBottom: isSearching ? ' 1px solid transparent' : ' 1px solid var(--color-pinky)', boxShadow: isSearching ? 'rgba(0, 0, 0, 0.35) 0px 3px 10px' : ' rgba(0, 0, 0, 0.35) 0px 5px 15px'}}>
                 <Link href={'/'}>
                     <div className='navBlogo'>
                         <Image src={"/LogoToqueDeBellezaPinky.svg"} quality={100} fill alt={'logo'} priority={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
