@@ -8,8 +8,6 @@ export default async function ProductsList({ filter, amount }) {
     if(amount) {
         dataFiltered = dataFiltered.slice(0, amount)
         styles = {
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, max-content))'
         }
     }
 

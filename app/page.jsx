@@ -28,7 +28,9 @@ export default function initialApp(){
             <h3>Nuestras Categorias:</h3>
             <Categories />
             <h3>Nuestros productos mas recomendados:</h3>
-            <ProductsList amount={4}/>
+            <div style={{width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                <ProductsList amount={4}/>
+            </div>
         </>
     )
 }

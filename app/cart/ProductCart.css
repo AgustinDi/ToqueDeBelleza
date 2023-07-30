@@ -6,15 +6,10 @@
     padding-bottom: 9px;
 }
 
-.cartproductCart * {
-
-}
-
 .cartimageContainer {
     position: relative;
     aspect-ratio: 1/1;
     width: 140px;
-    background-color: green;
 }
 
 .cartsideInfo {
@@ -51,9 +46,12 @@
 
 .cartcategoryAndX p {
     margin: 0;
+    margin-top: 2px;
     padding-right: 9px;
     text-align: end;
     overflow-wrap: break-word;
+    font-weight: 500;
+    color: var(--color-pinky)
 }
 
 .cartbottomInfo {
@@ -64,6 +62,7 @@
 
 .cartsubTotalContainer {
     display: flex;
+    font-weight: 500;
 }
 
 .cartsubTotalContainer * {
@@ -162,5 +161,7 @@
     .cartCategoryP a p {
         overflow-wrap: break-word;
     }
-
+    .carttitleInfo {
+        color: var(--color-pinky)
+    }
 }
