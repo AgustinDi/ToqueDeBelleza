@@ -31,13 +31,14 @@
     list-style: none;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid var(--color-fifth);
-    border-radius: 32px;
+}
+
+.navBul li {
+    margin: 0px 10px;
 }
 
 .navBnavbarText {
     position: relative;  
-    margin: 0 10px;
     color: var(--color-fifth);
     font-weight: 600;
 }

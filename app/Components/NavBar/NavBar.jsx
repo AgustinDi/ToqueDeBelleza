@@ -42,7 +42,6 @@ export default function NavBar(){
 
     return (
         <header className='navBheader' style={{top: isScrolling ? '0' : '-90px'}}>
-            {console.log(isSearching)}
             <nav className='navBnav' style={{borderBottom: isSearching ? ' 1px solid transparent' : ' 1px solid var(--color-pinky)', boxShadow: isSearching ? 'none' : ' rgba(0, 0, 0, 0.35) 0px 5px 15px'}}>
                 <Link href={'/'}>
                     <div className='navBlogo'>

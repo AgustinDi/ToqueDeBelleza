@@ -15,7 +15,7 @@ const links = [
     name: 'Nuestros productos',
     link: '/productos'
     },{
-    name: 'Como comprar?',
+    name: '¿Cómo comprar?',
     link: '/comprar'
     }
 ]
@@ -45,9 +45,6 @@ export default function Navigation({ setIsSearching, isSearching }) {
   return (
         <>
             <ul className='navBul'>
-                        <li className='navBcontainerLupaImage'>
-                            <Image onClick={()=>setIsSearching(value=>!value)} className='navBcartImage' src={'/Lupa.png'} fill alt="Buscador" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
-                        </li>
                         {
                             !isMobile &&
                         (links.map(({name, link})=>
@@ -58,6 +55,9 @@ export default function Navigation({ setIsSearching, isSearching }) {
                         </li>
                         ))
                         }
+                        <li className='navBcontainerLupaImage'>
+                            <Image onClick={()=>setIsSearching(value=>!value)} className='navBcartImage' src={'/Lupa.png'} fill alt="Buscador" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+                        </li>
                         <CartDot setIsSearching={setIsSearching} setOpenMenu={setOpenMenu}/>
                         
                         {
