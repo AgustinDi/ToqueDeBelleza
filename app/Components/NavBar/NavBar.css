@@ -36,9 +36,31 @@
 }
 
 .navBnavbarText {
+    position: relative;  
     margin: 0 10px;
     color: var(--color-fifth);
     font-weight: 600;
+}
+
+.navBnavbarText a::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: 0px;
+    height: 2px;
+    background-color: var(--color-pinky);
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+    transform-origin: left;
+}
+
+.navBnavbarText a:hover::after {
+  width: 101%;
+}
+
+.navBnavbarTextActive a::after {
+    width: 101%;
 }
 
 .navBsearcher {

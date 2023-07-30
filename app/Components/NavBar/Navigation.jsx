@@ -51,14 +51,13 @@ export default function Navigation({ setIsSearching, isSearching }) {
                         {
                             !isMobile &&
                         (links.map(({name, link})=>
-                        <li key={name} className='navBnavbarText'>
+                        <li key={name} className={`navBnavbarText${pathnmae === link ? ' navBnavbarTextActive' : ''}`}>
                             <Link href={link} onClick={()=>setIsSearching(false)}>
                                 {name}
                             </Link>
                         </li>
                         ))
                         }
-
                         <CartDot setIsSearching={setIsSearching} setOpenMenu={setOpenMenu}/>
                         
                         {
