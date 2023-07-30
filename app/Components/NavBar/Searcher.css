@@ -3,21 +3,19 @@
     display: flex;
     justify-content: center;
     background-color: var(--color-second);
-    padding: 5px 0px;
-    /* border-bottom: 2px solid var(--color-pinky); */
-    
+    padding: 10px 0px;
 }
 
 .searinput {
     border: 0;
     border-radius: 5px;
-    border-bottom: 1px solid var(--color-pinky);
-    /* box-shadow: 2px 10px 5px 0px rgba(0,0,0,0.75); */
     padding: 8px;
+    padding-left: 12px;
     width: 50%;
     outline: none;
     background-color: var(--color-secondary);
     position: relative;
+    transition: border 0.1s ease;
 }
 
 @media only screen and (max-width: 1100px) {

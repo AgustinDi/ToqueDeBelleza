@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Context>
-        <div style={{height: '100px'}}></div>
+        <div style={{height: '90px'}}></div>
         <NavBar/>
         <center>
           {children}

@@ -41,17 +41,17 @@ export default function NavBar(){
     }, [])
 
     return (
-        <header className='navBheader' style={{top: isScrolling ? '0' : '-110px'}}>
+        <header className='navBheader' style={{top: isScrolling ? '0' : '-90px'}}>
             {console.log(isSearching)}
-            <nav className='navBnav' style={{borderBottom: isSearching ? ' 1px solid transparent' : ' 1px solid var(--color-pinky)'}}>
+            <nav className='navBnav' style={{borderBottom: isSearching ? ' 1px solid transparent' : ' 1px solid var(--color-pinky)', boxShadow: isSearching ? 'none' : ' rgba(0, 0, 0, 0.35) 0px 5px 15px'}}>
                 <Link href={'/'}>
                     <div className='navBlogo'>
-                        <Image src={"/LogoToquedeBellezaPink.svg"} quality={100} fill alt={'logo'} priority={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+                        <Image src={"/LogoToquedeBellezaPinky2.svg"} quality={100} fill alt={'logo'} priority={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                     </div>
                 </Link>
                 <Navigation setIsSearching={setIsSearching} isSearching={isSearching}/>
             </nav>
-        <div className='navBsearcher' style={{position: 'absolute', overflowX: 'hidden', top: isSearching ? '110px' : '65px', zIndex: -1}}>
+        <div className='navBsearcher' style={{position: 'absolute', overflowX: 'hidden', top: isSearching ? '90px' : '45px', zIndex: -1}}>
             <Searcher searched={searched} isSearching={isSearching}/>
         </div>
         </header>

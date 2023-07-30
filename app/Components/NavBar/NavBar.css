@@ -10,7 +10,7 @@
 .navBnav {
     background-color: var(--color-secondary);
     display: flex;
-    padding: 10px 5%;
+    padding: 0px 5%;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -38,6 +38,7 @@
 .navBnavbarText {
     margin: 0 10px;
     color: var(--color-fifth);
+    font-weight: 600;
 }
 
 .navBsearcher {
@@ -185,7 +186,7 @@
 
 @media only screen and (max-width: 370px) {
     .navBnav {
-        padding: 10px 5px;
+        padding: 0px 5px;
     }
     .navBlogo {
         position: relative;
