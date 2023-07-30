@@ -55,6 +55,9 @@ export default function Navigation({ setIsSearching, isSearching }) {
                         </li>
                         ))
                         }
+
+            </ul> 
+            <ul className="navBul">
                         <li className='navBcontainerLupaImage'>
                             <Image onClick={()=>setIsSearching(value=>!value)} className='navBcartImage' src={'/Lupa.png'} fill alt="Buscador" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                         </li>
@@ -63,14 +66,13 @@ export default function Navigation({ setIsSearching, isSearching }) {
                         {
                             isMobile && <Burger links={links} setOpenMenu={setOpenMenu} setIsSearching={setIsSearching}/>
                         }
-
-            </ul> 
             {
                 isMobile ? <BurgerMenu links={links} setOpenMenu={setOpenMenu} openMenu={openMenu}/> : setOverflow()
             }
             {
                 (isMobile && openMenu) ? <div onClick={()=>setOpenMenu(false)} className="navBbackgroundTransparent"></div> : null
             }
+            </ul>
         </>
   )
 }
