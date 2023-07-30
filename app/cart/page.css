@@ -10,6 +10,7 @@
     justify-content: center;
     margin-top: 20px;
     width: 100%;
+    min-height: 400px;
 }
 
 .cartbuttonBuy {
@@ -62,6 +63,13 @@
 
 .cartemptyCartImageContainer img {
     left: -15px !important;
+}
+
+
+.cartemptyBottomMessage {
+    font-weight: 500;
+    padding: 1em 10px;
+    background-color: var(--color-secondary);
 }
 
 @media only screen and (max-width: 1000px) {

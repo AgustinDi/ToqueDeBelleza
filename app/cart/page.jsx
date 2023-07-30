@@ -9,6 +9,7 @@ import ProductCart from "./ProductCart";
 import Image from "next/image";
 import DifuminedBorder from "../Components/DifuminedBorder";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import Button from "../Components/Button";
 import Swal from "sweetalert2";
 
@@ -105,14 +106,22 @@ export default function Cart() {
                     }
                 </div>
                 :
-                <div className='cartemptyCartContainer'>
-                    <h2>{loading ? 'Cargando...' : 'Tus productos aparecerán aquí:'}</h2>
-                        <div className='cartemptyCartImageContainer'>
-                            <Image src={'/granCarrito.png'} alt="carrito vacio" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
-                        </div>
-                </div>
+                <>
+                    <div className='cartemptyCartContainer'>
+                        <h2>{loading ? 'Cargando...' : 'Tus productos aparecerán aquí:'}</h2>
+                            <div className='cartemptyCartImageContainer'>
+                                <Image src={'/granCarrito.png'} alt="carrito vacio" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+                            </div>
+                    </div>
+                </>
                 }
             </div>
+            {
+                !renderedCart.length && !loading &&
+                <p className='cartemptyBottomMessage'>
+                    Agrega algunos <Link href='/productos' className="pinkyText">Productos</Link> a tu carrito!
+                </p>
+            }
         </section>
     )
 }
