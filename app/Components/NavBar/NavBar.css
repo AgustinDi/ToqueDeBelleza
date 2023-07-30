@@ -187,8 +187,8 @@
         max-width: 400px;
         min-width: 200px;
         height: 80vh;
-        height: calc(100vh - 110px);
-        top: 110px;
+        height: calc(100vh - 90px);
+        top: 90px;
         right: -400px;
         background-color: var(--color-third);
         border-top: 1px solid var(--color-pinky);
