@@ -8,6 +8,7 @@
 
 .comprarPinky {
     color: var(--color-pinky);
+    font-weight: 600;
 }
 
 /* complete later */
@@ -35,7 +36,8 @@
 }
 
 .bottomMessage {
-    margin: 1em 10px
+    padding: 1em 10px;
+    background-color: var(--color-secondary);
 }
 
 
