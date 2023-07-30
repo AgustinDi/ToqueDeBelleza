@@ -10,9 +10,10 @@ import Image from "next/image";
 import DifuminedBorder from "../Components/DifuminedBorder";
 import { redirect, useRouter } from "next/navigation";
 import Button from "../Components/Button";
+import Swal from "sweetalert2";
 
 export default function Cart() {
-    const {cart} = UseMyContext();
+    const { cart, cleanAllCart } = UseMyContext();
     const [renderedCart, setRenderedCart] = useState([])
     const [loading, setLoading] = useState(true)
     const router = useRouter()
@@ -40,6 +41,19 @@ export default function Cart() {
         return () => clearTimeout(timer);
     }, []);
 
+    function showLoading(){{
+        Swal.fire({
+          html: '<h3>Estas siendo redirigid@!</h3>',
+          allowEscapeKey: false,
+          allowOutsideClick: false,
+          allowEnterKey: false,
+          didOpen: () => {
+            Swal.showLoading()
+          }
+        })
+      }
+    }
+
     function buy() {
         if(renderedCart.lenght === 0) return
         const inicio = `Hola Cande! Me gustaria hacerte un pedido:\r\n\r\n`
@@ -47,6 +61,9 @@ export default function Cart() {
         const total = `\r\nTotal: $${getTotalCart(renderedCart)}`
         const url = `https://wa.me/${5493547667348}?text=${encodeURI(inicio+pedido+total.substring(0,pedido.length - 2))}`
         router.push(url)
+        cleanAllCart();
+        showLoading();
+        
     }
     
     return (
