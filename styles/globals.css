@@ -11,27 +11,8 @@
   /* 0A0A0A or 111 */
 }
 
-html {
-  min-height: 100%;
-  position: relative;
-}
-
 body {
-  margin: 0;
-  margin-bottom: 300px;
   background-color: var(--color-primary);
-}
-
-@media only screen and (max-width: 625px) {
-  body {
-    margin-bottom: 500px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  body {
-    margin-bottom: 600px;
-  }
 }
 
 body::-webkit-scrollbar {

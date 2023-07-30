@@ -1,14 +1,13 @@
 .footer {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-third);
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    background-color: var(--color-third);
     border-top: 1px solid var(--color-pinky);
 
     align-items: center;
     justify-content:space-between;
+    margin-top: 10px;
 }
 
 .footer * {
