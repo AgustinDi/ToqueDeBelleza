@@ -5,11 +5,13 @@ import Link from 'next/link';
 import productsJson from './Products.json';
 import { UseMyContext } from '../Context/Context';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function SideMenuCategory({ params }) {
     const categoriesSet = new Set(productsJson.data.map(product => product.category))
     const categorias = [...categoriesSet];
     const [open, setOpen] = useState(false);
+    const pathname = usePathname();
     const { isMobile } = UseMyContext();
 
     const xActive = {
@@ -32,7 +34,7 @@ export default function SideMenuCategory({ params }) {
             <h3>Filtro por Categoria:</h3>
             <ul className='sidul'>
                 <Link href={'/productos/'}><li>Todos</li></Link>
-                {categorias.map(categoria => <Link key={categoria} href={'/productos/' + categoria}><li>{categoria}</li></Link>)}
+                {categorias.map(categoria => <Link key={categoria} href={'/productos/' + categoria}><li className={decodeURI(pathname).includes(categoria) ? 'pinkyText' : ''}>{categoria}</li></Link>)}
             </ul>
             </>
             : <div className='sidcontainerMobileSideMenu'>

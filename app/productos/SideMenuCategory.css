@@ -9,14 +9,33 @@
     left: 0;
 }
 
+.sidsideMenu h3 {
+    margin: 15px 0px;
+}
+
 .sidul {
     list-style: none;
     padding: 0;
 }
 
+.sidul li::before {
+    content: "\2022"; 
+    color: var(--color-pinky);  
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -5px; 
+}
+
 .sidul li {
     text-align: start;
+    font-weight: 500;
     padding: 3px;
+    transition: color 0.2s ease;
+}
+
+.sidul li:hover {
+    color: var(--color-pinky);
 }
 
 
