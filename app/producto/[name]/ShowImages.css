@@ -32,30 +32,25 @@
      border-radius: 20px 0px 0px 20px;
      margin: 0;
      right: 0 !important;
+     width: 30px;
+     height: 30px;
 }
 
 .is-prev {
     border-radius: 0px 20px 20px 0px;
     margin: 0;
     left: 0 !important;
-}
-
-.f-button {
     width: 30px;
     height: 30px;
 }
 
-
-@media only screen and (max-width: 740px) {
-     .sh-slide {
-          
-     }
-}
-
-
 @media only screen and (max-width: 450px) {
-     .f-button {
+     .is-prev {
          width: 26px;
          height: 26px;
+     }
+     .is-next {
+          width: 26px;
+          height: 26px;
      }
 }
