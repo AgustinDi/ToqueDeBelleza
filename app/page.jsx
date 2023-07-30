@@ -28,7 +28,7 @@ export default function initialApp(){
             <h3>Nuestras Categorias:</h3>
             <Categories />
             <h3>Nuestros productos mas recomendados:</h3>
-            <ProductsList amount={5}/>
+            <ProductsList amount={4}/>
         </>
     )
 }
