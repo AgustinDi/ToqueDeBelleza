@@ -8,7 +8,7 @@
 }
 
 .navBnav {
-    background-color: var(--color-secondary);
+    background-color: #e1e1e1;
     display: flex;
     padding: 0px 5%;
     justify-content: space-between;
