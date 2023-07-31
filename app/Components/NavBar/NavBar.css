@@ -214,9 +214,9 @@
         height: calc(100vh - 90px);
         top: 90px;
         right: -400px;
-        background-color: var(--color-third);
+        background-color: var(--color-primary);
         border-top: 1px solid var(--color-pinky);
-
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
         transition: right 0.4s ease;
     }
 
