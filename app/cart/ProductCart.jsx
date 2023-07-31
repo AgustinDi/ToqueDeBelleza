@@ -17,7 +17,7 @@ export default function ProductCart({ data }) {
       html: '<h3 class="cartTitle">¿Estás segur@ que quieres eliminar este producto?</h3>',
       showConfirmButton: true,
       showCancelButton: true,
-      confirmButtonText: 'Si quiero!',
+      confirmButtonText: 'Si, eliminalo',
       cancelButtonText: 'No, gracias',
 
       buttonsStyling: false,

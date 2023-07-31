@@ -94,7 +94,7 @@
 }
 
 .cartbtn-success:hover {
-    background-color: rgb(194, 12, 12);
+    background-color: rgb(216, 26, 26);
 }
 
 .cartCategoryP p {
@@ -136,9 +136,8 @@
     .cartbtn-danger {
         background-color: var(--color-pinky);
     }
-    
     .cartbtn-success {
-        background-color: rgb(194, 12, 12);
+        background-color: var(--color-fourth);
     }
 }
 

@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-BW7YYFEJZ5');
             `
           }
-        </Script>  
+        </Script>
       </head>
       <body>
         <Context>
