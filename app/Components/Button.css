@@ -2,17 +2,19 @@
     color: inherit;
     cursor: pointer;
     outline: none;
-    background-color: var(--color-third);
+    background-color: var(--color-secondary);
     border: 2px solid var(--color-fourth);
     border-radius: 20px;
     min-height: 41px;
     padding: 5px;
     width: 100%;
-    transition: background-color 0.2s ease-in;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
 }
 
 .button:hover {
-  background-color: var(--color-pinky);
+  background-color: var(--color-third);
+  border: 2px solid var(--color-pinky);
 }
 
 .button:active {

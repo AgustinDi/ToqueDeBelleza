@@ -97,6 +97,10 @@
     background-color: rgb(194, 12, 12);
 }
 
+.cartCategoryP p {
+    font-weight: 600;
+}
+
 @media only screen and (max-width: 650px) {
     .cartproductCart {
         width: 95vw;
