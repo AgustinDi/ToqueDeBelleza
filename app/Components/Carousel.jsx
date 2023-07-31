@@ -4,14 +4,20 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Carousel as CarouselFancy } from "@fancyapps/ui/dist/carousel/carousel.esm.js";
 import "@fancyapps/ui/dist/carousel/carousel.css";
+import { Autoplay } from "@fancyapps/ui/dist/carousel/carousel.autoplay.esm.js";
+import "@fancyapps/ui/dist/carousel/carousel.autoplay.css";
 import './Carousel.css';
 
 export default function Carousel({ images, name }) {
   const container = useRef(null)
 
   useEffect(()=>{
-    const options = {  };
-    const result = new CarouselFancy(container.current, options)
+    const options = { 
+      Autoplay: {
+        timeout: 3000
+      }
+     };
+    const result = new CarouselFancy(container.current, options, { Autoplay })
   },[])
 
   return (

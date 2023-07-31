@@ -25,6 +25,10 @@
      object-fit: cover;
 }
 
+.f-progress {
+     background-color: var(--color-pinky) !important;
+}
+
 
 @media only screen and (max-width: 740px) {
      .c-slide {
