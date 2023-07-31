@@ -10,6 +10,6 @@
   .productsList {
     align-content: center;
     gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(180px, max-content));
+    grid-template-columns: repeat(auto-fill, minmax(180px, max-content)) !important;
   }
 }
