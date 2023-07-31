@@ -25,9 +25,9 @@ export default function initialApp(){
     return (
         <>
             <Carousel images={images} name={'Carousel'}/>
-            <h3>Nuestras Categorias:</h3>
+            <h2>Categorias:</h2>
             <Categories />
-            <h3>Nuestros productos mas recomendados:</h3>
+            <h2>Productos más recomendados:</h2>
             <div style={{width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                 <ProductsList amount={4}/>
             </div>
