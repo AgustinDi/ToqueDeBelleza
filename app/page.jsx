@@ -5,7 +5,7 @@ import ProductsList from "./productos/ProductsList.jsx";
 export default function initialApp(){
     const images = [
         {
-            src: "/Banner 1 - Toque de Belleza.png",
+            src: "/Bannerr 1.png",
             index: 0
         },
         {

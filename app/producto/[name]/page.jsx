@@ -14,7 +14,7 @@ export default function producto({ params }) {
       <IndexV category={product.category} individual={nameOfProduct}/>
       <div className='productocontainerPoduct'>
         <div className='productocontainerImage'>
-          <ShowImages product={product}/>  {/* pasar O recibir images y crear la gallery del producto. image */}
+          <ShowImages product={product}/>
         </div> 
         <div className='productosideInfo'>
           <div className='productotitleProduct'>
