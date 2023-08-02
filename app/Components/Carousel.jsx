@@ -22,9 +22,9 @@ export default function Carousel({ images, name }) {
 
   return (
      <div className="f-carousel c-carousel" ref={container}>
-          {images.map(({src, index})=>
-              <div key={index} data-src={src} data-fancybox={name} data-caption={src} className="f-carousel__slide c-slide">
-                  <Image fill src={src} alt={src} quality={100} priority={index === 0} className='f-carousel__imageContainer c-imageContainer'  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"/>
+          {images.map(({src, index, alt})=>
+              <div key={index} data-src={src} data-fancybox={name} data-caption={alt} className="f-carousel__slide c-slide">
+                  <Image fill src={src} alt={alt} quality={100} priority={index === 0} className='f-carousel__imageContainer c-imageContainer'  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"/>
               </div>
           )}
      </div>

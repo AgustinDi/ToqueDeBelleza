@@ -8,15 +8,18 @@ export default function initialApp(){
     const images = [
         {
             src: "/Banner 1 - PinkVersion.png",
-            index: 0
+            index: 0,
+            alt: 'Banner 1'
         },
         {
             src: "/Banner 2 - PinkVersion.png",
-            index: 1
+            index: 1,
+            alt: 'Banner 2'
         },
         {
             src: "/Banner 3 - PinkVersion.png",
-            index: 2
+            index: 2,
+            alt: 'Banner 3'
         }
     ]
     
