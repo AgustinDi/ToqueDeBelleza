@@ -45,7 +45,7 @@
 
 @media only screen and (max-width: 450px) {
      .c-slide {
-          aspect-ratio: 4/3;
+          aspect-ratio: 3/2;
      }
      
      .is-next {
