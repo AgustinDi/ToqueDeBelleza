@@ -5,21 +5,17 @@ import ProductsList from "./productos/ProductsList.jsx";
 export default function initialApp(){
     const images = [
         {
-            src: "/Bannerr 1.png",
+            src: "/Banner 1 - PinkVersion.png",
             index: 0
         },
         {
-            src: "/Banner 2 - Toque de Belleza.png",
+            src: "/Banner 2 - PinkVersion.png",
             index: 1
         },
         {
-            src: "/Loading.png",
+            src: "/Banner 3 - PinkVersion.png",
             index: 2
-        },
-        {
-            src: "/Loading.png",
-            index: 3
-        },
+        }
     ]
     
     return (

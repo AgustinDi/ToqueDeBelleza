@@ -1,6 +1,6 @@
 .c-carousel {
      margin-bottom: 50px;
-     margin-top: 1px;
+     margin-top: 20px;
      max-width: 1100px;
      min-height: 100%;
 }
@@ -34,6 +34,9 @@
 
 
 @media only screen and (max-width: 740px) {
+     .c-carousel {
+          margin-top: 1px;
+     }
      .c-slide {
           aspect-ratio: 2/1;
      }
