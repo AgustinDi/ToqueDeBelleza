@@ -19,6 +19,7 @@
 
 .productBannerText {
      font-size: larger;
+     text-shadow: 1px 1px 0px #a10000;
 }
 
 @media only screen and (max-width: 768px) {
