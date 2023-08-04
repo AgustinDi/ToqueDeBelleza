@@ -1,6 +1,6 @@
 <img src='https://res.cloudinary.com/agustindi/image/upload/v1691159080/LogoToqueDeBellezaPinky_senxey.svg' width="100%">
 <hr/>
-# Sobre el proyecto:
+<h1>Sobre el Proyecto:</h1>
 <b>
 Bienvenido al codigo abierto del sitio web de toque de belleza, este proyecto personal fue creado con la intención de aumentar las ventas y alcance de toque de belleza, un emprendimiento de productos capilares de mi hermana, @candelaDigiacinto.
 
