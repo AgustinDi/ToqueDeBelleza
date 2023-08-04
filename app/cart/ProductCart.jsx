@@ -42,7 +42,7 @@ export default function ProductCart({ data }) {
       <div>
         <Link  href={`/producto/${data.name}`} >
           <div className='cartimageContainer'>
-            <Image src={data.images[0]} placeholder="blur" blurDataURL={blur} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={data.name}/>
+            <Image src={data.images[0]} placeholder="blur" blurDataURL={blur} quality={10} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={data.name}/>
           </div>
         </Link>
       </div>
