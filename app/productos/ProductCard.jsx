@@ -3,14 +3,13 @@ import './ProductCard.css';
 import Link from "next/link";
 import loadingImage from '../../public/Loading.png';
 import AddToCart from "./AddToCart.jsx";
+import ImageShow from "./ImageShow";
 
 export default function ProductCard({value}){
     return (
         <div key={value.name} className='prccard'>
             <Link href={'/producto/' + value.name}>
-            <div className='prcimageContainer'>
-                <Image src={value.images[0] || loadingImage} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill alt={value.name}/>
-            </div>
+            <ImageShow value={value} />
             <div className='prctitle'>
                 <h3>
                     {value.name} 
