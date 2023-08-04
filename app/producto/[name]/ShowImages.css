@@ -22,6 +22,7 @@
 
 .sh-imageContainer {
      object-fit: cover;
+     background-color: grey;
 }
 
 
