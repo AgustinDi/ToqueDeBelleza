@@ -5,10 +5,13 @@ import Image from "next/image";
 import { UseMyContext } from "../Context/Context"
 import Link from "next/link";
 import PickAmount from "./PickAmount.jsx";
+import blurData from '@/app/helper/blurData64.json'
 import Swal from "sweetalert2";
+
 
 export default function ProductCart({ data }) {
   const { removeToCart, minusToCart } = UseMyContext();
+  const { blur } = blurData;
 
   function verifyToDeleteAmount(destroy){
     const {name, amount} = data;
@@ -39,7 +42,7 @@ export default function ProductCart({ data }) {
       <div>
         <Link  href={`/producto/${data.name}`} >
           <div className='cartimageContainer'>
-            <Image src={data.images[0]} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={data.name}/>
+            <Image src={data.images[0]} placeholder="blur" blurDataURL={blur} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt={data.name}/>
           </div>
         </Link>
       </div>
