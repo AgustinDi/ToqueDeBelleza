@@ -8,7 +8,7 @@ export default function ImageShow({ value }) {
 
   return (
      <div className='prcimageContainer'>
-          <Image src={value.images[0]} placeholder="blur" blurDataURL={blur} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill alt={value.name}/>
+          <Image src={value.images[0]} placeholder="blur" blurDataURL={blur} quality={10} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill alt={value.name}/>
      </div>
   )
 }
