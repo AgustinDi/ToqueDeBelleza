@@ -231,6 +231,10 @@
         padding: 8px;
     }
 
+    .navBNavigationLinks {
+        padding-top: 15px;
+    }
+
     .navBNavigationLinks li::before {
         content: "\2022"; 
         color: var(--color-pinky);  
