@@ -13,6 +13,6 @@ Se usó la libreria FancyApps, especificamente FancyCarousel y FancyBox.
 El proyecto esta abierto a aportes y pull requests, ya sea estetico, de semantica o funcionales, se agradece cualquier aporte.<3
 
 ### Links:
-@Toque de Belleza (instagram)
-@Agustin_Digiacinto (Linkedin)
+<a href='https://www.instagram.com/ttoquedebelleza/'>@TtoqueDeBelleza</a> - instagram
+<a href='https://www.linkedin.com/in/agustin-digiacinto/'>@AgustinDigiacinto</a> - Linkedin
 </b>
