@@ -1,7 +1,5 @@
-import Image from "next/image";
 import './ProductCard.css';
 import Link from "next/link";
-import loadingImage from '../../public/Loading.png';
 import AddToCart from "./AddToCart.jsx";
 import ImageShow from "./ImageShow";
 
