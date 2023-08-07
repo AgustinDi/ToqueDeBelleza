@@ -6,6 +6,8 @@ import productsJson from '../../Products.json';
 import { removeAccents } from '@/app/helper/functions';
 import IndexV from '../../IndexV';
 import Image from 'next/image';
+import Link from 'next/link';
+import GoBack from './GoBack';
 
 
 export default function ProductSearched({ search }) {
@@ -41,7 +43,7 @@ export default function ProductSearched({ search }) {
           <div className='prodSear_404Container'>
             <Image fill src={'/error 404.png'} alt='error 404' />
           </div>
-          <button className='prodSear_BackButton categoryContainer'>Volver</button>
+          <GoBack/>
         </div>
       }
       
