@@ -1,4 +1,4 @@
-import productsJson from './Products.json'
+import productsJson from '@/app/helper/Products.json';
 import ProductCard from './ProductCard.jsx'
 import '../productos/ProductList.css'
 

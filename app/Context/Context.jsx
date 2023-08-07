@@ -2,7 +2,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { cleanCart } from "../helper/functions";
 import { usePathname, useSearchParams } from "next/navigation";
-import { data } from "../productos/Products.json";
 
 export const context = createContext();
 

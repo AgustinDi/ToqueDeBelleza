@@ -2,11 +2,10 @@ import '../../ProductList.css';
 import './ProductSearched.css';
 import '@/app/Components/Categories.css';
 import ProductCard from '../../ProductCard';
-import productsJson from '../../Products.json';
+import productsJson from '@/app/helper/Products.json';
 import { removeAccents } from '@/app/helper/functions';
 import IndexV from '../../IndexV';
 import Image from 'next/image';
-import Link from 'next/link';
 import GoBack from './GoBack';
 
 

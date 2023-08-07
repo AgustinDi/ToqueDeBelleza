@@ -1,5 +1,5 @@
 import './page.css';
-import productsJson from '../../productos/Products.json';
+import productsJson from '@/app/helper/Products.json';
 import IndexV from '@/app/productos/IndexV';
 import Link from 'next/link';
 import PickAndBuy from './PickAndBuy';

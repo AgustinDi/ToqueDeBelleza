@@ -2,7 +2,7 @@
 
 import './SideMenuCategory.css';
 import Link from 'next/link';
-import productsJson from './Products.json';
+import productsJson from '@/app/helper/Products.json';
 import { UseMyContext } from '../Context/Context';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';

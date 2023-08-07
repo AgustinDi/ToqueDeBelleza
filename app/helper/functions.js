@@ -1,4 +1,4 @@
-import productsJson from '../productos/Products.json';
+import productsJson from '@/app/helper/Products.json';
 import Toastify from 'toastify-js';
 import "toastify-js/src/toastify.css";
 import './functions.css';
