@@ -1,4 +1,6 @@
 import '../../ProductList.css';
+import './ProductSearched.css';
+import '@/app/Components/Categories.css';
 import ProductCard from '../../ProductCard';
 import productsJson from '../../Products.json';
 import { removeAccents } from '@/app/helper/functions';
@@ -34,13 +36,12 @@ export default function ProductSearched({ search }) {
           </div>
         </div>
         :
-        <div >
-          {/* agregar a futuro classnames a todo esto */}
-          <button style={{position: 'absolute', top: '0px'}}>Volver</button>
-          <div style={{position: 'relative', width: '200px', height: '200px', marginTop: '100px'}}>
+        <div className='prodSear_Container'>
+          <h3>Lo sentimos, no encontramos resultados para su busqueda</h3>
+          <div className='prodSear_404Container'>
             <Image fill src={'/error 404.png'} alt='error 404' />
           </div>
-          <h3 style={{marginBottom: '0px'}}>Lo sentimos, no encontramos resultados para su busqueda</h3>
+          <button className='prodSear_BackButton categoryContainer'>Volver</button>
         </div>
       }
       

@@ -1,0 +1,64 @@
+.prodSear_Container {
+     min-height: 430px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.prodSear_BackButton {
+     margin-bottom: 30px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid var(--color-pinky);
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: var(--color-pinky);
+    text-decoration: none;
+    transition: 0.3s ease all;
+}
+
+.prodSear_BackButton:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: var(--color-pinky);
+    z-index: -1;
+} 
+
+.prodSear_BackButton:hover, .prodSear_BackButton:focus {
+  color: white;
+}
+
+.prodSear_BackButton:hover:before, .prodSear_BackButton:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.prodSear_BackButton:active {
+  transform: scale(0.98);
+}
+
+
+.prodSear_404Container {
+     position: relative;
+     width: 200px;
+     height: 200px;
+}
+
+.prodSear_Container h3 {
+     margin-top: 50px;
+}
