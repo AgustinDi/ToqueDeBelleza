@@ -32,7 +32,6 @@ export default function ProductSearched({ search }) {
         ? 
         <div>
           <IndexV category={search}/> 
-          {/* en un futuro hacer que el nombre de la busqueda en el indexV empieze con mayus  */}
           <div className='productsList'>
             {result?.map(value => <ProductCard value={value} key={value.name}/>)}
           </div>
