@@ -2,7 +2,7 @@
     "data" : [
         {
             "name": "Bonet",
-            "category": "Nutrición",
+            "category": 1,
             "price": 800,
             "size": "250ml",
             "description": "Contiene antioxidantes y queratina es una suave crema aromada para nutrir tu cabello.",
@@ -13,7 +13,7 @@
         },
         {
             "name": "Diamond",
-            "category": "Shock de keratina*",
+            "category": 1,
             "price": 800,
             "size": "250ml",
             "description": "sin enjuage y libre de formol  ******************",
@@ -24,7 +24,7 @@
         },
         {
             "name": "Hialuronic",
-            "category": "Ampolla emulsionante",
+            "category": 2,
             "price": 800,
             "size": "250ml",
             "description": "Rehidrata, da movimiento y elasticidad al cabello.",
@@ -35,7 +35,7 @@
         },
         {
             "name": "Blue Protector",
-            "category": "Protector Termico",
+            "category": 0,
             "price": 800,
             "size": "250ml",
             "description": "La combinación de principios activos de máxima pureza protege y nutren el cabello, disminuye el frizz.",
@@ -46,7 +46,7 @@
         },
         {
             "name": "El rulo Perfecto",
-            "category": "Desenredante Nutritivo",
+            "category": 1,
             "price": 800,
             "size": "250ml",
             "description": "Nutre e hidrata formando una capa protectora contra rayos UV y radicales libres, para mantener tu cabello sin frizz, se puede usar como protector termico.",
@@ -57,7 +57,7 @@
         },
         {
             "name": "Cherry Protector",
-            "category": "Protector Termico",
+            "category": 0,
             "price": 800,
             "size": "250ml",
             "description": "Contiene colageno, agua de rosas y aceite de argán, protege el cabello del calor de la plancha y el secador, disminuye el frizz.",
@@ -68,7 +68,7 @@
         },
         {
             "name": "Brillo de Frezas",
-            "category": "Nutrición",
+            "category": 1,
             "price": 800,
             "size": "250ml",
             "description": "Contiene antioxidantes y queratina es una suave crema aromada para nutrir tu cabello.",
@@ -79,7 +79,7 @@
         },
         {
             "name": "Argán",
-            "category": "Nutrición",
+            "category": 1,
             "price": 800,
             "size": "250ml",
             "description": "Contiene Keratina, aceite y células madre de argán, ideal para cabellos secos.",
@@ -90,7 +90,7 @@
         },
         {
             "name": "Lenien",
-            "category": "Nutrición",
+            "category": 1,
             "price": 800,
             "size": "250ml",
             "description": "Con celulas madre de Lino y Biotina, regenerativa e ideal para cabellos dañados.",
@@ -101,7 +101,7 @@
         },
         {
             "name": "Shampoo y Acondicionador de Biotina",
-            "category": "Kit",
+            "category": 3,
             "price": 800,
             "size": "250ml",
             "description": "Enriquecido con Biotina refuerza la estructura interna de las fibras para un cabello más fuerte. Para cabello normal a seco.",
@@ -112,7 +112,7 @@
         },
         {
             "name": "Shampoo y Acondicionador Anticaida",
-            "category": "Kit",
+            "category": 3,
             "price": 800,
             "size": "250ml",
             "description": "Uso diario, el poder de la ortiga estimula la circulación sanguínea en el cuero cabelludo ayudando al crecimiento y previniendo la caida de cabello.",
@@ -123,7 +123,7 @@
         },
         {
             "name": "Shampoo y Acondicionador Argán",
-            "category": "Kit",
+            "category": 3,
             "price": 800,
             "size": "250ml",
             "description": "Anti Frizz, Perfecto para Cabellos rebeldes",
@@ -145,7 +145,7 @@
         },
         {
             "name": "Bye Frizz",
-            "category": "Ampolla emulsionante",
+            "category": 2,
             "price": 800,
             "size": "250ml",
             "description": "Brillo suavidad y efecto alisador.",
@@ -156,7 +156,7 @@
         },
         {
             "name": "Keratin",
-            "category": "Ampolla emulsionante",
+            "category": 2,
             "price": 800,
             "size": "250ml",
             "description": "Ultra hidratante y anti-oxidante",

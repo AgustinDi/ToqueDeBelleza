@@ -1,6 +1,7 @@
 'use client'
+
 import { createContext, useContext, useEffect, useState } from "react";
-import { cleanCart } from "../helper/functions";
+import { cleanCart, getAllProducts } from "../helper/functions";
 import { usePathname, useSearchParams } from "next/navigation";
 
 export const context = createContext();
@@ -12,6 +13,7 @@ export const UseMyContext = () => {
 }
 
 export const Context = ({ children }) => {
+    const allProducts = getAllProducts()
     const [cart, setCart] = useState(cleanCart())
     const [isMobile, setIsMobile] = useState(true)
     const searchParams = useSearchParams()
@@ -43,6 +45,7 @@ export const Context = ({ children }) => {
     
     useEffect(()=>{
         localStorage.setItem('cart', JSON.stringify(cart))
+        console.log(allProducts)
     }, [cart])
 
     const invertMobile = () => setIsMobile(value=>!value)

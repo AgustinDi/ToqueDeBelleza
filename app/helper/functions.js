@@ -3,8 +3,32 @@ import Toastify from 'toastify-js';
 import "toastify-js/src/toastify.css";
 import './functions.css';
 
+const getCategory = ['Protector Térmico', 'Nutrición', 'Ampollas Emulsionantes', 'Kit']
+const getHowToUse = ['como usar un protector terminco....', 'como usar una nutricion....', 'como usar una ampolla emulsionante....', 'Kit']
+const getPrecaution = ['precaucion para protector terminco....', 'precaucion para una nutricion....', 'precaucion para una ampolla emulsionante....', 'Kit']
+
+class Product {
+    constructor(name, description, price, size, images, category){
+        this.name = name;
+        this.description = description;
+        this.price = `$ ${price}`;
+        this.size = `${size}ml`;
+        this.images = [...images];
+        this.category = getCategory[category]; //Confirmar en un futuro si hacerlo asi.
+        this.howToUse = getHowToUse[category];
+    }
+    // name - description - size - price // son individuales
+    // images // es un array individual
+    // category - HowToUse - Precaution // es grupal
+
+}
+
 export const removeAccents = function (str) {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+export const getAllProducts = function () {
+    return productsJson.data.map(({name, description, price, size, images, category}) => new Product(name, description, price, size, images, category))
 }
 
 export const cleanCart = function () {
