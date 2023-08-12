@@ -1,36 +1,35 @@
 {
     "data" : [
         {
-            "name": "Bonet",
-            "category": "Nutrición",
-            "price": 800,
+            "name": "Cherry",
+            "category": "Protector Termico",
+            "price": 1000,
             "size": "250ml",
             "description": "Contiene antioxidantes y queratina es una suave crema aromada para nutrir tu cabello.",
             "howToUse": "Lavar el cabello con shampoo neutro, luego aplicar mecha por mecha, dejar reposar de 20min a 40min con gorro térmico, enjuagar, brushinar y opcional planchar.",
             "precaution": "",
-            "aplication": "",
-            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885533/Toque%20de%20Belleza/20230316_001456_6_11zon_w1glcq.jpg"]
+            "images": ["https://res.cloudinary.com/agustindi/image/upload/v1691797657/cherry_compresed_product_rvimqu.jpg","https://res.cloudinary.com/agustindi/image/upload/v1691797823/cherry_label_vqdhof.png"]
         },
         {
-            "name": "Diamond",
-            "category": "Shock de keratina*",
-            "price": 800,
+            "name": "blue",
+            "category": "Protector Termico",
+            "price": 1000,
             "size": "250ml",
             "description": "sin enjuage y libre de formol  ******************",
             "howToUse": "Lavar el cabello 2 veces con shampoo de uso diario, secar con toalla sin dejar agua aplicar el producto mecha por mecha sin tocar raiz, dejar actuar de 5min a 10min, luego procedemos al secado y planchado, ambos procesos hacerlos dividiendo en sectores ordenadamente hasta secar y planchar al %100. ",
             "precaution": "",
-            "aplication": "",
+            
             "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885535/Toque%20de%20Belleza/20230316_000542_4_11zon_iry82m.jpg","https://res.cloudinary.com/agustindi/image/upload/v1684885533/Toque%20de%20Belleza/20230316_001456_6_11zon_w1glcq.jpg"]
         },
         {
             "name": "Hialuronic",
-            "category": "Ampolla emulsionante",
-            "price": 800,
+            "category": "Nutrición",
+            "price": 1100,
             "size": "250ml",
             "description": "Rehidrata, da movimiento y elasticidad al cabello.",
             "howToUse": "Diluir contenido en dos partes de agua tibia, hasta formar una crema, se aplica sobre cabello humedo, dejar actuar unos minutos y proceder al enjuage. Finalizar con secador.",
             "precaution": "Diluir contenido en dos partes de agua tibia, hasta formar una crema, se aplica sobre cabello humedo, dejar actuar unos minutos y proceder al enjuage. Finalizar.",
-            "aplication": "",
+            
             "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885538/Toque%20de%20Belleza/20230316_004716_15_11zon_lhit7p.jpg"]
         },
         {
@@ -41,7 +40,7 @@
             "description": "La combinación de principios activos de máxima pureza protege y nutren el cabello, disminuye el frizz.",
             "howToUse": "Atomizar sobre el cabello humedo o seco y proceder al secado o planchado del mismo.",
             "precaution": "",
-            "aplication": "",
+            
             "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885528/Toque%20de%20Belleza/20230315_234612_1_11zon_ea9pre.jpg"]
         },
         {
@@ -52,7 +51,7 @@
             "description": "Nutre e hidrata formando una capa protectora contra rayos UV y radicales libres, para mantener tu cabello sin frizz, se puede usar como protector termico.",
             "howToUse": "Pulverizar en largos *****, en cabello limpio, húmedo o seco, luego proceder al peinado",
             "precaution": "",
-            "aplication": "",
+            
             "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885528/Toque%20de%20Belleza/20230315_235534_2_11zon_th8i6a.jpg"]
         },
         {
@@ -63,7 +62,7 @@
             "description": "Contiene colageno, agua de rosas y aceite de argán, protege el cabello del calor de la plancha y el secador, disminuye el frizz.",
             "howToUse": "Pulverizar sobre el cabello limpio y proceder al secado o planchado.",
             "precaution": "",
-            "aplication": "",
+            
             "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885528/Toque%20de%20Belleza/20230315_235815_3_11zon_baqzhe.jpg"]
         },
         {
@@ -74,7 +73,7 @@
             "description": "Contiene antioxidantes y queratina es una suave crema aromada para nutrir tu cabello.",
             "howToUse": "Lavar el cabello con shampoo neutro, luego aplicar mecha por mecha, dejar reposar de 20min a 40min con gorro térmico, enjuagar, brushinar y opcional planchar.",
             "precaution": "",
-            "aplication": "",
+            
             "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885538/Toque%20de%20Belleza/20230316_001225_5_11zon_mdqncd.jpg"]
         },
         {
@@ -85,7 +84,7 @@
             "description": "Contiene Keratina, aceite y células madre de argán, ideal para cabellos secos.",
             "howToUse": "Lavar el cabello con shampoo neutro, luego aplicar mecha por mecha, dejar reposar de 20min a 40min con gorro térmico, enjuagar, brushinar y opcional planchar.",
             "precaution": "",
-            "aplication": "",
+            
             "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885530/Toque%20de%20Belleza/20230316_002023_7_11zon_bgi8xd.jpg"]
         },
         {
@@ -96,7 +95,7 @@
             "description": "Con celulas madre de Lino y Biotina, regenerativa e ideal para cabellos dañados.",
             "howToUse": "Lavar el cabello con shampoo neutro, luego aplicar mecha por mecha, dejar reposar de 20min a 40min con gorro térmico, enjuagar, brushinar y opcional planchar.",
             "precaution": "",
-            "aplication": "",
+            
             "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885529/Toque%20de%20Belleza/20230316_002646_8_11zon_nwwqhe.jpg"]
         },
         {
@@ -107,7 +106,7 @@
             "description": "Enriquecido con Biotina refuerza la estructura interna de las fibras para un cabello más fuerte. Para cabello normal a seco.",
             "howToUse": "",
             "precaution": "",
-            "aplication": "",
+            
             "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885531/Toque%20de%20Belleza/20230316_003028_9_11zon_ryb6ii.jpg"]
         },
         {
@@ -118,7 +117,7 @@
             "description": "Uso diario, el poder de la ortiga estimula la circulación sanguínea en el cuero cabelludo ayudando al crecimiento y previniendo la caida de cabello.",
             "howToUse": "",
             "precaution": "",
-            "aplication": "",
+            
             "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885532/Toque%20de%20Belleza/20230316_003312_10_11zon_xobnvf.jpg"]
         },
         {
@@ -129,7 +128,7 @@
             "description": "Anti Frizz, Perfecto para Cabellos rebeldes",
             "howToUse": "",
             "precaution": "",
-            "aplication": "",
+            
             "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885533/Toque%20de%20Belleza/20230316_003602_11_11zon_ppqboh.jpg"]
         },
         {
@@ -151,7 +150,7 @@
             "description": "Brillo suavidad y efecto alisador.",
             "howToUse": "Diluir contenido en dos partes de agua tibia, hasta formar una crema, se aplica sobre cabello humedo, dejar actuar unos minutos y proceder al enjuage. Finalizar con secador.",
             "precaution": "",
-            "aplication": "",
+            
             "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885536/Toque%20de%20Belleza/20230316_004315_13_11zon_lcjbte.jpg"]
         },
         {
@@ -162,7 +161,7 @@
             "description": "Ultra hidratante y anti-oxidante",
             "howToUse": "Diluir contenido en dos partes de agua tibia, hasta formar una crema, se aplica sobre cabello humedo, dejar actuar unos minutos y proceder al enjuage. Finalizar con secador.",
             "precaution": "",
-            "aplication": "",
+            
             "images": ["https://res.cloudinary.com/agustindi/image/upload/v1684885539/Toque%20de%20Belleza/20230316_004445_14_11zon_vz8gxk.jpg"]
         }
     ]
